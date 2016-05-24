@@ -1,5 +1,10 @@
 package hello.bean;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
+
 import javax.persistence.*;
 
 /**
@@ -7,7 +12,8 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "BD")
-public class Bd {
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+public class Bd implements Comparable {
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +24,10 @@ public class Bd {
     private String numero;
     @Column(name = "COUVERTURE_URL")
     private String couvertureUrl;
+
+    @ManyToOne
+    @JsonBackReference
+    private Serie serie;
 
     public Bd() {
     }
@@ -61,4 +71,16 @@ public class Bd {
         this.titre = titre;
     }
 
+    public Serie getSerie() {
+        return serie;
+    }
+
+    public void setSerie(Serie serie) {
+        this.serie = serie;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return this.getId().compareTo(((Bd) o).getId());
+    }
 }
