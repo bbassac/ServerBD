@@ -89,4 +89,28 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
         }
         return toReturn;
     }
+
+    @Override
+    public Long switchBDAsPossede(Long bdId) {
+        Serie serie = (Serie) entityManager
+                .createQuery("SELECT bd.serie FROM Bd bd WHERE bd.id=:bdId")
+                .setParameter("bdId", bdId)
+                .getSingleResult();
+
+        Bd selectedBd = null;
+        for (Bd bd : serie.getListManquante()) {
+            if (bd.getId().equals(bdId)) {
+                selectedBd = bd;
+                break;
+            }
+        }
+        if (selectedBd != null) {
+            serie.getListManquante().remove(selectedBd);
+            serie.getListPossede().add(selectedBd);
+            entityManager.merge(serie);
+            entityManager.flush();
+        }
+
+        return selectedBd.getId();
+    }
 }

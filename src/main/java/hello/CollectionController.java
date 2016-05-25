@@ -2,20 +2,18 @@ package hello;
 
 import hello.bean.Collection;
 import hello.bean.CollectionBuilder;
+import hello.bean.DeleteResult;
 import hello.repository.CollectionRepositoryCustom;
-import hello.repository.CollectionRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/collection")
 public class CollectionController extends AbstractController{
 
 
-    @Autowired
-    private CollectionRepositoryCustom customRepo;
-
     @CrossOrigin
-    @RequestMapping(value = "/collection",method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     public Collection getCollections() {
 
@@ -23,7 +21,7 @@ public class CollectionController extends AbstractController{
     }
 
     @CrossOrigin
-    @RequestMapping(value="/collection",method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public String createCollection() {
         Collection collection = CollectionBuilder.getCollection(false);
@@ -31,6 +29,13 @@ public class CollectionController extends AbstractController{
         return "ok";
     }
 
+    @CrossOrigin
+    @RequestMapping(method = RequestMethod.DELETE)
+    @ResponseBody
+    public DeleteResult deleteCollection() {
+        DeleteResult result = customRepo.deleteCollection();
+        return result;
+    }
 
 
 }

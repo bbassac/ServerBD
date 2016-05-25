@@ -1,8 +1,6 @@
 package hello.repository;
 
 import hello.bean.*;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
@@ -26,4 +24,6 @@ public interface CollectionRepositoryCustom {
     DeleteResult deleteCollection();
 
     List<BdManquante> getAllBdManquantes();
+
+    Long switchBDAsPossede(Long id);
 }

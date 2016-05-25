@@ -1,7 +1,7 @@
 package hello;
 
-import hello.bean.Bd;
 import hello.bean.BdManquante;
+import hello.bean.Serie;
 import hello.repository.CollectionRepositoryCustom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,36 +9,23 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/bds")
-public class BdController extends AbstractController{
-
-
+@RequestMapping("/series")
+public class SerieController extends AbstractController{
 
     @CrossOrigin
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public List<Bd> getBds() {
+    public List<Serie> getSeries() {
 
-        return customRepo.getAllBd();
+        return customRepo.getAllSeries();
     }
 
     @CrossOrigin
     @RequestMapping(value = "{id}",method = RequestMethod.GET)
     @ResponseBody
-    public Bd getBd(@PathVariable("id") Long id) {
+    public Serie getSerie(@PathVariable("id") Long id) {
 
-        return customRepo.getBdFromId(id);
+        return customRepo.getSerieFromId(id);
     }
-
-
-    @CrossOrigin
-    @RequestMapping("/manquantes")
-    @ResponseBody
-    public List<BdManquante> getManquantes() {
-
-        return customRepo.getAllBdManquantes();
-    }
-
-
 
 }
