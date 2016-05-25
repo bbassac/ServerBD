@@ -15,7 +15,7 @@ public class CollectionController extends AbstractController{
     private CollectionRepositoryCustom customRepo;
 
     @CrossOrigin
-    @RequestMapping(value = "/collections",method = RequestMethod.GET)
+    @RequestMapping(value = "/collection",method = RequestMethod.GET)
     @ResponseBody
     public Collection getCollections() {
 
@@ -23,7 +23,7 @@ public class CollectionController extends AbstractController{
     }
 
     @CrossOrigin
-    @RequestMapping(value="/collections",method = RequestMethod.POST)
+    @RequestMapping(value="/collection",method = RequestMethod.POST)
     @ResponseBody
     public String createCollection() {
         Collection collection = CollectionBuilder.getCollection(false);
