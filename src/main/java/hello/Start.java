@@ -14,7 +14,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableJpaRepositories
 @EnableJSONDoc
-@EnableCaching
 @EnableAdminServer
 public class Start {
 

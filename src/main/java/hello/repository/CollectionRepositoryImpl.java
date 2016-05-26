@@ -1,9 +1,6 @@
 package hello.repository;
 
 import hello.bean.*;
-
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
@@ -23,6 +20,8 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
     @PersistenceContext
     private EntityManager entityManager;
 
+    CustomCache cache = new CustomCache();
+
     @Override
     public Bd getBdFromId(long id) {
         return entityManager.find(Bd.class, id);
@@ -34,15 +33,23 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
     }
 
     @Override
-    @Cacheable("collection")
     public Collection getCollection() {
-        List<Collection> resultList = entityManager.createQuery("SELECT c FROM Collection c order by c.id ASC").getResultList();
-        return  resultList.isEmpty()? null : resultList.get(0);
+       if(cache.isEmpty("collection")){
+           cache.putIn("collection",getCollectionFromBdd());
+       }
+        return cache.getCache("collection");
     }
 
     @Override
     public void createCollection(Collection c) {
         entityManager.persist(c);
+        cache.putIn("collection",getCollectionFromBdd());
+    }
+
+    private Collection getCollectionFromBdd(){
+        System.out.println("get in database");
+        List<Collection> resultList = entityManager.createQuery("SELECT c FROM Collection c order by c.id ASC").getResultList();
+        return resultList.isEmpty() ? null : resultList.get(0);
     }
 
     @Override
@@ -56,12 +63,12 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
     }
 
     @Override
-    @CacheEvict("collection")
     public DeleteResult deleteCollection() {
         DeleteResult result = new DeleteResult();
         result.setBdDeleted(entityManager.createQuery("DELETE FROM Bd").executeUpdate());
         result.setSerieDeleted(entityManager.createQuery("DELETE FROM Serie").executeUpdate());
         result.setCollectionDeleted(entityManager.createQuery("DELETE FROM Collection").executeUpdate());
+        cache.clearCache("collection");
         return result;
     }
 
@@ -95,7 +102,6 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
     }
 
     @Override
-    @CacheEvict("collection")
     public Long switchBDAsPossede(Long bdId) {
         Serie serie = (Serie) entityManager
                 .createQuery("SELECT bd.serie FROM Bd bd WHERE bd.id=:bdId")
@@ -115,7 +121,7 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
             entityManager.merge(serie);
             entityManager.flush();
         }
-
+        cache.clearCache("collection");
         return selectedBd.getId();
     }
 }
