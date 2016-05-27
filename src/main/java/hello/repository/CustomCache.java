@@ -9,7 +9,7 @@ import java.util.Map;
  * Created by b.bassac on 26/05/2016.
  */
 public class CustomCache {
-
+    public static final String COLLECTION_CACHE = "collection";
     Map<String,Collection> map = new HashMap<>();
 
     public void putIn(String key, Collection collection) {

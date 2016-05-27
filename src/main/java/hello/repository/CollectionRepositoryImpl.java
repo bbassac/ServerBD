@@ -7,6 +7,7 @@ import org.springframework.util.StringUtils;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,8 +18,9 @@ import java.util.List;
 @Transactional
 public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
 
+
     @PersistenceContext
-    private EntityManager entityManager;
+     EntityManager entityManager;
 
     CustomCache cache = new CustomCache();
 
@@ -34,22 +36,23 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
 
     @Override
     public Collection getCollection() {
-       if(cache.isEmpty("collection")){
-           cache.putIn("collection",getCollectionFromBdd());
+       if(cache.isEmpty(CustomCache.COLLECTION_CACHE)){
+           cache.putIn(CustomCache.COLLECTION_CACHE,getCollectionFromBdd());
        }
-        return cache.getCache("collection");
+        return cache.getCache(CustomCache.COLLECTION_CACHE);
     }
 
     @Override
     public void createCollection(Collection c) {
         entityManager.persist(c);
-        cache.putIn("collection",getCollectionFromBdd());
+        cache.putIn(CustomCache.COLLECTION_CACHE,getCollectionFromBdd());
     }
 
     private Collection getCollectionFromBdd(){
         System.out.println("get in database");
-        List<Collection> resultList = entityManager.createQuery("SELECT c FROM Collection c order by c.id ASC").getResultList();
-        return resultList.isEmpty() ? null : resultList.get(0);
+        Query query = entityManager.createQuery("SELECT c FROM Collection c order by c.id ASC");
+        List<Collection> res = query.getResultList();
+        return res.isEmpty() ? null : res.get(0);
     }
 
     @Override
@@ -68,7 +71,7 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
         result.setBdDeleted(entityManager.createQuery("DELETE FROM Bd").executeUpdate());
         result.setSerieDeleted(entityManager.createQuery("DELETE FROM Serie").executeUpdate());
         result.setCollectionDeleted(entityManager.createQuery("DELETE FROM Collection").executeUpdate());
-        cache.clearCache("collection");
+        cache.clearCache(CustomCache.COLLECTION_CACHE);
         return result;
     }
 
@@ -121,7 +124,7 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
             entityManager.merge(serie);
             entityManager.flush();
         }
-        cache.clearCache("collection");
+        cache.clearCache(CustomCache.COLLECTION_CACHE);
         return selectedBd.getId();
     }
 }
