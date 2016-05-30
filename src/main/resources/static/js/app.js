@@ -1,8 +1,8 @@
-angular.module('hello', [])
+angular.module('myApp', [])
     .controller('home', function($scope,$http) {
-        //$scope.greeting = {id: 'xxx', content: 'Hello World!'}
-        $http.get('http://rest-service.guides.spring.io/greeting').
+        //$scope.collection = {id: 'xxx', content: 'Hello World!'}
+        $http.get('/collection').
         success(function(data) {
-            $scope.greeting = data;
+            $scope.collection = data;
         });
     })
