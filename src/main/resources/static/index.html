@@ -20,19 +20,7 @@
     </div>
 </div>
 
-<div class="container" ng-controller="home">
-    <table class="table table-hover table-bordered table-striped rounded">
-        <tr ng-repeat="serie in collection.listeSerie">
-            <td><img ng-src={{serie.imageUrl}} width="60px"/></td>
-            <td>{{ serie.nom }}</td>
-            <td>{{ serie.editeur }}</td>
-            <td title="img titre" class="text-center">
-                <img ng-src="{{serie.fini?'img/check.png':'img/cross.png'}}" width="30px"/>
-            </td>
-        </tr>
-    </table>
-
-</div>
+<div class="container" ng-controller="home" ng-include="'tableau.html'" />
 
 <script src="js/app.js"></script>
 </body>

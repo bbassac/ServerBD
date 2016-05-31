@@ -1,0 +1,33 @@
+<table class="table table-hover table-bordered table-striped rounded">
+    <tbody  ng-repeat="serie in collection.listeSerie">
+        <tr ng-click="toggleDetail($index)" class="main-row">
+            <td><img ng-src={{serie.imageUrl}} width="60px"/></td>
+            <td>{{ serie.nom }}</td>
+            <td>{{ serie.editeur }}</td>
+            <td title="img titre" class="text-center">
+                <img ng-src="{{serie.fini?'img/check.png':'img/cross.png'}}" width="30px"/>
+            </td>
+        </tr>
+        <tr class="extra-row" ng-show="activePosition == $index">
+            <td></td>
+            <td>
+                <table class="table table-hover table-bordered table-striped rounded">
+                    <tbody ng-repeat="bd in serie.listPossede">
+                        <td class="success">{{bd.numero}}</td>
+                        <td class="success">{{bd.titre}}</td>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="table table-hover table-bordered table-striped rounded">
+                    <tbody ng-repeat="bd in serie.listManquante" >
+                        <td class="danger">{{bd.numero}}</td>
+                        <td class="danger">{{bd.titre}}</td>
+                    </tbody>
+                </table>
+            </td>
+            <td></td>
+        </tr>
+
+    </tbody>
+</table>
