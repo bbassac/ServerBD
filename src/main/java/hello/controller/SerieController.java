@@ -1,9 +1,6 @@
-package hello;
+package hello.controller;
 
-import hello.bean.BdManquante;
 import hello.bean.Serie;
-import hello.repository.CollectionRepositoryCustom;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

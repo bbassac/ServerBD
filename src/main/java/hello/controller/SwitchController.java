@@ -1,4 +1,4 @@
-package hello;
+package hello.controller;
 
 import org.springframework.web.bind.annotation.*;
 

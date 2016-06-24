@@ -1,10 +1,8 @@
-package hello;
+package hello.controller;
 
 import hello.bean.Collection;
 import hello.bean.CollectionBuilder;
 import hello.bean.DeleteResult;
-import hello.repository.CollectionRepositoryCustom;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

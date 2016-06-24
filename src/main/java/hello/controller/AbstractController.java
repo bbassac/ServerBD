@@ -1,4 +1,4 @@
-package hello;
+package hello.controller;
 
 import hello.repository.CollectionRepositoryCustom;
 import org.springframework.beans.factory.annotation.Autowired;
