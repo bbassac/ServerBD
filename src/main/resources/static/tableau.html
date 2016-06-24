@@ -11,9 +11,7 @@
     <tbody  ng-repeat="serie in collection.listeSerie">
         <tr ng-click="toggleDetail($index)" class="main-row">
             <td>
-                <a href="{{serie.imageUrl}}">
-                    <img ng-src={{serie.imageUrl}} width="60px"/>
-                </a>
+                <img ng-src={{serie.imageUrl}} width="60px" onclick="displayPoP(this.src)"/>
             </td>
             <td>{{ serie.nom }}</td>
             <td>{{ serie.editeur }}</td>
@@ -29,9 +27,7 @@
                         <td class="success">{{bd.numero}}</td>
                         <td class="success">{{bd.titre}}</td>
                         <td>
-                            <a href="{{bd.couvertureUrl}}">
-                                <img ng-src={{bd.couvertureUrl}} width="60px"/>
-                            </a>
+                            <img ng-src={{bd.couvertureUrl}} width="60px"/>
                         </td>
                     </tbody>
                 </table>
@@ -42,9 +38,7 @@
                         <td class="danger">{{bd.numero}}</td>
                         <td class="danger">{{bd.titre}}</td>
                         <td>
-                            <a href="{{bd.couvertureUrl}}">
-                                <img ng-src={{bd.couvertureUrl}} width="60px"/>
-                            </a>
+                            <img ng-src={{bd.couvertureUrl}} width="60px"/>
                         </td>
                     </tbody>
                 </table>

@@ -9,4 +9,6 @@ angular.module('myApp', [])
         success(function(data) {
             $scope.collection = data;
         });
+
+      
     })
