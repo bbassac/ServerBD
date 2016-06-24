@@ -2,6 +2,7 @@ package hello.repository;
 
 import hello.bean.*;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -26,4 +27,6 @@ public interface CollectionRepositoryCustom {
     List<BdManquante> getAllBdManquantes();
 
     Long switchBDAsPossede(Long id);
+
+    byte[] exportCollectionToExcel() throws IOException;
 }
