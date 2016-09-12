@@ -221,6 +221,7 @@ public class CollectionBuilder {
                 .addManquante(new Bd(next(withId), "16", "Terra Secunda - II", ""))
                 .addManquante(new Bd(next(withId),"17","Guerres ophidiennes","http://www.bedetheque.com/media/Couvertures/Couv_258046.jpg"))
                 .addManquante(new Bd(next(withId), "HS1", "L'empire de la negation", ""))
+                .addManquante(new Bd(next(withId),"0","En un jeu cruel","http://www.bedetheque.com/media/Couvertures/Couv_139500.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_955.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -589,11 +590,12 @@ public class CollectionBuilder {
                 .addPossede(new Bd(next(withId), "7", "L'Autre rive", ""))
                 .addPossede(new Bd(next(withId), "8", "L'epingle des ephemeres", ""))
                 .addManquante(new Bd(next(withId),"9"," Les Deux Roynes","http://www.bedetheque.com/media/Couvertures/Couv_250209.jpg"))
+                .addManquante(new Bd(next(withId),"10"," Le dernier guardien","http://www.bedetheque.com/media/Couvertures/Couv_287106.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_163697.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
 
-        c.addBD(new Serie(next(withId), "Black et Mortimer")
+        c.addBD(new Serie(next(withId), "Blake et Mortimer")
                 .addPossede(new Bd(next(withId), "1 2 3", "Le secret de l'Espadon", ""))
                 .addPossede(new Bd(next(withId), "1 2", "Le mystere de la grande pyramide", ""))
                 .addPossede(new Bd(next(withId), "", "La marque jaune", ""))
