@@ -194,12 +194,23 @@ public class CollectionBuilder {
                 .withFini(true));
 
         c.addBD(new Serie(next(withId), "Lanfeust de Troy Integrales")
-                .addPossede(new Bd(next(withId), "1", "Volumes 1 2 3", ""))
-                .addManquante(new Bd(next(withId), "2", "Volumes 4 5 6", ""))
-                .addManquante(new Bd(next(withId), "3", "Volumes 7 8 encyclo", ""))
+                .addPossede(new Bd(next(withId), "1", "Volumes 1 2 3", "http://www.bedetheque.com/media/Couvertures/Couv_163937.jpg"))
+                .addPossede(new Bd(next(withId), "2", "Volumes 4 5 6", "http://www.bedetheque.com/media/Couvertures/Couv_172349.jpg"))
+                .addManquante(new Bd(next(withId), "3", "Volumes 7 8 encyclo", "http://www.bedetheque.com/media/Couvertures/Couv_177029.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_163937.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
+        c.addBD(new Serie(next(withId), "Lanfeust de Troy")
+                .addManquante(new Bd(next(withId),"1","1", ""))
+                .addManquante(new Bd(next(withId),"2","2", ""))
+                .addManquante(new Bd(next(withId),"3","3", ""))
+                .addManquante(new Bd(next(withId),"4","4", ""))
+                .addManquante(new Bd(next(withId),"5","5", ""))
+                .addManquante(new Bd(next(withId),"6","6", ""))
+                .addManquante(new Bd(next(withId),"7","7", ""))
+                .addPossede(new Bd(next(withId),"8","La bête fabuleuse", "http://www.bedetheque.com/media/Couvertures/Couv_2107.jpg"))
+                .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_2107.jpg")
+        );
 
         c.addBD(new Serie(next(withId), "Les chroniques de la lune noire")
                 .addPossede(new Bd(next(withId), "1", "Le Signe des Ténèbres", ""))
@@ -213,7 +224,6 @@ public class CollectionBuilder {
                 .addPossede(new Bd(next(withId), "9", "Les Chants de la négation", ""))
                 .addPossede(new Bd(next(withId), "10", "L'Aigle foudroyé", ""))
                 .addPossede(new Bd(next(withId), "11", "Ave Tenebrae", ""))
-                .addManquante(new Bd(next(withId), "0", "En un jeu cruel", ""))
                 .addManquante(new Bd(next(withId), "12", "La Porte des Enfers", ""))
                 .addManquante(new Bd(next(withId), "13", "La Prophétie ", ""))
                 .addManquante(new Bd(next(withId), "14", "La Fin des Temps", ""))
@@ -632,6 +642,13 @@ public class CollectionBuilder {
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/harrydicksonzanon01.jpg")
                 .withEditeur("Art & B.D.")
                 .withFini(false));
+
+        c.addBD(new Serie(next(withId),"Le Codex Angelique")
+                .addPossede(new Bd(next(withId),"1", "Izaël","http://www.bedetheque.com/media/Couvertures/codexangelique01.jpg"))
+                .addManquante(new Bd(next(withId),"2", "Lisa","http://www.bedetheque.com/media/Couvertures/Couv_66086.jpg"))
+                .addManquante(new Bd(next(withId),"3", "Thomas","http://www.bedetheque.com/media/Couvertures/codexangelique03_83669.jpg"))
+                .withImageUrl("http://www.bedetheque.com/media/Couvertures/codexangelique01.jpg")
+        );
 
         return c;
     }

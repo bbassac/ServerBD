@@ -1,19 +1,23 @@
 package hello.repository;
 
 import hello.bean.Collection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
+
 
 /**
  * Created by b.bassac on 26/05/2016.
  */
 public class CustomCache {
     public static final String COLLECTION_CACHE = "collection";
+    private static final Logger logger = LoggerFactory.getLogger(CustomCache.class);
     Map<String,Collection> map = new HashMap<>();
 
     public void putIn(String key, Collection collection) {
-        System.out.println("Put in cache " + collection);
+        logger.info("Put in cache " + collection);
         map.put(key,collection);
     }
 
@@ -23,7 +27,7 @@ public class CustomCache {
     }
 
     public Collection getCache(String key) {
-        System.out.println("Get In Cache");
+        logger.info("Get In Cache");
         return map.get(key);
     }
 
