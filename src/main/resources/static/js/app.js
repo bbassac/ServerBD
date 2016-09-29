@@ -9,4 +9,5 @@ angular.module('myApp', [])
             $scope.collection = data;
         });
 
+
     })

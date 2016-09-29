@@ -1,3 +1,14 @@
+<form>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-search"></i></div>
+
+            <input type="text" class="form-control" placeholder="Search in collection" ng-model="searchText">
+
+        </div>
+    </div>
+</form>
+
 <table class="table table-hover table-bordered table-striped rounded table-sm">
     <thead>
         <tr>
@@ -8,7 +19,7 @@
         </tr>
     </thead>
 
-    <tbody  ng-repeat="serie in collection.listeSerie">
+    <tbody  ng-repeat="serie in collection.listeSerie | filter:searchText">
         <tr ng-click="toggleDetail($index)" class="main-row">
             <td>
                 <img ng-src={{serie.imageUrl}} width="60px" onclick="displayPoP(this.src)"/>
