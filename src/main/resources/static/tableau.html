@@ -13,8 +13,18 @@
     <thead>
         <tr>
             <th>Couverture</th>
-            <th>Série</th>
-            <th>Editeur</th>
+            <th>
+                <a href="#" ng-click="sortType = 'nom'; sortReverse = !sortReverse">Série
+                    <span ng-show="sortType == 'nom' && !sortReverse" class="fa fa-caret-down"></span>
+                    <span ng-show="sortType == 'nom' && sortReverse" class="fa fa-caret-up"></span>
+                </a>
+            </th>
+            <th>
+                <a href="#" ng-click="sortType = 'editeur'; sortReverse = !sortReverse">Editeur
+                    <span ng-show="sortType == 'editeur' && !sortReverse" class="fa fa-caret-down"></span>
+                    <span ng-show="sortType == 'editeur' && sortReverse" class="fa fa-caret-up"></span>
+                </a>
+            </th>
             <th>
                 <a href="#" ng-click="sortType = 'listManquante.length'; sortReverse = !sortReverse">Fini ?
                     <span ng-show="sortType == 'listManquante.length' && !sortReverse" class="fa fa-caret-down"></span>
