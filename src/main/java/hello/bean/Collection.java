@@ -35,7 +35,7 @@ public class Collection {
     }
 
 
-    public void addBD(Serie serie) {
+    public void addSerie(Serie serie) {
         serie.setCollection(this);
         listeSerie.add(serie);
     }
