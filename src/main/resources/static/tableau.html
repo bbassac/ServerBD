@@ -15,11 +15,16 @@
             <th>Couverture</th>
             <th>Série</th>
             <th>Editeur</th>
-            <th>Fini ?</th>
+            <th>
+                <a href="#" ng-click="sortType = 'listManquante.length'; sortReverse = !sortReverse">Fini ?
+                    <span ng-show="sortType == 'listManquante.length' && !sortReverse" class="fa fa-caret-down"></span>
+                    <span ng-show="sortType == 'listManquante.length' && sortReverse" class="fa fa-caret-up"></span>
+                </a>
+            </th>
         </tr>
     </thead>
 
-    <tbody  ng-repeat="serie in collection.listeSerie | filter:searchText">
+    <tbody  ng-repeat="serie in collection.listeSerie | orderBy:sortType:sortReverse | filter:searchText">
         <tr ng-click="toggleDetail($index)" class="main-row">
             <td>
                 <img ng-src={{serie.imageUrl}} width="60px" onclick="displayPoP(this.src)"/>
