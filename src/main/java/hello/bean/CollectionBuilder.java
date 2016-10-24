@@ -62,7 +62,7 @@ public class CollectionBuilder {
                 .addPossede(new Bd(next(withId), "8", "Frères de sang", "http://www.bedetheque.com/media/Couvertures/Couv_174222.jpg"))
                 .addPossede(new Bd(next(withId), "9", "Ogomo", "http://www.bedetheque.com/media/Couvertures/Couv_217764.jpg"))
                 .addManquante(new Bd(next(withId), "10", "Ririko", "http://www.bedetheque.com/media/Couvertures/Couv_258014.jpg"))
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/samurai02.jpg")
+                .withImageUrl("http://www.bedetheque.com/media/Couvertures/samurai01.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
 

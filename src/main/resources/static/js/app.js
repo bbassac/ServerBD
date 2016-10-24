@@ -11,5 +11,12 @@ angular.module('myApp', [])
             $scope.collection = data;
         });
 
+        $scope.getCouvUrl =  function (url){
+                var filename = url.replace(/^.*[\\\/]/, '')
+                return "img/couv/"+filename;
+            };
 
-    })
+    }
+
+    )
+

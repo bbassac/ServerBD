@@ -18,7 +18,7 @@ import java.net.URLConnection;
  * Created by b.bassac on 24/10/2016.
  */
 public class ImageCrawlerTest {
-static int nbImgCrawled = 0;
+static int nbImgCrawled = -19;
 
     @BeforeClass
     public void beforeClass() throws IOException {
@@ -34,7 +34,7 @@ static int nbImgCrawled = 0;
     public void crawlAllImages() throws FileNotFoundException {
         Collection collection = CollectionBuilder.getCollection(false);
         for (Serie serie : collection.getListeSerie()){
-            //crawlImage(serie.getImageUrl());
+            crawlImage(serie.getImageUrl());
             for (Bd bd:serie.getListManquante()){
                 crawlImage(bd.getCouvertureUrl());
             }
@@ -47,7 +47,7 @@ static int nbImgCrawled = 0;
         int nbImgOnTest = countImages("target\\img");
         Assert.assertEquals(nbImgCrawled,nbImgOnTest);
         int nbImagsOnSources = countImages("src\\main\\resources\\static\\img\\couv");
-        Assert.assertEquals(nbImgOnTest,nbImagsOnSources);
+        Assert.assertEquals(nbImgCrawled,nbImagsOnSources);
     }
 
     private int countImages(String dir) {
