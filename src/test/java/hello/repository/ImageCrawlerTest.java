@@ -13,14 +13,12 @@ import org.testng.annotations.Test;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 /**
  * Created by b.bassac on 24/10/2016.
  */
 public class ImageCrawlerTest {
-static int i = 0;
+static int nbImgCrawled = 0;
 
     @BeforeClass
     public void beforeClass() throws IOException {
@@ -45,13 +43,15 @@ static int i = 0;
             }
         }
 
-        System.out.println(" Total images = " + i);
-        int j = countImages();
-        Assert.assertEquals(i,j);
+        System.out.println(" Total images = " + nbImgCrawled);
+        int nbImgOnTest = countImages("target\\img");
+        Assert.assertEquals(nbImgCrawled,nbImgOnTest);
+        int nbImagsOnSources = countImages("src\\main\\resources\\static\\img\\couv");
+        Assert.assertEquals(nbImgOnTest,nbImagsOnSources);
     }
 
-    private int countImages() {
-        File directory = new File("target\\img");
+    private int countImages(String dir) {
+        File directory = new File(dir);
         File[] f = directory.listFiles();
         int x = 0;
         for (int i = 0 ; i < f.length ; i++) {
@@ -66,7 +66,7 @@ static int i = 0;
         if(Strings.isNotBlank(imageUrl)){
 
             getFile(imageUrl);
-            i++;
+            nbImgCrawled++;
         }
     }
 
