@@ -4,27 +4,39 @@ import hello.bean.Bd;
 import hello.bean.Collection;
 import hello.bean.CollectionBuilder;
 import hello.bean.Serie;
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.util.Strings;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 /**
  * Created by b.bassac on 24/10/2016.
  */
 public class ImageCrawlerTest {
-static int i = -1;
+static int i = 0;
+
+    @BeforeClass
+    public void beforeClass() throws IOException {
+        File directory = new File("target\\img");
+        if(directory.exists()) {
+            FileUtils.deleteDirectory(directory);
+        }
+        directory.mkdir();
+
+    }
 
     @Test
     public void crawlAllImages() throws FileNotFoundException {
         Collection collection = CollectionBuilder.getCollection(false);
         for (Serie serie : collection.getListeSerie()){
-            crawlImage(serie.getImageUrl());
+            //crawlImage(serie.getImageUrl());
             for (Bd bd:serie.getListManquante()){
                 crawlImage(bd.getCouvertureUrl());
             }
@@ -34,12 +46,27 @@ static int i = -1;
         }
 
         System.out.println(" Total images = " + i);
+        int j = countImages();
+        Assert.assertEquals(i,j);
+    }
+
+    private int countImages() {
+        File directory = new File("target\\img");
+        File[] f = directory.listFiles();
+        int x = 0;
+        for (int i = 0 ; i < f.length ; i++) {
+            if (f[i].isFile()) {
+                x++;
+            }
+        }
+        return x;
     }
 
     private void crawlImage(String imageUrl) throws FileNotFoundException {
         if(Strings.isNotBlank(imageUrl)){
-            i++;
+
             getFile(imageUrl);
+            i++;
         }
     }
 
@@ -56,13 +83,12 @@ static int i = -1;
 
             if (fileLength == -1)
             {
-                System.out.println("Invalide URL or file " + host);
-                return;
+                Assert.fail("Invalide URL or file ");
             }
 
             input = connection.getInputStream();
             String fileName = url.getFile().substring(url.getFile().lastIndexOf('/') + 1);
-            writeFile = new FileOutputStream("target/"+fileName);
+            writeFile = new FileOutputStream("target/img/"+fileName);
             byte[] buffer = new byte[1024];
             int read;
 
@@ -72,7 +98,7 @@ static int i = -1;
         }
         catch (IOException e)
         {
-            System.out.println("Error while trying to download the file "+host);
+            Assert.fail(e.getMessage());
         }
 
 
@@ -85,7 +111,7 @@ static int i = -1;
             }
             catch (Exception e)
             {
-                System.out.println("Error while trying to download the file "+host);
+                Assert.fail("Error while trying to download the file "+host);
             }
         }
     }
