@@ -632,11 +632,11 @@ public class CollectionBuilder {
 
         c.addSerie(new Serie(next(withId), "Harry Dickson")
                 .addPossede(new Bd(next(withId), "1", "La bande de l'araignee", "http://www.bedetheque.com/media/Couvertures/harrydicksonzanon01.jpg"))
-                .addPossede(new Bd(next(withId), "2", "Les spectres bourreaux", "http://www.bedetheque.com/media/Couvertures/harrydickson02eo.jpg"))
-                .addPossede(new Bd(next(withId), "3", "Les 3 cercles de l'epouvante", "http://www.bedetheque.com/media/Couvertures/harrydicksonzanon03.jpg"))
-                .addPossede(new Bd(next(withId), "4", "Le royaume introuvable", "http://www.bedetheque.com/media/Couvertures/HarryDickson04.jpg"))
-                .addPossede(new Bd(next(withId), "5", "L'etrange lueur verte", "http://www.bedetheque.com/media/Couvertures/HarryDickson05.jpg"))
-                .addPossede(new Bd(next(withId), "6", "La conspiration fantastique", "http://www.bedetheque.com/media/Couvertures/HarryDickson06.jpg"))
+                .addPossede(new Bd(next(withId), "2", "Les spectres bourreaux", "http://www.bedetheque.com/media/Couvertures/Couv_12432.jpg"))
+                .addPossede(new Bd(next(withId), "3", "Les 3 cercles de l'epouvante", "http://www.bedetheque.com/media/Couvertures/Couv_1854.jpg"))
+                .addPossede(new Bd(next(withId), "4", "Le royaume introuvable", "http://www.bedetheque.com/media/Couvertures/Couv_3120.jpg"))
+                .addPossede(new Bd(next(withId), "5", "L'etrange lueur verte", "http://www.bedetheque.com/media/Couvertures/Couv_3121.jpg"))
+                .addPossede(new Bd(next(withId), "6", "La conspiration fantastique", "http://www.bedetheque.com/media/Couvertures/Couv_3122.jpg"))
                 .addManquante(new Bd(next(withId), "7", "Echec au roi", "http://www.bedetheque.com/media/Couvertures/HarryDickson07_08022002.jpg"))
                 .addPossede(new Bd(next(withId), "8", "Le temple de fer", "http://www.bedetheque.com/media/Couvertures/haryydicksonzanoncouv08.jpg"))
                 .addManquante(new Bd(next(withId), "9", "Les gardiens du gouffre 09/2014", "http://www.bedetheque.com/media/Couvertures/Couv_224288.jpg"))
@@ -671,7 +671,7 @@ public class CollectionBuilder {
                 .addPossede(new Bd(next(withId),"6", "Tome 6","http://www.bedetheque.com/media/Couvertures/Couv_21787.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_8153.jpg")
                 .withEditeur("Glénat"));
-        
+
         return c;
     }
 
