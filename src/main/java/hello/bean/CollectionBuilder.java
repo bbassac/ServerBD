@@ -663,16 +663,15 @@ public class CollectionBuilder {
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_661.jpg"));
 
         c.addSerie(new Serie(next(withId),"Gunnm")
-                .addManquante(new Bd(next(withId),"1", "Tome 1","http://www.bedetheque.com/media/Couvertures/Couv_8153.jpg"))
-                .addManquante(new Bd(next(withId),"2", "Tome 2","http://www.bedetheque.com/media/Couvertures/Couv_8154.jpg"))
+                .addPossede(new Bd(next(withId),"1", "Tome 1","http://www.bedetheque.com/media/Couvertures/Couv_8153.jpg"))
+                .addPossede(new Bd(next(withId),"2", "Tome 2","http://www.bedetheque.com/media/Couvertures/Couv_8154.jpg"))
                 .addPossede(new Bd(next(withId),"3", "Tome 3","http://www.bedetheque.com/media/Couvertures/Couv_11986.jpg"))
                 .addPossede(new Bd(next(withId),"4", "Tome 4","http://www.bedetheque.com/media/Couvertures/Couv_11987.jpg"))
                 .addPossede(new Bd(next(withId),"5", "Tome 5","http://www.bedetheque.com/media/Couvertures/Couv_11988.jpg"))
                 .addPossede(new Bd(next(withId),"6", "Tome 6","http://www.bedetheque.com/media/Couvertures/Couv_21787.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_8153.jpg")
                 .withEditeur("Glénat"));
-
-
+        
         return c;
     }
 
