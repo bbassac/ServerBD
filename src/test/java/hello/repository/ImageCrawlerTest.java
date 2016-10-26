@@ -18,7 +18,7 @@ import java.net.URLConnection;
  * Created by b.bassac on 24/10/2016.
  */
 public class ImageCrawlerTest {
-static int nbImgCrawled = -19;
+
 
     @BeforeClass
     public void beforeClass() throws IOException {
@@ -32,22 +32,33 @@ static int nbImgCrawled = -19;
 
     @Test
     public void crawlAllImages() throws FileNotFoundException {
+        int nbImgCrawled = -24;
         Collection collection = CollectionBuilder.getCollection(false);
         for (Serie serie : collection.getListeSerie()){
-            crawlImage(serie.getImageUrl());
+            if(Strings.isNotBlank(serie.getImageUrl())){
+
+                getFile(serie.getImageUrl());
+                nbImgCrawled++;
+            }
             for (Bd bd:serie.getListManquante()){
-                crawlImage(bd.getCouvertureUrl());
+                if(Strings.isNotBlank(bd.getCouvertureUrl())){
+
+                    getFile(bd.getCouvertureUrl());
+                    nbImgCrawled++;
+                }
             }
             for (Bd bd:serie.getListPossede()){
-                crawlImage(bd.getCouvertureUrl());
+                if(Strings.isNotBlank(bd.getCouvertureUrl())){
+
+                    getFile(bd.getCouvertureUrl());
+                    nbImgCrawled++;
+                }
             }
         }
 
         System.out.println(" Total images = " + nbImgCrawled);
-        int nbImgOnTest = countImages("target\\img");
-        Assert.assertEquals(nbImgCrawled,nbImgOnTest);
-        int nbImagsOnSources = countImages("src\\main\\resources\\static\\img\\couv");
-        Assert.assertEquals(nbImgCrawled,nbImagsOnSources);
+        Assert.assertEquals(nbImgCrawled, countImages("target\\img"));
+        Assert.assertEquals(nbImgCrawled, countImages("src\\main\\resources\\static\\img\\couv"));
     }
 
     private int countImages(String dir) {
@@ -62,13 +73,6 @@ static int nbImgCrawled = -19;
         return x;
     }
 
-    private void crawlImage(String imageUrl) throws FileNotFoundException {
-        if(Strings.isNotBlank(imageUrl)){
-
-            getFile(imageUrl);
-            nbImgCrawled++;
-        }
-    }
 
     public static void getFile(String host) throws FileNotFoundException
     {
