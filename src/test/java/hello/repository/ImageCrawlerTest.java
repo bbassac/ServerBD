@@ -32,7 +32,7 @@ public class ImageCrawlerTest {
 
     @Test
     public void crawlAllImages() throws FileNotFoundException {
-        int nbImgCrawled = -24;
+        int nbImgCrawled = -27;
         Collection collection = CollectionBuilder.getCollection(false);
         for (Serie serie : collection.getListeSerie()){
             if(Strings.isNotBlank(serie.getImageUrl())){
