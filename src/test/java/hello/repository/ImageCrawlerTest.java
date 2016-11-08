@@ -32,33 +32,24 @@ public class ImageCrawlerTest {
 
     @Test
     public void crawlAllImages() throws FileNotFoundException {
-        int nbImgCrawled = -27;
         Collection collection = CollectionBuilder.getCollection(false);
         for (Serie serie : collection.getListeSerie()){
             if(Strings.isNotBlank(serie.getImageUrl())){
-
                 getFile(serie.getImageUrl());
-                nbImgCrawled++;
             }
             for (Bd bd:serie.getListManquante()){
                 if(Strings.isNotBlank(bd.getCouvertureUrl())){
-
                     getFile(bd.getCouvertureUrl());
-                    nbImgCrawled++;
                 }
             }
             for (Bd bd:serie.getListPossede()){
                 if(Strings.isNotBlank(bd.getCouvertureUrl())){
-
                     getFile(bd.getCouvertureUrl());
-                    nbImgCrawled++;
                 }
             }
         }
 
-        System.out.println(" Total images = " + nbImgCrawled);
-        Assert.assertEquals(nbImgCrawled, countImages("target\\img"));
-        Assert.assertEquals(nbImgCrawled, countImages("src\\main\\resources\\static\\img\\couv"));
+        Assert.assertEquals(countImages("target\\img"), countImages("src\\main\\resources\\static\\img\\couv"));
     }
 
     private int countImages(String dir) {
