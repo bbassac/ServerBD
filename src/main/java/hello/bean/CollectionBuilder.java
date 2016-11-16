@@ -197,7 +197,7 @@ public class CollectionBuilder {
         c.addSerie(new Serie(next(withId), "Lanfeust de Troy Integrales")
                 .addPossede(new Bd(next(withId), "1", "Volumes 1 2 3", "http://www.bedetheque.com/media/Couvertures/Couv_163937.jpg"))
                 .addPossede(new Bd(next(withId), "2", "Volumes 4 5 6", "http://www.bedetheque.com/media/Couvertures/Couv_172349.jpg"))
-                .addManquante(new Bd(next(withId), "3", "Volumes 7 8 encyclo- 978-2-302-02252-2", "http://www.bedetheque.com/media/Couvertures/Couv_177029.jpg"))
+                .addPossede(new Bd(next(withId), "3", "Volumes 7 8 encyclopedie", "http://www.bedetheque.com/media/Couvertures/Couv_177029.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_163937.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -674,11 +674,11 @@ public class CollectionBuilder {
                 .withEditeur("Glénat"));
 
         c.addSerie(new Serie(next(withId),"Dangoo")
-                .addManquante(new Bd(next(withId),"1", "Tome 1","http://www.bedetheque.com/media/Couvertures/Couv_120767.jpg"))
-                .addManquante(new Bd(next(withId),"2", "Tome 2","http://www.bedetheque.com/media/Couvertures/Couv_101696.jpg"))
-                .addManquante(new Bd(next(withId),"3", "Tome 3","http://www.bedetheque.com/media/Couvertures/DANGOO_03_101697.jpg"))
-                .addManquante(new Bd(next(withId),"4", "Tome 4","http://www.bedetheque.com/media/Couvertures/DANGOO_04_101698.jpg"))
-                .addManquante(new Bd(next(withId),"5", "Tome 5","http://www.bedetheque.com/media/Couvertures/Dangoo5_21112006.jpg"))
+                .addPossede(new Bd(next(withId),"1", "Tome 1","http://www.bedetheque.com/media/Couvertures/Couv_120767.jpg"))
+                .addPossede(new Bd(next(withId),"2", "Tome 2","http://www.bedetheque.com/media/Couvertures/Couv_101696.jpg"))
+                .addPossede(new Bd(next(withId),"3", "Tome 3","http://www.bedetheque.com/media/Couvertures/DANGOO_03_101697.jpg"))
+                .addPossede(new Bd(next(withId),"4", "Tome 4","http://www.bedetheque.com/media/Couvertures/DANGOO_04_101698.jpg"))
+                .addPossede(new Bd(next(withId),"5", "Tome 5","http://www.bedetheque.com/media/Couvertures/Dangoo5_21112006.jpg"))
                 .addManquante(new Bd(next(withId),"6", "Tome 6","http://www.bedetheque.com/media/Couvertures/Couv_123893.jpg"))
                 .addManquante(new Bd(next(withId),"7", "Tome 7","http://www.bedetheque.com/media/Couvertures/Couv_123895.jpg"))
                 .addManquante(new Bd(next(withId),"8", "Tome 8","http://www.bedetheque.com/media/Couvertures/Couv_123896.jpg"))
