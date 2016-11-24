@@ -18,7 +18,7 @@ public class SerieController extends AbstractController{
     }
 
     @CrossOrigin
-    @RequestMapping(value = "{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     @ResponseBody
     public Serie getSerie(@PathVariable("id") Long id) {
 

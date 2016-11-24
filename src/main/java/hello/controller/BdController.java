@@ -21,7 +21,7 @@ public class BdController extends AbstractController{
     }
 
     @CrossOrigin
-    @RequestMapping(value = "{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     @ResponseBody
     public Bd getBd(@PathVariable("id") Long id) {
 
@@ -30,7 +30,7 @@ public class BdController extends AbstractController{
 
 
     @CrossOrigin
-    @RequestMapping("/manquantes")
+    @RequestMapping(value="/manquantes")
     @ResponseBody
     public List<BdManquante> getManquantes() {
 

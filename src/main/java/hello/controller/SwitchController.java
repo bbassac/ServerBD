@@ -9,7 +9,7 @@ public class SwitchController extends AbstractController{
 
 
     @CrossOrigin
-    @RequestMapping(value = "{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     @ResponseBody
     public Long getSerie(@PathVariable("id") Long id) {
 
