@@ -595,7 +595,7 @@ public class CollectionBuilder {
                 .withFini(false));
 
         c.addSerie(new Serie(next(withId), "Slhoka")
-                .addPossede(new Bd(next(withId), "1", "L'île oubliée", "http://www.bedetheque.com/media/Couvertures/slhoka1couv_6308.jpg"))
+                .addPossede(new Bd(next(withId), "1", "L'île oubliée", "http://www.bedetheque.com/media/Couvertures/Couv_6308.jpg"))
                 .addPossede(new Bd(next(withId), "2", "Les Jardins de Sangalî", "http://www.bedetheque.com/media/Couvertures/slhoka2couv_25655.jpg"))
                 .addPossede(new Bd(next(withId), "3", "Le monde blanc", "http://www.bedetheque.com/media/Couvertures/slhoka3couv_37205.jpg"))
                 .addPossede(new Bd(next(withId), "4", "Les arches de sang", "http://www.bedetheque.com/media/Couvertures/Couv_110896.jpg"))
