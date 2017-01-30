@@ -52,7 +52,7 @@ public class Serie {
         this.nom = nom;
         this.id = id;
         listPossede = new ArrayList<>();
-        listManquante = new ArrayList();
+        listManquante = new ArrayList<>();
     }
 
     public List<Bd> getListPossede() {
