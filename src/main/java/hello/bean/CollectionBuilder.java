@@ -211,6 +211,7 @@ public class CollectionBuilder {
                 .addManquante(new Bd(next(withId),"6","6", ""))
                 .addManquante(new Bd(next(withId),"7","7", ""))
                 .addPossede(new Bd(next(withId),"8","La bête fabuleuse", "http://www.bedetheque.com/media/Couvertures/Couv_2107.jpg"))
+                .withEditeur("Soleil")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_2107.jpg")
         );
 
@@ -661,6 +662,7 @@ public class CollectionBuilder {
                 .addPossede(new Bd(next(withId),"1", "Izaël","http://www.bedetheque.com/media/Couvertures/codexangelique01.jpg"))
                 .addPossede(new Bd(next(withId),"2", "Lisa","http://www.bedetheque.com/media/Couvertures/Couv_66086.jpg"))
                 .addPossede(new Bd(next(withId),"3", "Thomas","http://www.bedetheque.com/media/Couvertures/codexangelique03_83669.jpg"))
+                .withEditeur("Delcourt")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/codexangelique01.jpg")
         );
 
@@ -671,6 +673,7 @@ public class CollectionBuilder {
                 .addManquante(new Bd(next(withId),"4", "Le cri du Grouse","http://www.bedetheque.com/media/Couvertures/Couv_664.jpg"))
                 .addManquante(new Bd(next(withId),"5", "Le goût de Sulfur","http://www.bedetheque.com/media/Couvertures/Couv_665.jpg"))
                 .addManquante(new Bd(next(withId),"6", "La cité des vents","http://www.bedetheque.com/media/Couvertures/Couv_36023.jpg"))
+                .withEditeur("Vents d'Ouest")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_661.jpg"));
 
         c.addSerie(new Serie(next(withId),"Gunnm")
