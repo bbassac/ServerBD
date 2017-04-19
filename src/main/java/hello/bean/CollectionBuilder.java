@@ -701,8 +701,8 @@ public class CollectionBuilder {
 
         c.addSerie(new Serie(next(withId),"Kwaïdan")
                 .addPossede(new Bd(next(withId),"1", "L'esprit du lac","http://www.bedetheque.com/media/Couvertures/kwaidan.JPG"))
-                .addPossede(new Bd(next(withId),"2", "Setsuko","http://www.bedetheque.com/media/Couvertures/kwaidan02.jpg"))
-                .addPossede(new Bd(next(withId),"3", "Métamorphose","http://www.bedetheque.com/media/Couvertures/kwaidan03.jpg"))
+                .addManquante(new Bd(next(withId),"2", "Setsuko","http://www.bedetheque.com/media/Couvertures/kwaidan02.jpg"))
+                .addManquante(new Bd(next(withId),"3", "Métamorphose","http://www.bedetheque.com/media/Couvertures/kwaidan03.jpg"))
 
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/kwaidan.JPG")
                 .withEditeur("Delcourt"));
