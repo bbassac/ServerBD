@@ -442,7 +442,7 @@ public class CollectionBuilder {
                 .addManquante(new Bd(next(withId), "6", "Le labyrinthe d'Hadès ", "http://www.bedetheque.com/media/Couvertures/Couv_199367.jpg"))
                 .addManquante(new Bd(next(withId), "7", "Le Dernier des Grands Anciens", "http://www.bedetheque.com/media/Couvertures/Couv_227224.jpg"))
                 .addManquante(new Bd(next(withId),"8","Les Taureaux de Colchide","http://www.bedetheque.com/media/Couvertures/Couv_260179.jpg"))
-                .addManquante(new Bd(next(withId), "HS 1", "Les amis d'Atalantes", "http://www.bedetheque.com/media/Couvertures/AmisDAtalante_22102003.jpg"))
+                .addManquante(new Bd(next(withId), "HS 1", "Les amis d'Atalantes", "http://www.bedetheque.com/media/Couvertures/Couv_30442.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_1938.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
