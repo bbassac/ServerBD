@@ -1,5 +1,6 @@
 package hello.repository;
 
+import hello.LogUtils;
 import hello.bean.*;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
@@ -53,7 +54,7 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
     }
 
     private Collection getCollectionFromBdd(){
-        System.out.println("get in database");
+        LogUtils.warn("Get Collection from Database");
         Query query = entityManager.createQuery("SELECT c FROM Collection c order by c.id ASC");
         List<Collection> res = query.getResultList();
         return res.isEmpty() ? null : res.get(0);
