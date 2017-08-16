@@ -234,7 +234,7 @@ public class CollectionBuilder {
                 .addManquante(new Bd(next(withId), "16", "Terra Secunda - II", "http://www.bedetheque.com/media/Couvertures/Couv_225498.jpg"))
                 .addPossede(new Bd(next(withId),"17","Guerres ophidiennes","http://www.bedetheque.com/media/Couvertures/Couv_258046.jpg"))
                 .addManquante(new Bd(next(withId), "HS1", "L'empire de la negation", "http://www.bedetheque.com/media/Couvertures/Couv_201795.jpg"))
-                .addManquante(new Bd(next(withId),"0","En un jeu cruel","http://www.bedetheque.com/media/Couvertures/Couv_139500.jpg"))
+                .addPossede(new Bd(next(withId),"0","En un jeu cruel","http://www.bedetheque.com/media/Couvertures/Couv_139500.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_955.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -326,7 +326,6 @@ public class CollectionBuilder {
                 .withEditeur("Dargaud")
                 .withFini(true));
 
-        //TODO SORTIR TETE NOIR DANS LE CYCLE 3
         c.addSerie(new Serie(next(withId), "Les complaintes des landes perdues cycle 2")
                 .addPossede(new Bd(next(withId), "1", "Moriganes", "http://www.bedetheque.com/media/Couvertures/Couv_40118.jpg"))
                 .addPossede(new Bd(next(withId), "2", "Le Guinea Lord", "http://www.bedetheque.com/media/Couvertures/Couv_79248.jpg"))
@@ -341,6 +340,12 @@ public class CollectionBuilder {
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_253349.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
+
+        c.addSerie(new Serie(next(withId), "Angor")
+                .addPossede(new Bd(next(withId),"1","Angor","https://www.bedetheque.com/media/Couvertures/Couv_305128.jpg"))
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_305128.jpg")
+                .withEditeur("Soleil Productions")
+                .withFini(true));
 
         c.addSerie(new Serie(next(withId), "Crepuscule des dieux")
                 .addPossede(new Bd(next(withId), "0", "La Malédiction de l'Anneau", "http://www.bedetheque.com/media/Couvertures/CrepusculeDesDieuxLe0_24072009_052139.jpg"))
