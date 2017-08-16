@@ -1,5 +1,6 @@
 package hello.repository;
 
+import hello.LogUtils;
 import hello.bean.Bd;
 import hello.bean.Collection;
 import hello.bean.CollectionBuilder;
@@ -33,7 +34,10 @@ public class ImageCrawlerTest {
     @Test
     public void crawlAllImages() throws FileNotFoundException {
         Collection collection = CollectionBuilder.getCollection(false);
+        int nbSeries = collection.getListeSerie().size();
+        int currentSerie = 1;
         for (Serie serie : collection.getListeSerie()){
+            LogUtils.warn("Processing #"+currentSerie+"/"+nbSeries);
             if(Strings.isNotBlank(serie.getImageUrl())){
                 getFile(serie.getImageUrl());
             }
@@ -47,6 +51,7 @@ public class ImageCrawlerTest {
                     getFile(bd.getCouvertureUrl());
                 }
             }
+            currentSerie++;
         }
 
         Assert.assertEquals(countImages("target\\img"), countImages("src\\main\\resources\\static\\img\\couv"));
