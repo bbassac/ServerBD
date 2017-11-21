@@ -38,23 +38,27 @@ public class ImageCrawlerTest {
         int currentSerie = 1;
         for (Serie serie : collection.getListeSerie()){
             LogUtils.warn("Processing #"+currentSerie+"/"+nbSeries);
-            if(Strings.isNotBlank(serie.getImageUrl())){
-                getFile(serie.getImageUrl());
-            }
-            for (Bd bd:serie.getListManquante()){
-                if(Strings.isNotBlank(bd.getCouvertureUrl())){
-                    getFile(bd.getCouvertureUrl());
-                }
-            }
-            for (Bd bd:serie.getListPossede()){
-                if(Strings.isNotBlank(bd.getCouvertureUrl())){
-                    getFile(bd.getCouvertureUrl());
-                }
-            }
+            getAllFiles(serie);
             currentSerie++;
         }
 
         Assert.assertEquals(countImages("target\\img"), countImages("src\\main\\resources\\static\\img\\couv"));
+    }
+
+    private void getAllFiles(Serie serie) throws FileNotFoundException {
+        if(Strings.isNotBlank(serie.getImageUrl())){
+            getFile(serie.getImageUrl());
+        }
+        for (Bd bd:serie.getListManquante()){
+            if(Strings.isNotBlank(bd.getCouvertureUrl())){
+                getFile(bd.getCouvertureUrl());
+            }
+        }
+        for (Bd bd:serie.getListPossede()){
+            if(Strings.isNotBlank(bd.getCouvertureUrl())){
+                getFile(bd.getCouvertureUrl());
+            }
+        }
     }
 
     private int countImages(String dir) {

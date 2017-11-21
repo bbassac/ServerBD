@@ -712,6 +712,13 @@ public class CollectionBuilder {
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/kwaidan.JPG")
                 .withEditeur("Delcourt"));
 
+        c.addSerie(new Serie(next(withId),"La graine de Folie")
+                .addPossede(new Bd(next(withId),"1", "Igguk","https://www.bedetheque.com/media/Couvertures/Couv_890.jpg"))
+                .addPossede(new Bd(next(withId),"2", "Le grand ornement","https://www.bedetheque.com/media/Couvertures/Couv_1268.jpg"))
+                .addPossede(new Bd(next(withId),"3", "La Morrydwen","https://www.bedetheque.com/media/Couvertures/Couv_1751.jpg"))
+                .addPossede(new Bd(next(withId),"4", "Le roy sans cœur","https://www.bedetheque.com/media/Couvertures/Couv_19701.jpg"))
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_890.jpg")
+                .withEditeur("Delcourt"));
         return c;
     }
 
