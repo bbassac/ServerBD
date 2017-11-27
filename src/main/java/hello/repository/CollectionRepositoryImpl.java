@@ -178,7 +178,7 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
             row.createCell(indexId).setCellValue(createHelper.createRichTextString(String.valueOf(serie.getId())));
             row.createCell(indexNom).setCellValue(createHelper.createRichTextString(serie.getNom()));
             row.createCell(indexEditeur).setCellValue(createHelper.createRichTextString(serie.getEditeur()));
-            row.createCell(indexFini).setCellValue(createHelper.createRichTextString(serie.isFini() ? "x" : ""));
+            row.createCell(indexFini).setCellValue(createHelper.createRichTextString(serie.getListManquante().size()==0 ? "x" : ""));
             StringBuilder sbPossede = new StringBuilder();
             for (Bd possede : serie.getListPossede()) {
                 sbPossede.append(possede.getNumero() + " " + possede.getTitre() + System.getProperty("line.separator"));
