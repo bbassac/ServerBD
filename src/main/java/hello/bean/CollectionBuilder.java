@@ -390,7 +390,7 @@ public class CollectionBuilder {
                 .addPossede(new Bd(next(withId), "7", "Les Dents de pierre", "http://www.bedetheque.com/media/Couvertures/Couv_144393.jpg"))
                 .addPossede(new Bd(next(withId), "8", "Les hordes de la nuit", "http://www.bedetheque.com/media/Couvertures/Couv_199362.jpg"))
                 .addPossede(new Bd(next(withId),"9","Un flot de lumière","http://www.bedetheque.com/media/Couvertures/Couv_261106.jpg"))
-                .addPossede(new Bd(next(withId),"10","Le Destin du jongleur","https://www.bedetheque.com/media/Couvertures/Couv_315467.jpg"))
+                .addManquante(new Bd(next(withId),"10","Le Destin du jongleur","https://www.bedetheque.com/media/Couvertures/Couv_315467.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/foretsdopale01.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -479,7 +479,7 @@ public class CollectionBuilder {
                 .addManquante(new Bd(next(withId), "", "Les 4 as et le dragon des neiges", ""))
                 .addManquante(new Bd(next(withId), "", "Les 4 as et le rallye olympique", ""))
                 .addPossede(new Bd(next(withId), "", "Les 4 as et l'île du robinson", ""))
-                .addManquante(new Bd(next(withId), "", "Les 4 as et le tyran", ""))
+                .addPossede(new Bd(next(withId), "", "Les 4 as et le tyran", ""))
                 .addManquante(new Bd(next(withId), "", "Les 4 as et le Picasso vole", ""))
                 .addPossede(new Bd(next(withId), "", "Les 4 as et le gang des chapeaux blancs", ""))
                 .addPossede(new Bd(next(withId), "", "Les 4 as et le vaisseau fantôme", ""))
@@ -650,7 +650,7 @@ public class CollectionBuilder {
                 .addPossede(new Bd(next(withId), "21", "Le serment des cinq lords", "http://www.bedetheque.com/media/Couvertures/Couv_170145.jpg"))
                 .addPossede(new Bd(next(withId), "22", "L'onde Septimus", "http://www.bedetheque.com/media/Couvertures/Couv_197200.jpg"))
                 .addPossede(new Bd(next(withId), "23", "Le baton de Plutarque 12/2014", "http://www.bedetheque.com/media/Couvertures/Couv_226934.jpg"))
-                .addPossede(new Bd(next(withId), "24", "Le Testament de William S.", "http://www.bedetheque.com/media/Couvertures/Couv_293206.jpg"))
+                .addManquante(new Bd(next(withId), "24", "Le Testament de William S.", "http://www.bedetheque.com/media/Couvertures/Couv_293206.jpg"))
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_115948.jpg")
                 .withEditeur("Black et Mortimer")
                 .withFini(true));
