@@ -31,9 +31,9 @@ public class ImageCrawlerTest {
 
     }
 
-    @Test
+    @Test(enabled = true)
     public void crawlAllImages() throws FileNotFoundException {
-        Collection collection = CollectionBuilder.getCollection(false);
+        Collection collection = CollectionBuilder.getCollection();
         int nbSeries = collection.getListeSerie().size();
         int currentSerie = 1;
         for (Serie serie : collection.getListeSerie()){

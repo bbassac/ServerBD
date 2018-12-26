@@ -22,7 +22,7 @@ public class CollectionController extends AbstractController{
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
     public String createCollection() {
-        Collection collection = CollectionBuilder.getCollection(false);
+        Collection collection = CollectionBuilder.getCollection();
         customRepo.createCollection(collection);
         return "ok";
     }

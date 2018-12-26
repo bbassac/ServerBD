@@ -3,7 +3,6 @@ package hello;
 import hello.bean.Collection;
 import hello.bean.CollectionBuilder;
 import hello.repository.CollectionRepositoryCustom;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
@@ -28,7 +27,7 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
         LogUtils.warn("######################################");
         customRepo.deleteCollection();
         LogUtils.warn("#       CREATE COLLECTION            #");
-        Collection collection = CollectionBuilder.getCollection(false);
+        Collection collection = CollectionBuilder.getCollection();
         customRepo.createCollection(collection);
         LogUtils.warn("######################################");
 

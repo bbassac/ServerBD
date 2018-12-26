@@ -48,9 +48,9 @@ public class Serie {
 
     }
 
-    public Serie(Long id, String nom) {
+    public Serie(String nom) {
         this.nom = nom;
-        this.id = id;
+        this.id = CollectionBuilder.next(CollectionBuilder.withId);
         listPossede = new ArrayList<>();
         listManquante = new ArrayList<>();
     }
@@ -79,13 +79,16 @@ public class Serie {
         this.imageUrl = imageUrl;
     }
 
-    public Serie addPossede(Bd bd) {
+    public Serie addPossede( String numero, String nom, String urlVignette){
+
+        Bd bd = new Bd(CollectionBuilder.next(CollectionBuilder.withId), numero, nom, urlVignette);
         this.listPossede.add(bd);
         bd.setSerie(this);
         return this;
     }
 
-    public Serie addManquante(Bd bd) {
+    public Serie addManquante(String numero, String nom, String urlVignette){
+        Bd bd = new Bd(CollectionBuilder.next(CollectionBuilder.withId), numero, nom, urlVignette);
         this.listManquante.add(bd);
         bd.setSerie(this);
         return this;
