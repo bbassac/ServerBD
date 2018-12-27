@@ -6,7 +6,7 @@ angular.module('myApp', [])
             $scope.activePosition = $scope.activePosition == $index ? -1 : $index;
         };
 
-        $http.get('/collection').
+        $http.get('collection').
         success(function(data) {
             $scope.collection = data;
         });
