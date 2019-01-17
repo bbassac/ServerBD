@@ -51,6 +51,15 @@ public class CollectionBuilder {
                 .withEditeur("Delcourt")
                 .withFini(false));
 
+        c.addSerie(new Serie ("Reign")
+                .addPossede("1","Day One","https://www.bedetheque.com/media/Couvertures/reign01_83110.jpg")
+                .addPossede("2","Seconde chance","https://www.bedetheque.com/media/Couvertures/Couv_96355.jpg")
+                .addManquante("3","Troisième escadre","https://www.bedetheque.com/media/Couvertures/Couv_111986.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/reign01_83110.jpg")
+                .withEditeur("Soleil Productions")
+                .withFini(false)
+        );
+
         c.addSerie(new Serie( "Samurai")
                 .addPossede( "1", "Le Coeur du Prophète", "http://www.bedetheque.com/media/Couvertures/samurai01.jpg")
                 .addPossede( "2", "Les Sept Sources d'Akanobu", "http://www.bedetheque.com/media/Couvertures/samurai02.jpg")
