@@ -34,9 +34,8 @@ public class SearchCustomImpl implements SearchCustom {
 
     private SearchBD convertToJson(String xml) throws BookNotFoundException {
         JSONObject xmlJSONObj = XML.toJSONObject(xml);
-        parseJson(xmlJSONObj);
-        //String jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
-       return parseJson(xmlJSONObj);
+        String jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
+       return BNFParser.parse(jsonPrettyPrintString);
 
     }
 
@@ -47,37 +46,5 @@ public class SearchCustomImpl implements SearchCustom {
         return url;
     }
 
-    private SearchBD parseJson(JSONObject jsonObj) throws BookNotFoundException {
-        int nbFound = (int) jsonObj.query("/srw:searchRetrieveResponse/srw:numberOfRecords");
-        if (nbFound == 0){
-            throw new BookNotFoundException();
-        }
-        JSONArray array = (JSONArray) jsonObj.query("/srw:searchRetrieveResponse/srw:records/srw:record/srw:recordData/mxc:record/mxc:datafield");
-        SearchBD bd = new SearchBD();
-        int TITLE_TAG = 245;
-        String TITLE_CODE = "a";
-        String CONTENT_TAG="content";
-        String NUMERO_CODE = "u";
-
-        for (int i =0; i< array.length();i++){
-            JSONObject o = array.getJSONObject(i);
-            if (o.has("tag") &&  o.get("tag").equals(TITLE_TAG)){
-                JSONArray myarray = o.getJSONArray("mxc:subfield");
-                for (int j = 0;j< myarray.length();j++){
-
-                    if (myarray.getJSONObject(j).getString("code").equals(TITLE_CODE)){
-                        bd.setTitre(myarray.getJSONObject(j).getString(CONTENT_TAG));
-                    }
-
-                    if (myarray.getJSONObject(j).getString("code").equals(NUMERO_CODE)){
-                        bd.setTome(myarray.getJSONObject(j).getString(CONTENT_TAG));
-                    }
-                }
-
-            }
-        }
-
-        return bd;
-    }
 
 }

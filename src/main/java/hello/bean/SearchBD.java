@@ -5,6 +5,8 @@ public class SearchBD {
     private String serie;
     private String tome;
     private String Titre;
+    private String numero;
+    private String isbn;
 
     public String getSerie() {
         return serie;
@@ -39,4 +41,20 @@ public class SearchBD {
     }
 
     private String editeur;
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
 }
