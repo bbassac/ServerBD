@@ -88,6 +88,16 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.8.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.kevinsawicki</groupId>
+            <artifactId>http-request</artifactId>
+            <version>6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180813</version>
+        </dependency>
         <!--API DOC -->
         <dependency>
             <groupId>org.jsondoc</groupId>
