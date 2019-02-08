@@ -4,7 +4,6 @@ package hello.repository;
 import com.github.kevinsawicki.http.HttpRequest;
 import hello.LogUtils;
 import hello.bean.SearchBD;
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.XML;
 import org.springframework.stereotype.Repository;
@@ -19,20 +18,20 @@ public class SearchCustomImpl implements SearchCustom {
 
 
     @Override
-    public SearchBD getBookFromIsbn(String id) throws BookNotFoundException {
+    public SearchBD getBookFromIsbn(String id)  {
         String url = formatUrl(isbnUrl,id);
         String response =  HttpRequest.get(url).body();
         return convertToJson(response);
     }
 
     @Override
-    public SearchBD getBookFromEanIsbn(String id) throws BookNotFoundException {
+    public SearchBD getBookFromEanIsbn(String id)  {
         String url = formatUrl(eanUrl,id);
         String response =  HttpRequest.get(url).body();
         return convertToJson(response);
     }
 
-    private SearchBD convertToJson(String xml) throws BookNotFoundException {
+    private SearchBD convertToJson(String xml) {
         JSONObject xmlJSONObj = XML.toJSONObject(xml);
         String jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
        return BNFParser.parse(jsonPrettyPrintString);

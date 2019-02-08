@@ -9,13 +9,21 @@ import net.minidev.json.JSONArray;
 public class BNFParser {
 
 
-    static String KEY_SUBFIELD="mxc:subfield";
+
 
     public static SearchBD parse(String source){
 
-        String request = "$.srw:searchRetrieveResponse.srw:records.srw:record.srw:recordData.mxc:record.mxc:datafield";
 
+
+        String request = "$.srw:searchRetrieveResponse.srw:records.srw:record.srw:recordData.mxc:record.mxc:datafield";
         DocumentContext result = JsonPath.parse(source);
+
+
+        int nbResult = result.read("$.srw:searchRetrieveResponse.srw:numberOfRecords");
+        if (nbResult== 0){
+            throw new BookNotFoundException();
+        }
+
         JSONArray serie = result.read(request+"[?(@.tag==290)].mxc:subfield[?(@.code == \"a\")].content");
         JSONArray titre = result.read(request+"[?(@.tag==245)].mxc:subfield[?(@.code == \"a\")].content");
         JSONArray editeur = result.read(request+"[?(@.tag==\"260\")].mxc:subfield[?(@.code==\"c\")].content");
