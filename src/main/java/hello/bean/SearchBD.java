@@ -7,6 +7,25 @@ public class SearchBD {
     private String Titre;
     private String numero;
     private String isbn;
+    private String auteur;
+    private String notes;
+    public String getAnneePublication() {
+        return anneePublication;
+    }
+
+    public void setAnneePublication(String anneePublication) {
+        this.anneePublication = anneePublication;
+    }
+
+    private String anneePublication;
+
+    public String getAuteur() {
+        return auteur;
+    }
+
+    public void setAuteur(String auteurN) {
+        this.auteur = auteurN;
+    }
 
     public String getSerie() {
         return serie;
@@ -56,5 +75,13 @@ public class SearchBD {
 
     public void setIsbn(String isbn) {
         this.isbn = isbn;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 }

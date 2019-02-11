@@ -10,11 +10,11 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class SearchCustomImpl implements SearchCustom {
-    String template="XXXX";
+    private String template="XXXX";
 
-    String eanUrl ="http://catalogue.bnf.fr/api/SRU?version=1.2&operation=searchRetrieve&query=bib.ean%20adj%20\"XXXX\"&recordSchema=intermarcXchange";
-    String isbnUrl="http://catalogue.bnf.fr/api/SRU?version=1.2&operation=searchRetrieve&query=bib.isbn%20adj%20\"XXXX\"&recordSchema=intermarcXchange";
-    public static int PRETTY_PRINT_INDENT_FACTOR = 4;
+    private String eanUrl ="http://catalogue.bnf.fr/api/SRU?version=1.2&operation=searchRetrieve&query=bib.ean%20adj%20\"XXXX\"&recordSchema=intermarcXchange";
+    private String isbnUrl="http://catalogue.bnf.fr/api/SRU?version=1.2&operation=searchRetrieve&query=bib.isbn%20adj%20\"XXXX\"&recordSchema=intermarcXchange";
+    private static int PRETTY_PRINT_INDENT_FACTOR = 4;
 
 
     @Override
