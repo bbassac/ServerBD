@@ -655,9 +655,9 @@ public class CollectionBuilder {
                 .addPossede( "6", "Les meandres", "http://www.bedetheque.com/media/Couvertures/Couv_170655.jpg")
                 .addPossede( "7", "L'Autre rive", "http://www.bedetheque.com/media/Couvertures/Couv_190911.jpg")
                 .addPossede( "8", "L'epingle des ephemeres", "http://www.bedetheque.com/media/Couvertures/Couv_218816.jpg")
-                .addPossede("9","Les Deux Roynes","http://www.bedetheque.com/media/Couvertures/Couv_250209.jpg")
-                .addPossede("10","Le dernier guardien","http://www.bedetheque.com/media/Couvertures/Couv_287106.jpg")
-                .addPossede("11","Cellule de crise","https://www.bedetheque.com/media/Couvertures/Couv_309888.jpg")
+                .addPossede( "9","Les Deux Roynes","http://www.bedetheque.com/media/Couvertures/Couv_250209.jpg")
+                .addPossede( "10","Le dernier guardien","http://www.bedetheque.com/media/Couvertures/Couv_287106.jpg")
+                .addPossede( "11","Cellule de crise","https://www.bedetheque.com/media/Couvertures/Couv_309888.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_163697.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -681,7 +681,7 @@ public class CollectionBuilder {
                 .addPossede( "22", "L'onde Septimus", "http://www.bedetheque.com/media/Couvertures/Couv_197200.jpg")
                 .addPossede( "23", "Le baton de Plutarque 12/2014", "http://www.bedetheque.com/media/Couvertures/Couv_226934.jpg")
                 .addPossede( "24", "Le Testament de William S.", "http://www.bedetheque.com/media/Couvertures/Couv_293206.jpg")
-                .addManquante("25","La Vallée des Immortels : Menace sur Hong Kong","https://www.bedetheque.com/media/Couvertures/Couv_348626.jpg")
+                .addPossede( "25","La Vallée des Immortels : Menace sur Hong Kong","https://www.bedetheque.com/media/Couvertures/Couv_348626.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_115948.jpg")
                 .withEditeur("Black et Mortimer")
                 .withFini(true));
