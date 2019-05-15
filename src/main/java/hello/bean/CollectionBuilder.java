@@ -54,7 +54,7 @@ public class CollectionBuilder {
         c.addSerie(new Serie ("Reign")
                 .addPossede("1","Day One","https://www.bedetheque.com/media/Couvertures/reign01_83110.jpg")
                 .addPossede("2","Seconde chance","https://www.bedetheque.com/media/Couvertures/Couv_96355.jpg")
-                .addManquante("3","Troisième escadre","https://www.bedetheque.com/media/Couvertures/Couv_111986.jpg")
+                .addPossede("3","Troisième escadre","https://www.bedetheque.com/media/Couvertures/Couv_111986.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/reign01_83110.jpg")
                 .withEditeur("Soleil Productions")
                 .withFini(false)
@@ -73,6 +73,7 @@ public class CollectionBuilder {
                 .addPossede( "10", "Ririko", "http://www.bedetheque.com/media/Couvertures/Couv_258014.jpg")
                 .addPossede( "11", "Le sabre et le lotus", "https://www.bedetheque.com/media/Couvertures/Couv_305167.jpg")
                 .addPossede("12","L'Œil du dragon","https://www.bedetheque.com/media/Couvertures/Couv_332537.jpg")
+                .addManquante("13","Piment rouge et alcool blanc","https://www.bedetheque.com/media/Couvertures/Couv_363862.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/samurai01.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -91,6 +92,13 @@ public class CollectionBuilder {
                 .addPossede("4"," Vents de colère","http://www.bedetheque.com/media/Couvertures/Couv_282951.jpg")
                 .addPossede("5","Trompeuses apparences","https://www.bedetheque.com/media/Couvertures/Couv_346499.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_201038.jpg")
+                .withEditeur("Soleil")
+                .withFini(true));
+
+        c.addSerie(new Serie( "Samurai Origines ")
+                .addManquante( "1", "Takeo", "https://www.bedetheque.com/media/Couvertures/Couv_311651.jpg")
+                .addManquante( "2", "Le Maître des encens", "https://www.bedetheque.com/media/Couvertures/Couv_361250.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_311651.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
 
@@ -260,7 +268,7 @@ public class CollectionBuilder {
                 .addPossede( "1", "Ghorghor Bey", "http://www.bedetheque.com/media/Couvertures/arcanesdelalunenoire01.jpg")
                 .addPossede( "2", "Pile-ou-Face", "http://www.bedetheque.com/media/Couvertures/froid.jpg")
                 .addPossede( "3", "Parsifal", "http://www.bedetheque.com/media/Couvertures/116234_c.jpg")
-                .addPossede( "4", "Greldinard", "https://www.bedetheque.com/media/Couvertures/Couv_314513.jpg")
+                .addPossede( "4", "Greldinard - Première époque", "https://www.bedetheque.com/media/Couvertures/Couv_314513.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/froid.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -279,6 +287,7 @@ public class CollectionBuilder {
                 .addPossede( "11", "Trois montres d'argent", "http://www.bedetheque.com/media/Couvertures/Couv_683.jpg")
                 .addPossede( "12", "Le jugement", "http://www.bedetheque.com/media/Couvertures/Couv_1073.jpg")
                 .addManquante("13","l'enquete","http://www.bedetheque.com/media/Couvertures/Couv_1541.jpg")
+                .addManquante("13 bis","L'enquête - Deuxième partie","https://www.bedetheque.com/media/Couvertures/Couv_350218.jpg")
                 .addPossede( "14", "Secret défense", "http://www.bedetheque.com/media/Couvertures/Couv_2073.jpg")
                 .addPossede( "15", " Lachez les chiens !", "http://www.bedetheque.com/media/Couvertures/Couv_11781.jpg")
                 .addPossede( "16", "Opération Montecristo", "http://www.bedetheque.com/media/Couvertures/Couv_33245.jpg")
@@ -286,7 +295,7 @@ public class CollectionBuilder {
                 .addPossede( "18", "La version Irlandaise", "http://www.bedetheque.com/media/Couvertures/Couv_68485.jpg")
                 .addPossede( "19", "Le dernier round", "http://www.bedetheque.com/media/Couvertures/xiii19couv.jpg")
                 .addPossede( "20", " Le jour du Mayflower", "http://www.bedetheque.com/media/Couvertures/Couv_141327.jpg")
-                .addManquante( "21", "L'appât", "http://www.bedetheque.com/media/Couvertures/Couv_170163.jpg")
+                .addPossede( "21", "L'appât", "http://www.bedetheque.com/media/Couvertures/Couv_170163.jpg")
                 .addPossede( "22", "Retour à Greenfalls", "http://www.bedetheque.com/media/Couvertures/Couv_195999.jpg")
                 .addPossede( "23", "Le Message du martyr", "http://www.bedetheque.com/media/Couvertures/Couv_225425.jpg")
                 .addPossede("24","L'Héritage de Jason Mac Lane","http://www.bedetheque.com/media/Couvertures/Couv_277935.jpg")
@@ -428,6 +437,7 @@ public class CollectionBuilder {
                 .addPossede("7","Le Messager du cosmos","http://www.bedetheque.com/media/Couvertures/Couv_237685.jpg")
                 .addPossede("8","Ultimatum","http://www.bedetheque.com/media/Couvertures/Couv_291293.jpg")
                 .addPossede("9","Commando noir","https://www.bedetheque.com/media/Couvertures/Couv_312786.jpg")
+                .addManquante("10","Le complot","https://www.bedetheque.com/media/Couvertures/Couv_361308.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_69106.jpg")
                 .withEditeur("Delcourt")
                 .withFini(false));
@@ -473,6 +483,7 @@ public class CollectionBuilder {
                 .addManquante("9","Le Secret d'Héraclès","https://www.bedetheque.com/media/Couvertures/Couv_291412.jpg")
                 .addManquante("10","Les Hordes de Sargon","https://www.bedetheque.com/media/Couvertures/Couv_315468.jpg")
                 .addManquante( "HS 1", "Les amis d'Atalantes", "http://www.bedetheque.com/media/Couvertures/Couv_30442.jpg")
+                .addManquante("11","Retour aux sources","https://www.bedetheque.com/media/Couvertures/Couv_363136.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_1938.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -676,14 +687,14 @@ public class CollectionBuilder {
                 .withFini(true));
 
 
-        c.addSerie(new Serie( "Harry Dickson")
+        c.addSerie(new Serie( "Harry Dickson (Vanderhaeghe/Zanon) ")
                 .addPossede( "1", "La bande de l'araignee", "http://www.bedetheque.com/media/Couvertures/harrydicksonzanon01.jpg")
                 .addPossede( "2", "Les spectres bourreaux", "http://www.bedetheque.com/media/Couvertures/Couv_12432.jpg")
                 .addPossede( "3", "Les 3 cercles de l'epouvante", "http://www.bedetheque.com/media/Couvertures/Couv_1854.jpg")
                 .addPossede( "4", "Le royaume introuvable", "http://www.bedetheque.com/media/Couvertures/Couv_3120.jpg")
                 .addPossede( "5", "L'etrange lueur verte", "http://www.bedetheque.com/media/Couvertures/Couv_3121.jpg")
                 .addPossede( "6", "La conspiration fantastique", "http://www.bedetheque.com/media/Couvertures/Couv_3122.jpg")
-                .addManquante( "7", "Echec au roi", "http://www.bedetheque.com/media/Couvertures/HarryDickson07_08022002.jpg")
+                .addPossede( "7", "Echec au roi", "http://www.bedetheque.com/media/Couvertures/HarryDickson07_08022002.jpg")
                 .addPossede( "8", "Le temple de fer", "http://www.bedetheque.com/media/Couvertures/haryydicksonzanoncouv08.jpg")
                 .addManquante( "9", "Les gardiens du gouffre 09/2014", "http://www.bedetheque.com/media/Couvertures/Couv_224288.jpg")
                 .addManquante("10","Les gardiens du diable 04/2015","http://www.bedetheque.com/media/Couvertures/Couv_244116.jpg")
@@ -708,7 +719,7 @@ public class CollectionBuilder {
                 .addPossede("3", "La main de la Mangrove","http://www.bedetheque.com/media/Couvertures/Couv_663.jpg")
                 .addPossede("4", "Le cri du Grouse","http://www.bedetheque.com/media/Couvertures/Couv_664.jpg")
                 .addPossede("5", "Le goût de Sulfur","http://www.bedetheque.com/media/Couvertures/Couv_665.jpg")
-                .addManquante("6", "La cité des vents","http://www.bedetheque.com/media/Couvertures/Couv_36023.jpg")
+                .addPossede("6", "La cité des vents","http://www.bedetheque.com/media/Couvertures/Couv_36023.jpg")
                 .withEditeur("Vents d'Ouest")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_661.jpg"));
 
