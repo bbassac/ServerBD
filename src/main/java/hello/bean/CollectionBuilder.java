@@ -191,11 +191,11 @@ public class CollectionBuilder {
                 .addPossede( "1", "Armance", "http://www.bedetheque.com/media/Couvertures/Couv_99004.jpg")
                 .addPossede( "2", "Vengeances", "http://www.bedetheque.com/media/Couvertures/Couv_110858.jpg")
                 .addPossede( "3", "Amaury", "http://www.bedetheque.com/media/Couvertures/Couv_118093.jpg")
-                .addManquante( "4", "William", "http://www.bedetheque.com/media/Couvertures/Couv_143458.jpg")
-                .addManquante( "5", "Les quatres", "http://www.bedetheque.com/media/Couvertures/Couv_199252.jpg")
+                .addPossede( "4", "William", "http://www.bedetheque.com/media/Couvertures/Couv_143458.jpg")
+                .addPossede( "5", "Les quatres", "http://www.bedetheque.com/media/Couvertures/Couv_199252.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_99004.jpg")
                 .withEditeur("Soleil")
-                .withFini(false));
+                .withFini(true));
 
         c.addSerie(new Serie( "Beast")
                 .addPossede( "1", "Yunze, le dieu gardien", "http://www.bedetheque.com/media/Couvertures/Beast1_20062008_225806.jpg")
