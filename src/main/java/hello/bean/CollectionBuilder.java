@@ -242,6 +242,7 @@ public class CollectionBuilder {
                 .addPossede( "1", "Le Signe des Ténèbres", "http://www.bedetheque.com/media/Couvertures/Couv_136.jpg")
                 .addPossede( "2", "Le vent des Dragons", "http://www.bedetheque.com/media/Couvertures/Couv_137.jpg")
                 .addPossede( "3", "La Marque des Démons", "http://www.bedetheque.com/media/Couvertures/Couv_138.jpg")
+                .addManquante("3 TRANCHE ROUGE", "La Marque des Démons", "http://www.bedetheque.com/media/Couvertures/Couv_138.jpg")
                 .addPossede( "4", "Quand sifflent les Serpents", "http://www.bedetheque.com/media/Couvertures/Couv_139.jpg")
                 .addPossede( "5", "La danse écarlate", "http://www.bedetheque.com/media/Couvertures/Couv_585.jpg")
                 .addPossede( "6", "La Couronne des Ombres", "http://www.bedetheque.com/media/Couvertures/Couv_684.jpg")
