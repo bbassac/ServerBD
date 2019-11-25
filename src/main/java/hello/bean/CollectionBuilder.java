@@ -7,13 +7,13 @@ public class CollectionBuilder {
         Collection c = new Collection();
         c.setId(next(withId));
         c.addSerie(new Serie( "Arawn")
-                .addPossede( "1", "Bran le Maudit", "http://www.bedetheque.com/media/Couvertures/Arawn1_26012008_153221.jpg")
-                .addPossede( "2", "Les liens du sang", "http://www.bedetheque.com/media/Couvertures/Arawn2_22012009_150322.jpg")
+                .addPossede( "1", "Bran le Maudit", "https://www.bedetheque.com/media/Couvertures/Arawn1_26012008_153221.jpg")
+                .addPossede( "2", "Les liens du sang", "https://www.bedetheque.com/media/Couvertures/Arawn2_22012009_150322.jpg")
                 .addPossede( "3", "La Bataille de Cad Goddun", "http://www.bedetheque.com/media/Couvertures/Couv_104011.jpg")
                 .addPossede( "4", "Le chaudron de sang", "http://www.bedetheque.com/media/Couvertures/Couv_133430.jpg")
                 .addPossede( "5", "Résurrection", "http://www.bedetheque.com/media/Couvertures/Couv_173868.jpg")
                 .addPossede( "6", "La terre brulée", "http://www.bedetheque.com/media/Couvertures/Couv_217875.jpg")
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/Arawn1_26012008_153221.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Arawn1_26012008_153221.jpg")
                 .withEditeur("Soleil Celtic")
                 .withFini(false));
 
@@ -640,7 +640,7 @@ public class CollectionBuilder {
 
         c.addSerie(new Serie( "La foret")
                 .addPossede( "1", "La foret", "https://www.bedetheque.com/media/Couvertures/Couv_62310.jpg")
-                .addPossede( "2", "Le logis des ames", "https://www.bedetheque.com/media/Couvertures/Foret02_80394.jpg")
+                .addPossede( "2", "Le logis des ames", "https://www.bedetheque.com/media/Couvertures/Couv_80394.jpg")
                 .addManquante( "3", "A vida y a muert", "https://www.bedetheque.com/media/Couvertures/Couv_103242.jpg")
                 .addManquante( "4", "La veuve noire", "https://www.bedetheque.com/media/Couvertures/Couv_117138.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_62310.jpg")
@@ -689,20 +689,20 @@ public class CollectionBuilder {
 
 
         c.addSerie(new Serie( "Harry Dickson (Vanderhaeghe/Zanon) ")
-                .addPossede( "1", "La bande de l'araignee", "http://www.bedetheque.com/media/Couvertures/harrydicksonzanon01.jpg")
+                .addPossede( "1", "La bande de l'araignee", "https://www.bedetheque.com/media/Couvertures/Couv_24849.jpg")
                 .addPossede( "2", "Les spectres bourreaux", "http://www.bedetheque.com/media/Couvertures/Couv_12432.jpg")
                 .addPossede( "3", "Les 3 cercles de l'epouvante", "http://www.bedetheque.com/media/Couvertures/Couv_1854.jpg")
                 .addPossede( "4", "Le royaume introuvable", "http://www.bedetheque.com/media/Couvertures/Couv_3120.jpg")
                 .addPossede( "5", "L'etrange lueur verte", "http://www.bedetheque.com/media/Couvertures/Couv_3121.jpg")
                 .addPossede( "6", "La conspiration fantastique", "http://www.bedetheque.com/media/Couvertures/Couv_3122.jpg")
-                .addPossede( "7", "Echec au roi", "http://www.bedetheque.com/media/Couvertures/HarryDickson07_08022002.jpg")
-                .addPossede( "8", "Le temple de fer", "http://www.bedetheque.com/media/Couvertures/haryydicksonzanoncouv08.jpg")
+                .addPossede( "7", "Echec au roi", "https://www.bedetheque.com/media/Couvertures/Couv_8620.jpg")
+                .addPossede( "8", "Le temple de fer", "https://www.bedetheque.com/media/Couvertures/Couv_39999.jpg")
                 .addManquante( "9", "Les gardiens du gouffre 09/2014", "http://www.bedetheque.com/media/Couvertures/Couv_224288.jpg")
                 .addManquante("10","Les gardiens du diable 04/2015","http://www.bedetheque.com/media/Couvertures/Couv_244116.jpg")
                 .addManquante("11","Le messager des dieux et le vol de l'agneau mystique 16/09/2016","http://www.bedetheque.com/media/Couvertures/Couv_288312.jpg")
                 .addManquante("12","La chambre rouge","https://www.bedetheque.com/media/Couvertures/Couv_312214.jpg")
                 .addManquante("13"," L'or de Malacca","https://www.bedetheque.com/media/Couvertures/Couv_334030.jpg")
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/harrydicksonzanon01.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_24849.jpg")
                 .withEditeur("Art & B.D.")
                 .withFini(false));
 
@@ -762,6 +762,13 @@ public class CollectionBuilder {
                 .addPossede("4", "Le roy sans cœur","https://www.bedetheque.com/media/Couvertures/Couv_19701.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_890.jpg")
                 .withEditeur("Delcourt"));
+
+        c.addSerie(new Serie("La cathédrale des Abymes")
+                .addPossede("1","L'Évangile d'Ariathie","https://www.bedetheque.com/media/Couvertures/Couv_341999.jpg")
+                .addManquante("2","La guilde des assassins","https://www.bedetheque.com/media/Couvertures/Couv_353816.jpg")
+                .addManquante("3","Quand vient le sage...","https://www.bedetheque.com/media/Couvertures/Couv_375017.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_341999.jpg")
+                .withEditeur("Soleil Productions"));
         return c;
     }
 
