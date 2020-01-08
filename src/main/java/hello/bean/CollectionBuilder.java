@@ -423,6 +423,7 @@ public class CollectionBuilder {
                 .addPossede( "8", "Les hordes de la nuit", "http://www.bedetheque.com/media/Couvertures/Couv_199362.jpg")
                 .addPossede("9","Un flot de lumière","http://www.bedetheque.com/media/Couvertures/Couv_261106.jpg")
                 .addPossede("10","Le Destin du jongleur","https://www.bedetheque.com/media/Couvertures/Couv_315467.jpg")
+                .addManquante("11","La fable oubliée","https://www.bedetheque.com/media/Couvertures/Couv_381488.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/foretsdopale01.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -490,8 +491,9 @@ public class CollectionBuilder {
                 .addManquante("8","Les Taureaux de Colchide","http://www.bedetheque.com/media/Couvertures/Couv_260179.jpg")
                 .addManquante("9","Le Secret d'Héraclès","https://www.bedetheque.com/media/Couvertures/Couv_291412.jpg")
                 .addManquante("10","Les Hordes de Sargon","https://www.bedetheque.com/media/Couvertures/Couv_315468.jpg")
-                .addManquante( "HS 1", "Les amis d'Atalantes", "http://www.bedetheque.com/media/Couvertures/Couv_30442.jpg")
                 .addManquante("11","Retour aux sources","https://www.bedetheque.com/media/Couvertures/Couv_363136.jpg")
+                .addManquante( "HS 1", "Les amis d'Atalantes", "http://www.bedetheque.com/media/Couvertures/Couv_30442.jpg")
+                .addManquante( "HS 2", "Atalantes", "https://www.bedetheque.com/media/Couvertures/Couv_48033.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_1938.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -696,7 +698,7 @@ public class CollectionBuilder {
                 .withFini(true));
 
 
-        c.addSerie(new Serie( "Harry Dickson (Vanderhaeghe/Zanon) ")
+        c.addSerie(new Serie( "Harry Dickson (Vanderhaeghe/Zanon)")
                 .addPossede( "1", "La bande de l'araignee", "https://www.bedetheque.com/media/Couvertures/Couv_24849.jpg")
                 .addPossede( "2", "Les spectres bourreaux", "http://www.bedetheque.com/media/Couvertures/Couv_12432.jpg")
                 .addPossede( "3", "Les 3 cercles de l'epouvante", "http://www.bedetheque.com/media/Couvertures/Couv_1854.jpg")
