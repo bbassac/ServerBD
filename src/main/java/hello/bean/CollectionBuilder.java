@@ -578,7 +578,7 @@ public class CollectionBuilder {
                 .addManquante( "3", "L'opera maudit", "http://www.bedetheque.com/media/Couvertures/Couv_32998.jpg")
                 .addManquante( "6", "Freres de cendres", "http://www.bedetheque.com/media/Couvertures/dickherisson6couv_6594.jpg")
                 .addManquante( "7", "Le tombeau d'Absalom", "http://www.bedetheque.com/media/Couvertures/Couv_6595.jpg")
-                .addManquante( "8", "La maison du pendu", "http://www.bedetheque.com/media/Couvertures/dickherisson8couv_6596.jpg")
+                .addPossede( "8", "La maison du pendu", "http://www.bedetheque.com/media/Couvertures/dickherisson8couv_6596.jpg")
                 .addManquante( "9", "Le 7 ieme cri", "http://www.bedetheque.com/media/Couvertures/Couv_6597.jpg")
                 .addManquante( "10", "La brouette des morts", "http://www.bedetheque.com/media/Couvertures/Couv_18638.jpg")
                 .addManquante( "11", "L'araignee pourpre 1/2", "http://www.bedetheque.com/media/Couvertures/Couv_39543.jpg")
