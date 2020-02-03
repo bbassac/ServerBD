@@ -52,6 +52,7 @@
                     <tbody ng-repeat="bd in serie.listPossede" >
                         <td class="success">{{bd.numero}}</td>
                         <td class="success">{{bd.titre}}</td>
+                        <td class="success"><i>{{bd.isbn}}</i></td>
                         <td>
                             <img ng-src={{getCouvUrl(bd.couvertureUrl)}} width="60px" onclick="displayPoP(this.src)"/>
                         </td>
@@ -63,6 +64,7 @@
                     <tbody ng-repeat="bd in serie.listManquante">
                         <td class="danger">{{bd.numero}}</td>
                         <td class="danger">{{bd.titre}}</td>
+                        <td class="danger"><i>{{bd.isbn}}</i></td>
                         <td>
                             <img ng-src={{getCouvUrl(bd.couvertureUrl)}} width="60px" onclick="displayPoP(this.src)"/>
                         </td>

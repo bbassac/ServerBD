@@ -79,16 +79,16 @@ public class Serie {
         this.imageUrl = imageUrl;
     }
 
-    public Serie addPossede( String numero, String nom, String urlVignette){
+    public Serie addPossede(String numero, String nom, String isbn, String urlVignette){
 
-        Bd bd = new Bd(CollectionBuilder.next(CollectionBuilder.withId), numero, nom, urlVignette);
+        Bd bd = new Bd(CollectionBuilder.next(CollectionBuilder.withId), numero, nom,isbn, urlVignette);
         this.listPossede.add(bd);
         bd.setSerie(this);
         return this;
     }
 
-    public Serie addManquante(String numero, String nom, String urlVignette){
-        Bd bd = new Bd(CollectionBuilder.next(CollectionBuilder.withId), numero, nom, urlVignette);
+    public Serie addManquante(String numero, String nom, String isbn, String urlVignette){
+        Bd bd = new Bd(CollectionBuilder.next(CollectionBuilder.withId), numero, nom,isbn, urlVignette);
         this.listManquante.add(bd);
         bd.setSerie(this);
         return this;

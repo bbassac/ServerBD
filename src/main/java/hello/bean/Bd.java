@@ -24,6 +24,9 @@ public class Bd implements Comparable {
     private String numero;
     @Column(name = "COUVERTURE_URL")
     private String couvertureUrl;
+    @Column(name = "ISBN")
+    private String isbn;
+
 
     @ManyToOne
     @JsonBackReference
@@ -37,6 +40,14 @@ public class Bd implements Comparable {
         this.numero = numero;
         this.titre = titre;
         this.couvertureUrl = url;
+    }
+
+    public Bd(Long id, String numero, String titre,String isbn, String url) {
+        this.id = id;
+        this.numero = numero;
+        this.titre = titre;
+        this.couvertureUrl = url;
+        this.isbn = isbn;
     }
 
     public String getCouvertureUrl() {
@@ -82,5 +93,13 @@ public class Bd implements Comparable {
     @Override
     public int compareTo(Object o) {
         return this.getId().compareTo(((Bd) o).getId());
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 }

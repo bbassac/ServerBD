@@ -10,6 +10,16 @@ public class BdManquante {
     String numero;
     String titre;
     String editeur;
+    String isbn;
+
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
 
     public String getEditeur() {
         return editeur;
