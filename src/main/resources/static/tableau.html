@@ -37,7 +37,7 @@
     <tbody  ng-repeat="serie in collection.listeSerie | orderBy:sortType:sortReverse | filter:searchText">
         <tr ng-click="toggleDetail($index)" class="main-row">
             <td>
-                <img ng-src={{getCouvUrl(serie.imageUrl)}} width="60px" onclick="displayPoP(this.src)"/>
+                <img ng-src={{getCouvUrl(serie.imageUrl)}} class="couverture" onclick="displayPoP(this.src)"/>
             </td>
             <td>{{ serie.nom }}</td>
             <td>{{ serie.editeur }}</td>
@@ -54,7 +54,7 @@
                         <td class="success">{{bd.titre}}</td>
                         <td class="success"><i>{{bd.isbn}}</i></td>
                         <td>
-                            <img ng-src={{getCouvUrl(bd.couvertureUrl)}} width="60px" onclick="displayPoP(this.src)"/>
+                            <img ng-src={{getCouvUrl(bd.couvertureUrl)}} class="couverture" onclick="displayPoP(this.src)"/>
                         </td>
                     </tbody>
                 </table>
@@ -66,7 +66,7 @@
                         <td class="danger">{{bd.titre}}</td>
                         <td class="danger"><i>{{bd.isbn}}</i></td>
                         <td>
-                            <img ng-src={{getCouvUrl(bd.couvertureUrl)}} width="60px" onclick="displayPoP(this.src)"/>
+                            <img ng-src={{getCouvUrl(bd.couvertureUrl)}} class="couverture" onclick="displayPoP(this.src)"/>
                         </td>
                     </tbody>
                 </table>
