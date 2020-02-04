@@ -8,4 +8,4 @@
 |___/  |___| |_|_\    \_/    |___| |_|_\       |___/  |___/
 
 
-${AnsiColor.BRIGHT_BLUE}:: Meow :: Running Spring Boot ${spring-boot.version} :: ${AnsiColor.BLACK}
+${AnsiColor.BRIGHT_BLUE}:: Meow :: Running Spring Boot ${spring-boot.version} on ${server.port} :: ${AnsiColor.BLACK}

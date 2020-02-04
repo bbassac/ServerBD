@@ -1,37 +1,37 @@
 <!doctype html>
 <html>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<head>
-    <title>Collection Manager</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.js" type="text/javascript"></script>
-</head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <head>
+        <title>Collection Manager</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.js" type="text/javascript"></script>
+    </head>
 
-<body ng-app="myApp">
+    <body ng-app="myApp">
 
-<div class="container">
-    <div class="list-group">
-        <a  class="list-group-item" href="./swagger-ui.html">Documentation</a>
-        <a  class="list-group-item" href="./health">Santé</a>
-        <a  class="list-group-item" href="./dump">Dump</a>
-        <a  class="list-group-item" href="./metrics">Metrics</a>
-        <a></a>
-        <a href="./export" class="btn btn-success" role="button" >Export</a>
-        <a href="./listing" class="btn btn-success" role="button" >Listing</a>
+    <div class="container">
+        <div class="list-group">
+            <a  class="list-group-item" href="./swagger-ui.html">Documentation</a>
+            <a  class="list-group-item" href="./health">Santé</a>
+            <a  class="list-group-item" href="./dump">Dump</a>
+            <a  class="list-group-item" href="./metrics">Metrics</a>
+            <a></a>
+            <a href="./export" class="btn btn-success" role="button" >Export</a>
+            <a href="./listing" class="btn btn-success" role="button" >Listing</a>
+        </div>
     </div>
-</div>
 
-<div class="container" ng-controller="home" ng-include="'tableau.html'" />
+    <div class="container" ng-controller="home" ng-include="'tableau.html'" />
 
 
-<script src="js/app.js"></script>
-<script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ui.js"></script>
 
-</body>
+    </body>
 </html>
 
 
