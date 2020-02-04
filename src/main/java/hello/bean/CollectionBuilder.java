@@ -509,18 +509,18 @@ public class CollectionBuilder {
                 .withFini(false));
 
         c.addSerie(new Serie( "Les 4 As")
-                .addPossede( "1", "Les 4 as et le serpent de mer","", "https://www.bedetheque.com/media/Couvertures/Couv_20179.jpg")
-                .addManquante( "2", "Les 4 as et l'aeroglisseur","", "https://www.bedetheque.com/media/Couvertures/Couv_59092.jpg")
-                .addPossede( "3", "Les 4 as et la vache sacree","", "https://www.bedetheque.com/media/Couvertures/quatreas3_03112002.jpg")
-                .addPossede( "4", "Les 4 as et le visiteur de minuit","", "https://www.bedetheque.com/media/Couvertures/Couv_48271.jpg")
-                .addPossede( "5", "Les 4 as et le couroucoucou","", "https://www.bedetheque.com/media/Couvertures/Couv_20182.jpg")
-                .addPossede( "6", "Les 4 as et la coupe d'or","", "https://www.bedetheque.com/media/Couvertures/4as06.jpg")
-                .addManquante( "7", "Les 4 as et le dragon des neiges","", "https://www.bedetheque.com/media/Couvertures/4as07.jpg")
-                .addManquante( "8", "Les 4 as et le rallye olympique","", "https://www.bedetheque.com/media/Couvertures/quatreas8_03112002.jpg")
-                .addPossede( "9", "Les 4 as et l'île du robinson","", "https://www.bedetheque.com/media/Couvertures/4as09.jpg")
-                .addPossede( "10", "Les 4 as et le tyran","", "https://www.bedetheque.com/media/Couvertures/quatreas10_03112002.jpg")
-                .addPossede( "11", "Les 4 as et la ruee vers l'or","", "https://www.bedetheque.com/media/Couvertures/quatreas11_03112002.jpg")
-                .addManquante( "12", "Les 4 as et le Picasso vole","", "https://www.bedetheque.com/media/Couvertures/quatreas12.jpg")
+                .addPossede( "1", "Les 4 as et le serpent de mer","2-203-31502-4", "https://www.bedetheque.com/media/Couvertures/Couv_20179.jpg")
+                .addManquante( "2", "Les 4 as et l'aeroglisseur","2-203-31501-6", "https://www.bedetheque.com/media/Couvertures/Couv_59092.jpg")
+                .addPossede( "3", "Les 4 as et la vache sacree","2-203-31503-2", "https://www.bedetheque.com/media/Couvertures/quatreas3_03112002.jpg")
+                .addPossede( "4", "Les 4 as et le visiteur de minuit","2-203-31504-0", "https://www.bedetheque.com/media/Couvertures/Couv_48271.jpg")
+                .addPossede( "5", "Les 4 as et le couroucou","2-203-31505-9", "https://www.bedetheque.com/media/Couvertures/Couv_20182.jpg")
+                .addPossede( "6", "Les 4 as et la coupe d'or","2-203-31506-7", "https://www.bedetheque.com/media/Couvertures/4as06.jpg")
+                .addManquante( "7", "Les 4 as et le dragon des neiges","2-203-31507-5", "https://www.bedetheque.com/media/Couvertures/4as07.jpg")
+                .addManquante( "8", "Les 4 as et le rallye olympique","2-203-31508-3", "https://www.bedetheque.com/media/Couvertures/quatreas8_03112002.jpg")
+                .addPossede( "9", "Les 4 as et l'île du robinson","2-203-31509-1", "https://www.bedetheque.com/media/Couvertures/4as09.jpg")
+                .addPossede( "10", "Les 4 as et le tyran","2-203-31510-5", "https://www.bedetheque.com/media/Couvertures/quatreas10_03112002.jpg")
+                .addPossede( "11", "Les 4 as et la ruee vers l'or","2-203-31511-3", "https://www.bedetheque.com/media/Couvertures/quatreas11_03112002.jpg")
+                .addManquante( "12", "Les 4 as et le Picasso vole","2-203-31512-1", "https://www.bedetheque.com/media/Couvertures/quatreas12.jpg")
                 .addPossede( "13", "Les 4 as et la bombe F","2-203-31513-X", "https://www.bedetheque.com/media/Couvertures/quatreas13.jpg")
                 .addPossede( "14", "Les 4 as et la Saucisse volante","2-203-31514-8", "https://www.bedetheque.com/media/Couvertures/4as14.jpg")
                 .addPossede( "15", "Les 4 as et le gang des chapeaux blancs","2-203-31515-6", "https://www.bedetheque.com/media/Couvertures/les4aslegangdeschapeauxblancs_5880.jpg")
@@ -608,9 +608,9 @@ public class CollectionBuilder {
                 .withFini(false));
 
         c.addSerie(new Serie( "Malefic Time Luis Royo")
-                .addPossede( "1", "Apocalypse","", "http://www.bedetheque.com/media/Couvertures/Couv_171145.jpg")
+                .addPossede( "1", "Apocalypse","2-811-20883-6", "http://www.bedetheque.com/media/Couvertures/Couv_171145.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_171145.jpg")
-                .withEditeur("")
+                .withEditeur("Milady")
                 .withFini(false));
 
         c.addSerie(new Serie( "Asgard")
@@ -638,8 +638,8 @@ public class CollectionBuilder {
                 .withFini(true));
 
         c.addSerie(new Serie( "Tif et Tondu")
-                .addPossede( "2", "Tif et Tondu en amérique centrale","", "https://www.bedetheque.com/media/Couvertures/Couv_59457.jpg")
-                .addPossede( "22", "Un plan démoniaque","", "https://www.bedetheque.com/media/Couvertures/Couv_4457.jpg")
+                .addPossede( "2", "Tif et Tondu en amérique centrale","2-8001-0595-X", "https://www.bedetheque.com/media/Couvertures/Couv_59457.jpg")
+                .addPossede( "22", "Un plan démoniaque","2-8001-0404-X", "https://www.bedetheque.com/media/Couvertures/Couv_4457.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_215593.jpg")
                 .withEditeur("Dupuis")
                 .withFini(false));

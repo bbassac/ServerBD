@@ -29,4 +29,6 @@ public interface CollectionRepositoryCustom {
     Long switchBDAsPossede(Long id);
 
     byte[] exportCollectionToExcel() throws IOException;
+
+    byte[] exportAllCollectionToExcel()throws IOException;
 }
