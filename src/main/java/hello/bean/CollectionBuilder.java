@@ -172,10 +172,10 @@ public class CollectionBuilder {
                 .withFini(false));
 
         c.addSerie(new Serie( "La geste des chevaliers Dragon")
-                .addPossede( "1", "Jaina","2-86967-596-8", "http://www.bedetheque.com/media/Couvertures/gestechevaliersdragons01.jpg")
+                .addPossede( "1", "Jaina","2-86967-596-8", "https://www.bedetheque.com/media/Couvertures/Couv_1333.jpg")
                 .addPossede( "2", "Akanah","2-84565-574-6", "http://www.bedetheque.com/media/Couvertures/Couv_31479.jpg")
-                .addPossede( "3", "Le pays de non-vie","2-84565-794-3", "http://www.bedetheque.com/media/Couvertures/gestedeschevaliersdragons03.jpg")
-                .addPossede( "4", "Brisken","2-84946-058-3", "http://www.bedetheque.com/media/Couvertures/gestedeschevalierdragon04.jpg")
+                .addPossede( "3", "Le pays de non-vie","2-84565-794-3", "https://www.bedetheque.com/media/Couvertures/Couv_40635.jpg")
+                .addPossede( "4", "Brisken","2-84946-058-3", "https://www.bedetheque.com/media/Couvertures/gestedeschevalierdragon04.jpg")
                 .addPossede( "5", "Les Jardins du Palais","2-84946-599-2", "http://www.bedetheque.com/media/Couvertures/gestedeschevaliersdragons05.JPG")
                 .addPossede( "6", "Par-delà les montagnes","978-2-84946-853-1", "http://www.bedetheque.com/media/Couvertures/gestedeschevaliersdragons06.jpg")
                 .addPossede( "7", "Revoir le soleil","978-2-302-00124-4", "http://www.bedetheque.com/media/Couvertures/gestedeschevaliersdragonscouv07_73906.jpg")
@@ -203,7 +203,7 @@ public class CollectionBuilder {
                 .addPossede("29","Les Sœurs de la Vengeance","978-2-302-07885-7", "https://www.bedetheque.com/media/Couvertures/Couv_378803.jpg")
                 .addManquante( "HS1", "Les contrees du levant","978-2-302-01464-0", "http://www.bedetheque.com/media/Couvertures/Couv_118631.jpg")
                 .addManquante("30","L'Ancienne","978-2-302-08317-2","https://www.bedetheque.com/media/Couvertures/Couv_405224.jpg")
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/gestechevaliersdragons01.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_1333.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
 
@@ -329,8 +329,8 @@ public class CollectionBuilder {
 
         c.addSerie(new Serie( "Thorgal")
                 .addPossede( "1", "La magicienne trahie","2-8036-0358-6", "http://www.bedetheque.com/media/Couvertures/Couv_398.jpg")
-                .addPossede( "2", "L'île des mers gelées","2-8036-0359-4", "http://www.bedetheque.com/media/Couvertures/thorgal02.jpg")
-                .addPossede( "3", "Les trois vieillards du pays d'Aran","2-8036-0001-3", "http://www.bedetheque.com/media/Couvertures/thorgal03.jpg")
+                .addPossede( "2", "L'île des mers gelées","2-8036-0359-4", "https://www.bedetheque.com/media/Couvertures/Couv_399.jpg")
+                .addPossede( "3", "Les trois vieillards du pays d'Aran","2-8036-0001-3", "https://www.bedetheque.com/media/Couvertures/Couv_400.jpg")
                 .addPossede( "4", "La galère noire","2-8036-0026-9", "http://www.bedetheque.com/media/Couvertures/Couv_401.jpg")
                 .addPossede( "5", "Au-delà des ombres","2-8036-0407-8", "http://www.bedetheque.com/media/Couvertures/Couv_402.jpg")
                 .addPossede( "6", "La chute de Brek Zarith","2-8036-0451-5", "http://www.bedetheque.com/media/Couvertures/Couv_403.jpg")
@@ -472,15 +472,15 @@ public class CollectionBuilder {
                 .withFini(false));
 
         c.addSerie(new Serie( "Black Op")
-                .addManquante( "1", "Tome 1","2-205-05491-0", "http://www.bedetheque.com/media/Couvertures/blackop01.jpg")
-                .addManquante( "2", "Tome 2","2-205-05687-5", "http://www.bedetheque.com/media/Couvertures/BlackOp02.jpg")
-                .addManquante( "3", "Tome 3","978-2-205-05878-9", "http://www.bedetheque.com/media/Couvertures/blackop03.jpg")
-                .addManquante( "4", "Tome 4","978-2-205-06025-6", "http://www.bedetheque.com/media/Couvertures/BlackOp4_10042008_184948.jpg")
-                .addManquante( "5", "Tome 5","978-2-205-06212-0", "http://www.bedetheque.com/media/Couvertures/Nubuc_blackop5couv_85641.jpg")
-                .addPossede( "6", "Tome 6","978-2-205-06320-2", "http://www.bedetheque.com/media/Couvertures/BlackOp-couv_100964.jpg")
-                .addManquante( "7", "Tome 7","978-2-205-07175-7", "http://www.bedetheque.com/media/Couvertures/Couv_201894.jpg")
-                .addManquante( "8", "Tome 8","978-2-205-07343-0", "http://www.bedetheque.com/media/Couvertures/Couv_229164.jpg")
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/BlackOp-couv_100964.jpg")
+                .addManquante( "1", "Tome 1","2-205-05491-0", "https://www.bedetheque.com/media/Couvertures/Couv_43308.jpg")
+                .addManquante( "2", "Tome 2","2-205-05687-5", "https://www.bedetheque.com/media/Couvertures/Couv_53884.jpg")
+                .addManquante( "3", "Tome 3","978-2-205-05878-9", "https://www.bedetheque.com/media/Couvertures/Couv_61328.jpg")
+                .addManquante( "4", "Tome 4","978-2-205-06025-6", "https://www.bedetheque.com/media/Couvertures/Couv_73510.jpg")
+                .addManquante( "5", "Tome 5","978-2-205-06212-0", "https://www.bedetheque.com/media/Couvertures/Couv_85641.jpg")
+                .addPossede( "6", "Tome 6","978-2-205-06320-2", "https://www.bedetheque.com/media/Couvertures/BlackOp-couv_100964.jpg")
+                .addManquante( "7", "Tome 7","978-2-205-07175-7", "https://www.bedetheque.com/media/Couvertures/Couv_201894.jpg")
+                .addManquante( "8", "Tome 8","978-2-205-07343-0", "https://www.bedetheque.com/media/Couvertures/Couv_227203.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_43308.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
 
@@ -495,8 +495,8 @@ public class CollectionBuilder {
                 .addManquante( "8", "Le chevalier Bragon","978-2-205-06330-1", "http://www.bedetheque.com/media/Couvertures/Couv_197893.jpg")
                 .addManquante("9","L'emprise","978-2-205-07578-6", "https://www.bedetheque.com/media/Couvertures/Couv_311567.jpg")
                 .addManquante("10", "Kryll","978-2-205-07960-9","https://www.bedetheque.com/media/Couvertures/Couv_381509.jpg")
-                .addManquante( "HS1", "Esquisses - L'ami Javin","", "http://www.bedetheque.com/media/Couvertures/QueteDeLoiseauDuTempsLaEsquisses_20072006.jpg")
-                .addManquante( "HS2", "En quête de l'oiseau du temps","2-205-05548-8", "http://www.bedetheque.com/media/Couvertures/Couv_32442.jpg")
+                .addManquante( "HS1", "Esquisses - L'ami Javin","", "https://www.bedetheque.com/media/Couvertures/Couv_57147.jpg")
+                .addManquante( "HS2", "En quête de l'oiseau du temps","2-205-05548-8", "https://www.bedetheque.com/media/Couvertures/Couv_32442.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_69122.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -505,7 +505,7 @@ public class CollectionBuilder {
                 .addManquante("0","Première larme","978-2-302-09096-5","https://www.bedetheque.com/media/Couvertures/Couv_414587.jpg")
                 .addPossede( "1", "Le pacte","2-87764-938-5", "http://www.bedetheque.com/media/Couvertures/Couv_1938.jpg")
                 .addPossede( "2", "Nautiliaa","2-84565-159-7", "http://www.bedetheque.com/media/Couvertures/Couv_9792.jpg")
-                .addPossede( "3", "Les mystères de Samothrace","2-84565-689-0", "http://www.bedetheque.com/media/Couvertures/atalante03.jpg")
+                .addPossede( "3", "Les mystères de Samothrace","2-84565-689-0", "https://www.bedetheque.com/media/Couvertures/Couv_31070.jpg")
                 .addManquante( "4", "L'envol des Boréades","978-2-302-00366-8", "http://www.bedetheque.com/media/Couvertures/Couv_88913.jpg")
                 .addManquante( "5", "Calaïs et Zétès","978-2-302-02704-6", "http://www.bedetheque.com/media/Couvertures/Couv_177341.jpg")
                 .addManquante( "6", "Le labyrinthe d'Hadès ","978-2-302-03635-2", "http://www.bedetheque.com/media/Couvertures/Couv_199367.jpg")
@@ -524,12 +524,12 @@ public class CollectionBuilder {
         c.addSerie(new Serie( "Les 4 As")
                 .addPossede( "1", "Les 4 as et le serpent de mer","2-203-31502-4", "https://www.bedetheque.com/media/Couvertures/Couv_20179.jpg")
                 .addManquante( "2", "Les 4 as et l'aeroglisseur","2-203-31501-6", "https://www.bedetheque.com/media/Couvertures/Couv_59092.jpg")
-                .addPossede( "3", "Les 4 as et la vache sacree","2-203-31503-2", "https://www.bedetheque.com/media/Couvertures/quatreas3_03112002.jpg")
+                .addPossede( "3", "Les 4 as et la vache sacree","2-203-31503-2", "https://www.bedetheque.com/media/Couvertures/Couv_20180.jpg")
                 .addPossede( "4", "Les 4 as et le visiteur de minuit","2-203-31504-0", "https://www.bedetheque.com/media/Couvertures/Couv_48271.jpg")
                 .addPossede( "5", "Les 4 as et le couroucou","2-203-31505-9", "https://www.bedetheque.com/media/Couvertures/Couv_20182.jpg")
                 .addPossede( "6", "Les 4 as et la coupe d'or","2-203-31506-7", "https://www.bedetheque.com/media/Couvertures/4as06.jpg")
                 .addManquante( "7", "Les 4 as et le dragon des neiges","2-203-31507-5", "https://www.bedetheque.com/media/Couvertures/4as07.jpg")
-                .addManquante( "8", "Les 4 as et le rallye olympique","2-203-31508-3", "https://www.bedetheque.com/media/Couvertures/quatreas8_03112002.jpg")
+                .addManquante( "8", "Les 4 as et le rallye olympique","2-203-31508-3", "https://www.bedetheque.com/media/Couvertures/Couv_20185.jpg")
                 .addPossede( "9", "Les 4 as et l'île du robinson","2-203-31509-1", "https://www.bedetheque.com/media/Couvertures/4as09.jpg")
                 .addPossede( "10", "Les 4 as et le tyran","2-203-31510-5", "https://www.bedetheque.com/media/Couvertures/quatreas10_03112002.jpg")
                 .addPossede( "11", "Les 4 as et la ruee vers l'or","2-203-31511-3", "https://www.bedetheque.com/media/Couvertures/quatreas11_03112002.jpg")
@@ -541,7 +541,7 @@ public class CollectionBuilder {
                 .addPossede( "17", "Les 4 as et le diamant bleu","2-203-31517-2", "https://www.bedetheque.com/media/Couvertures/4As17_c_5912.jpg")
                 .addPossede( "18", "Les 4 as et la licorne","2-203-31518-0", "https://www.bedetheque.com/media/Couvertures/4asles18_5913.jpg")
                 .addManquante( "19", "Les 4 as et l'iceberg","2-203-31519-9", "https://www.bedetheque.com/media/Couvertures/BD_Les_4_As_et_lIceberg_350_525_5881.jpg")
-                .addPossede( "20", "Les 4 as et le chateau malefique","2-203-31520-2", "https://www.bedetheque.com/media/Couvertures/quatreas20.jpg")
+                .addPossede( "20", "Les 4 as et le chateau malefique","2-203-31520-2", "https://www.bedetheque.com/media/Couvertures/Couv_5914.jpg")
                 .addManquante( "21", "Les 4 as et le tresor des tsars","2-203-31521-0", "https://www.bedetheque.com/media/Couvertures/Couv_5915.jpg")
                 .addPossede( "22", "Les 4 as et le hold up big bank","2-203-31522-9", "https://www.bedetheque.com/media/Couvertures/quatreas22.jpg")
                 .addPossede( "23", "Les 4 as et le magicien","2-203-31523-7", "https://www.bedetheque.com/media/Couvertures/Couv_1311.jpg")
@@ -550,7 +550,7 @@ public class CollectionBuilder {
                 .addManquante( "26", "Les 4 as et la navette spatiale","2-203-31526-1", "https://www.bedetheque.com/media/Couvertures/4as26navettespatiale.jpg")
                 .addManquante( "27", "Les 4 as et le requin geant","2-203-31527-X", "https://www.bedetheque.com/media/Couvertures/4as27requingeant.jpg")
                 .addManquante( "28", "Les 4 as et l'empire cache","2-203-31528-8", "https://www.bedetheque.com/media/Couvertures/quatreas28.jpg")
-                .addManquante( "29", "Les 4 as et le mystere de la jungle","2-203-31529-6", "https://www.bedetheque.com/media/Couvertures/4as29.JPG")
+                .addManquante( "29", "Les 4 as et le mystere de la jungle","2-203-31529-6", "https://www.bedetheque.com/media/Couvertures/Couv_35606.jpg")
                 .addManquante( "30", "Les 4 as et les extraterrestres","2-203-31530-X", "https://www.bedetheque.com/media/Couvertures/Couv_24983.jpg")
                 .addManquante( "31", "Les 4 as et le fantôme du Mont Saint-Michel","2-203-31531-8", "https://www.bedetheque.com/media/Couvertures/quatreas31.jpg")
                 .addManquante( "32", "Les 4 as et le robot vandale","2-203-31532-6", "https://www.bedetheque.com/media/Couvertures/quatreas32.jpg")
@@ -565,7 +565,7 @@ public class CollectionBuilder {
                 .addManquante( "41", "Les 4 as et le grand supreme","2-203-31541-5", "https://www.bedetheque.com/media/Couvertures/quatreas41.jpg")
                 .addManquante( "42", "Mission Mars","2-203-31542-3", "https://www.bedetheque.com/media/Couvertures/4AsLes42_08072005.jpg")
                 .addManquante( "43", "La balade des 4 as","978-2-203-31543-3", "https://www.bedetheque.com/media/Couvertures/4asles43_64626.jpg")
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/quatreas8_03112002.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_20179.jpg")
                 .withEditeur("Casterman")
                 .withFini(false));
 
@@ -588,8 +588,10 @@ public class CollectionBuilder {
                 .withFini(false));
 
         c.addSerie(new Serie( "L'Épervier (Pellerin)")
-                .addPossede( "INT", "1+2","", "https://www.bedetheque.com/media/Couvertures/Epervier1_2l.jpg")
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/Epervier1_2l.jpg")
+                .addPossede( "INT", "1+2","", "https://www.bedetheque.com/media/Couvertures/Couv_27970.jpg")
+                .addManquante( "INT", "3+4","", "https://www.bedetheque.com/media/Couvertures/Couv_27969.jpg")
+                .addManquante( "INT", "5+6","90-588-5124-9", "https://www.bedetheque.com/media/Couvertures/Couv_42139.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_27970.jpg")
                 .withEditeur("Dupuis")
                 .withFini(true));
 
@@ -682,8 +684,8 @@ public class CollectionBuilder {
 
         c.addSerie(new Serie( "Slhoka")
                 .addPossede( "1", "L'île oubliée","2-84565-031-0", "http://www.bedetheque.com/media/Couvertures/Couv_6308.jpg")
-                .addPossede( "2", "Les Jardins de Sangalî","2-84565-408-1", "http://www.bedetheque.com/media/Couvertures/slhoka2couv_25655.jpg")
-                .addPossede( "3", "Le monde blanc","2-84565-566-5", "http://www.bedetheque.com/media/Couvertures/slhoka3couv_37205.jpg")
+                .addPossede( "2", "Les Jardins de Sangalî","2-84565-408-1", "https://www.bedetheque.com/media/Couvertures/Couv_25655.jpg")
+                .addPossede( "3", "Le monde blanc","2-84565-566-5", "https://www.bedetheque.com/media/Couvertures/Couv_37205.jpg")
                 .addPossede( "4", "Les arches de sang","978-2-302-01079-6", "http://www.bedetheque.com/media/Couvertures/Couv_110896.jpg")
                 .addPossede( "5", "L'eveil","978-2-302-01612-5", "http://www.bedetheque.com/media/Couvertures/Couv_133657.jpg")
                 .addPossede( "6", "Les meandres","978-2-302-02265-2", "http://www.bedetheque.com/media/Couvertures/Couv_170655.jpg")
@@ -826,7 +828,7 @@ public class CollectionBuilder {
 
         c.addSerie(new Serie("Kwaïdan")
                 .addPossede("1", "L'esprit du lac","2-84055-466-6", "https://www.bedetheque.com/media/Couvertures/Couv_2179.jpg")
-                .addPossede("2", "Setsuko","2-84055-815-7", "http://www.bedetheque.com/media/Couvertures/kwaidan02.jpg")
+                .addPossede("2", "Setsuko","2-84055-815-7", "https://www.bedetheque.com/media/Couvertures/Couv_14822.jpg")
                 .addPossede("3", "Métamorphose","2-84789-056-4", "https://www.bedetheque.com/media/Couvertures/Couv_26890.jpg")
 
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_2179.jpg")
@@ -834,7 +836,7 @@ public class CollectionBuilder {
 
         c.addSerie(new Serie("La graine de Folie")
                 .addPossede("1", "Igguk","2-84055-100-4", "https://www.bedetheque.com/media/Couvertures/Couv_890.jpg")
-                .addPossede("2", "Le grand ornement","2-84055-202-7 ", "https://www.bedetheque.com/media/Couvertures/kwaidan02.jpg")
+                .addPossede("2", "Le grand ornement","2-84055-202-7 ", "https://www.bedetheque.com/media/Couvertures/Couv_1268.jpg")
                 .addPossede("3", "La Morrydwen","2-84055-316-3", "https://www.bedetheque.com/media/Couvertures/Couv_1751.jpg")
                 .addPossede("4", "Le roy sans cœur","2-84055-673-1", "https://www.bedetheque.com/media/Couvertures/Couv_19701.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_890.jpg")

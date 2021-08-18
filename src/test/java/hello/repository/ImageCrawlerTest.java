@@ -10,7 +10,7 @@ import org.apache.logging.log4j.util.Strings;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
+import java.util.ArrayList;
 import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
@@ -20,7 +20,7 @@ import java.net.URLConnection;
  */
 public class ImageCrawlerTest {
 
-
+    private static ArrayList<String> errorUrls = new ArrayList<String>();
     @BeforeClass
     public void beforeClass() throws IOException {
         File directory = new File("target\\img");
@@ -41,7 +41,7 @@ public class ImageCrawlerTest {
             getAllFiles(serie);
             currentSerie++;
         }
-
+        Assert.assertEquals(errorUrls.size(), 0);
         Assert.assertEquals(countImages("target\\img"), countImages("src\\main\\resources\\static\\img\\couv"));
     }
 
@@ -115,7 +115,7 @@ public class ImageCrawlerTest {
             }
             catch (Exception e)
             {
-                Assert.fail("Error while trying to download the file "+host);
+                errorUrls.add(host);
             }
         }
     }

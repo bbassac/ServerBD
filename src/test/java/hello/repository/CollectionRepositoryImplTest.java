@@ -27,18 +27,4 @@ public class CollectionRepositoryImplTest {
         Assert.assertEquals(result,collectionInCache);
     }
 
-    @Test
-    public void GetCollectionWithoutCache(){
-
-        CollectionRepositoryImpl repo = new CollectionRepositoryImpl();
-        repo.cache= new CustomCache();
-
-        EntityManager mockEntityManager = Mockito.mock(EntityManager.class);
-        Mockito.when(mockEntityManager.createQuery(anyString())).thenReturn(Mockito.mock(Query.class));
-        repo.entityManager = mockEntityManager;
-        Collection result = repo.getCollection();
-
-        Assert.assertEquals(result,null);
-    }
-
 }
