@@ -21,6 +21,10 @@ public class Serie {
     private Long id;
     @Column(name = "NOM")
     private String nom;
+
+    @Column(name="FORMAT")
+    private String format;
+
     @Column(name = "FINI")
     private boolean fini = false;
     @Column(name = "IMAGE_URL")
@@ -30,29 +34,32 @@ public class Serie {
     @JoinColumn(nullable = true)
     @JsonManagedReference
     private List<Bd> listPossede;
-
     @LazyCollection(LazyCollectionOption.FALSE)
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(nullable = true)
     @JsonManagedReference
     private List<Bd> listManquante;
+
     @Column(name = "EDITEUR")
     private String editeur;
-
     @ManyToOne
     @JsonBackReference
     private Collection collection;
 
+
+
+    public enum Format{BD,MANGA;};
     // Must have no-argument constructor
+
     public Serie() {
 
     }
-
     public Serie(String nom) {
         this.nom = nom;
         this.id = CollectionBuilder.next(CollectionBuilder.withId);
         listPossede = new ArrayList<>();
         listManquante = new ArrayList<>();
+        this.format=Format.BD.toString();
     }
 
     public List<Bd> getListPossede() {
@@ -133,6 +140,11 @@ public class Serie {
         return this;
     }
 
+    public Serie withFormat(Format format) {
+        this.setFormat(format.toString());
+        return this;
+    }
+
     public String getEditeur() {
         return editeur;
     }
@@ -147,5 +159,13 @@ public class Serie {
 
     public void setCollection(Collection collection) {
         this.collection = collection;
+    }
+
+    public String getFormat() {
+        return format;
+    }
+
+    public void setFormat(String format) {
+        this.format = format;
     }
 }

@@ -52,9 +52,9 @@
                     <tbody ng-repeat="bd in serie.listPossede" >
                         <td class="success">{{bd.numero}}</td>
                         <td class="success">{{bd.titre}}</td>
-                        <td class="success"><i>{{bd.isbn}}</i></td>
+                        <td class="success"><a href="{{'https://www.isbns.fm/isbn/' + bd.isbn }}"><i>{{bd.isbn}}</i></a></td>
                         <td>
-                            <img ng-src={{getCouvUrl(bd.couvertureUrl)}} class="couverture" onclick="displayPoP(this.src)"/>
+                            <img ng-src={{getCouvUrl(bd.couvertureUrl)}} class="couverture" onclick="displayPoP(this.src)" align="right"/>
                         </td>
                     </tbody>
                 </table>

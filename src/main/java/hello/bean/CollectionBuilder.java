@@ -1,5 +1,8 @@
 package hello.bean;
 
+import static hello.bean.Serie.Format.BD;
+import static hello.bean.Serie.Format.MANGA;
+
 public class CollectionBuilder {
     private static long i = 0;
     static boolean withId = false;
@@ -75,6 +78,7 @@ public class CollectionBuilder {
                 .addPossede( "11", "Le sabre et le lotus","978-2-302-06211-5", "https://www.bedetheque.com/media/Couvertures/Couv_305167.jpg")
                 .addPossede("12","L'Œil du dragon","978-2-302-06977-0", "https://www.bedetheque.com/media/Couvertures/Couv_332537.jpg")
                 .addManquante("13","Piment rouge et alcool blanc","978-2-302-07647-1", "https://www.bedetheque.com/media/Couvertures/Couv_363862.jpg")
+                .addManquante("14","L'épaule du maître","978-2-302-08309-7", "https://www.bedetheque.com/media/Couvertures/Couv_401502.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/samurai01.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -93,6 +97,7 @@ public class CollectionBuilder {
                 .addPossede("4"," Vents de colère","978-2-302-05203-1", "http://www.bedetheque.com/media/Couvertures/Couv_282951.jpg")
                 .addPossede("5","Trompeuses apparences","978-2-302-07099-8", "https://www.bedetheque.com/media/Couvertures/Couv_346499.jpg")
                 .addManquante("6","Reiko","978-2-302-07756-0", "https://www.bedetheque.com/media/Couvertures/Couv_375014.jpg")
+                .addManquante("7", "L'île du yokaÏ noir","978-2-302-09289-1","https://www.bedetheque.com/media/Couvertures/Couv_422385.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_201038.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -100,6 +105,7 @@ public class CollectionBuilder {
         c.addSerie(new Serie( "Samurai Origines ")
                 .addPossede( "1", "Takeo","978-2-302-06362-4", "https://www.bedetheque.com/media/Couvertures/Couv_311651.jpg")
                 .addPossede( "2", "Le Maître des encens","978-2-302-07515-3", "https://www.bedetheque.com/media/Couvertures/Couv_361250.jpg")
+                .addManquante("3","Eiko","978-2-302-08167-3","https://www.bedetheque.com/media/Couvertures/Couv_386228.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_311651.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -196,6 +202,7 @@ public class CollectionBuilder {
                 .addPossede("28","Contrebandes","978-2-302-07656-3", "https://www.bedetheque.com/media/Couvertures/Couv_368426.jpg")
                 .addPossede("29","Les Sœurs de la Vengeance","978-2-302-07885-7", "https://www.bedetheque.com/media/Couvertures/Couv_378803.jpg")
                 .addManquante( "HS1", "Les contrees du levant","978-2-302-01464-0", "http://www.bedetheque.com/media/Couvertures/Couv_118631.jpg")
+                .addManquante("30","L'Ancienne","978-2-302-08317-2","https://www.bedetheque.com/media/Couvertures/Couv_405224.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/gestechevaliersdragons01.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -315,6 +322,7 @@ public class CollectionBuilder {
                 .addPossede("24","L'Héritage de Jason Mac Lane","978-2-505-06351-3", "http://www.bedetheque.com/media/Couvertures/Couv_277935.jpg")
                 .addManquante("25","The XIII history","978-2-505-06880-8", "https://www.bedetheque.com/media/Couvertures/Couv_373052.jpg")
                 .addManquante("26","2132 mètres","978-2-505-06990-4", "https://www.bedetheque.com/media/Couvertures/Couv_377348.jpg")
+                .addManquante("27", "Mémoire rechargée", "978-2-505-08332-0", "https://www.bedetheque.com/media/Couvertures/Couv_409329.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_177856.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -357,6 +365,7 @@ public class CollectionBuilder {
                 .addManquante( "35", "Le feu écarlate","978-2-8036-3548-1", "http://www.bedetheque.com/media/Couvertures/Couv_292474.jpg")
                 .addManquante("36","Aniel","978-2-8036-7217-2", "https://www.bedetheque.com/media/Couvertures/Couv_348589.jpg")
                 .addManquante("37","L'Ermite de Skellingar","978-2-8036-7372-8", "https://www.bedetheque.com/media/Couvertures/Couv_375436.jpg")
+                .addManquante("38","La selkie","978-2-8036-7718-4","https://www.bedetheque.com/media/Couvertures/Couv_405264.jpg")
                 .addManquante( "HS1", "Trois femmes pour un heros","2296509460", "http://www.bedetheque.com/media/Couvertures/Couv_170514.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_398.jpg")
                 .withEditeur("Le Lombard")
@@ -433,6 +442,7 @@ public class CollectionBuilder {
                 .addPossede("9","Un flot de lumière","978-2-302-04857-7", "http://www.bedetheque.com/media/Couvertures/Couv_261106.jpg")
                 .addPossede("10","Le Destin du jongleur","978-2-302-06305-1", "https://www.bedetheque.com/media/Couvertures/Couv_315467.jpg")
                 .addPossede("11","La fable oubliée","978-2-302-08049-2", "https://www.bedetheque.com/media/Couvertures/Couv_381488.jpg")
+                .addManquante("12","L'Étincel courroucé","978-2-302-09080-4","https://www.bedetheque.com/media/Couvertures/Couv_408929.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/foretsdopale01.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -456,6 +466,7 @@ public class CollectionBuilder {
                 .addPossede("8","Ultimatum","978-2-7560-7104-6", "http://www.bedetheque.com/media/Couvertures/Couv_291293.jpg")
                 .addPossede("9","Commando noir","978-2-7560-8085-7", "https://www.bedetheque.com/media/Couvertures/Couv_312786.jpg")
                 .addPossede("10","Le complot","978-2-413-01298-6", "https://www.bedetheque.com/media/Couvertures/Couv_361308.jpg")
+                .addManquante("11","Invasion","978-2-413-02016-5","https://www.bedetheque.com/media/Couvertures/Couv_405138.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_69106.jpg")
                 .withEditeur("Delcourt")
                 .withFini(false));
@@ -490,7 +501,8 @@ public class CollectionBuilder {
                 .withEditeur("Dargaud")
                 .withFini(false));
 
-        c.addSerie(new Serie( "Atalantes La légende")
+        c.addSerie(new Serie( "Atalante - La Légende")
+                .addManquante("0","Première larme","978-2-302-09096-5","https://www.bedetheque.com/media/Couvertures/Couv_414587.jpg")
                 .addPossede( "1", "Le pacte","2-87764-938-5", "http://www.bedetheque.com/media/Couvertures/Couv_1938.jpg")
                 .addPossede( "2", "Nautiliaa","2-84565-159-7", "http://www.bedetheque.com/media/Couvertures/Couv_9792.jpg")
                 .addPossede( "3", "Les mystères de Samothrace","2-84565-689-0", "http://www.bedetheque.com/media/Couvertures/atalante03.jpg")
@@ -502,6 +514,7 @@ public class CollectionBuilder {
                 .addManquante("9","Le Secret d'Héraclès","978-2-302-05579-7", "https://www.bedetheque.com/media/Couvertures/Couv_291412.jpg")
                 .addManquante("10","Les Hordes de Sargon","978-2-302-06512-3", "https://www.bedetheque.com/media/Couvertures/Couv_315468.jpg")
                 .addManquante("11","Retour aux sources","978-2-302-07295-4", "https://www.bedetheque.com/media/Couvertures/Couv_363136.jpg")
+                .addManquante("12","Le Sanglier de Calydon","978-2-302-08969-3","https://www.bedetheque.com/media/Couvertures/Couv_417398.jpg")
                 .addManquante( "HS 1", "Les amis d'Atalantes","2-84565-682-3", "http://www.bedetheque.com/media/Couvertures/Couv_30442.jpg")
                 .addManquante( "HS 2", "Atalantes","2-915419-05-1", "https://www.bedetheque.com/media/Couvertures/Couv_48033.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_1938.jpg")
@@ -552,7 +565,6 @@ public class CollectionBuilder {
                 .addManquante( "41", "Les 4 as et le grand supreme","2-203-31541-5", "https://www.bedetheque.com/media/Couvertures/quatreas41.jpg")
                 .addManquante( "42", "Mission Mars","2-203-31542-3", "https://www.bedetheque.com/media/Couvertures/4AsLes42_08072005.jpg")
                 .addManquante( "43", "La balade des 4 as","978-2-203-31543-3", "https://www.bedetheque.com/media/Couvertures/4asles43_64626.jpg")
-
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/quatreas8_03112002.jpg")
                 .withEditeur("Casterman")
                 .withFini(false));
@@ -629,10 +641,11 @@ public class CollectionBuilder {
                 .withEditeur("Delcourt")
                 .withFini(true));
 
-        c.addSerie(new Serie( "Elric (Blondel/Poli/Recht)")
+        c.addSerie(new Serie( "Elric (Blondel)")
                 .addPossede( "1", "Le trone de rubis","978-2-7234-8704-7", "http://www.bedetheque.com/media/Couvertures/Couv_187244.jpg")
                 .addPossede( "2", "Stormbringer","978-2-7234-8705-4", "http://www.bedetheque.com/media/Couvertures/Couv_222568.jpg")
                 .addPossede( "3", "Le Loup Blanc","978-2-7234-8706-1", "https://www.bedetheque.com/media/Couvertures/Couv_309200.jpg")
+                .addManquante("4","La cité qui rêve","978-2-7234-8707-8","https://www.bedetheque.com/media/Couvertures/Couv_422125.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_187244.jpg")
                 .withEditeur("Glenat")
                 .withFini(true));
@@ -707,6 +720,7 @@ public class CollectionBuilder {
                 .addPossede( "24", "Le Testament de William S.","978-2-87097-242-7", "http://www.bedetheque.com/media/Couvertures/Couv_293206.jpg")
                 .addPossede( "25","La Vallée des Immortels : Menace sur Hong Kong","978-2-87097-244-1", "https://www.bedetheque.com/media/Couvertures/Couv_348626.jpg")
                 .addPossede("26","La Vallée des Immortels - Tome 2 - Le Millième Bras du Mékong","978-2-87097-281-6", "https://www.bedetheque.com/media/Couvertures/Couv_377354.jpg")
+                .addManquante("27","Le cri du Moloch","978-2-87097-292-2","https://www.bedetheque.com/media/Couvertures/Couv_405221.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_115948.jpg")
                 .withEditeur("Black et Mortimer")
                 .withFini(true));
@@ -748,14 +762,52 @@ public class CollectionBuilder {
                 .withEditeur("Vents d'Ouest")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_661.jpg"));
 
-        c.addSerie(new Serie("Gunnm")
-                .addPossede("1", "Tome 1","", "http://www.bedetheque.com/media/Couvertures/Couv_8153.jpg")
-                .addPossede("2", "Tome 2","", "http://www.bedetheque.com/media/Couvertures/Couv_8154.jpg")
-                .addPossede("3", "Tome 3","", "http://www.bedetheque.com/media/Couvertures/Couv_11986.jpg")
-                .addPossede("4", "Tome 4","", "http://www.bedetheque.com/media/Couvertures/Couv_11987.jpg")
-                .addPossede("5", "Tome 5","", "http://www.bedetheque.com/media/Couvertures/Couv_11988.jpg")
-                .addPossede("6", "Tome 6","", "http://www.bedetheque.com/media/Couvertures/Couv_21787.jpg")
+        c.addSerie(new Serie("Gunnm last Order")
+                .addPossede("1", "Tome 1","2-7234-3980-1", "http://www.bedetheque.com/media/Couvertures/Couv_8153.jpg")
+                .addPossede("2", "Tome 2","2-7234-4209-8", "https://www.bedetheque.com/media/Couvertures/GunnmLastOrder02_30280.jpg")
+                .addPossede("3", "Tome 3","2-7234-4624-7", "https://www.bedetheque.com/media/Couvertures/GunnmLastOrder03_33917.jpg")
+                .addPossede("4", "Tome 4","2-7234-4630-1", "https://www.bedetheque.com/media/Couvertures/GunnmLastOrder04_39487.jpg")
+                .addPossede("5", "Tome 5","2-7234-5071-6", "https://www.bedetheque.com/media/Couvertures/GunnmLastOrder05_44459.jpg")
+                .addPossede("6", "Tome 6","2-7234-5122-4", "https://www.bedetheque.com/media/Couvertures/GunnmLastOrder06_50340.jpg")
+                .addPossede("7", "Tome 7","2-7234-5367-7", "https://www.bedetheque.com/media/Couvertures/GunnmLastOrder07_54111.jpg")
+                .addPossede("8", "Tome 8","2-7234-5595-5", "https://www.bedetheque.com/media/Couvertures/GunnmLastOrder08_58603.jpg")
+                .addPossede("9", "Tome 9","978-2-7234-5876-4", "https://www.bedetheque.com/media/Couvertures/GunnmLastOrder09_61698.jpg")
+                .addPossede("10", "Tome 10","978-2-7234-6437-6", "https://www.bedetheque.com/media/Couvertures/79749_c.jpg")
+                .addManquante("11", "Tome 11","978-2-7234-6724-7", "https://www.bedetheque.com/media/Couvertures/83162_c.jpg")
+                .addPossede("12", "Tome 12","978-2-7234-7195-4", "https://www.bedetheque.com/media/Couvertures/88472_c.jpg")
+                .addManquante("13", "Tome 13","978-2-7234-7890-8", "https://www.bedetheque.com/media/Couvertures/121114_c.jpg")
+                .addManquante("14", "Tome 14","978-2-7234-7891-5", "https://www.bedetheque.com/media/Couvertures/124780_c.jpg")
+                .addManquante("15", "Tome 15","978-2-7234-8396-4", "https://www.bedetheque.com/media/Couvertures/129743_c.jpg")
+                .addManquante("16", "Tome 16","978-2-7234-9204-1", "https://www.bedetheque.com/media/Couvertures/Couv_192813.jpg")
+                .addManquante("17", "Tome 17","978-2-7234-9282-9", "https://www.bedetheque.com/media/Couvertures/Couv_197237.jpg")
+                .addManquante("18", "Tome 18","978-2-7234-9748-0", "https://www.bedetheque.com/media/Couvertures/Couv_200676.jpg")
+                .addManquante("19", "Tome 19","978-2-344-00285-8", "https://www.bedetheque.com/media/Couvertures/Couv_219532.jpg")
+                .addPossede("HS","Gunnm other stories","978-2-7234-6780-3","https://www.bedetheque.com/media/Couvertures/86553_c.jpg")
+                .withFormat(MANGA)
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_8153.jpg")
+                .withEditeur("Glénat"));
+
+        c.addSerie(new Serie("Gunnm Mars Chronicles")
+                .addManquante("1", "Tome 1","978-2-344-01751-7", "https://www.bedetheque.com/media/Couvertures/Couv_290305.jpg")
+                .addPossede("2", "Tome 2","978-2-344-01752-4", "https://www.bedetheque.com/media/Couvertures/Couv_297093.jpg")
+                .addManquante("3", "Tome 3","978-2-344-02045-6", "https://www.bedetheque.com/media/Couvertures/Couv_306982.jpg")
+                .addManquante("4", "Tome 4","978-2-344-02525-3", "https://www.bedetheque.com/media/Couvertures/Couv_315920.jpg")
+                .addManquante("5", "Tome 5","978-2-344-03070-7", "https://www.bedetheque.com/media/Couvertures/Couv_337822.jpg")
+                .addManquante("6", "Tome 6","978-2-344-03406-4", "https://www.bedetheque.com/media/Couvertures/Couv_362607.jpg")
+                .addManquante("7", "Tome 7","978-2-344-04863-4", "https://www.bedetheque.com/media/Couvertures/Couv_426577.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_290305.jpg")
+                .withFormat(MANGA)
+                .withEditeur("Glénat"));
+
+        c.addSerie(new Serie("Gunnm")
+                .addPossede("1", "Tome 1","2-7234-3293-9", "https://www.bedetheque.com/media/Couvertures/gunnm1lastorder_09122002.jpg")
+                .addPossede("2", "Tome 2","2-7234-3333-1", "http://www.bedetheque.com/media/Couvertures/Couv_8154.jpg")
+                .addPossede("3", "Tome 3","2-7234-3477-X", "http://www.bedetheque.com/media/Couvertures/Couv_11986.jpg")
+                .addPossede("4", "Tome 4","2-7234-3478-8", "http://www.bedetheque.com/media/Couvertures/Couv_11987.jpg")
+                .addPossede("5", "Tome 5","2-7234-3479-6", "http://www.bedetheque.com/media/Couvertures/Couv_11988.jpg")
+                .addPossede("6", "Tome 6","2-7234-3615-2", "http://www.bedetheque.com/media/Couvertures/Couv_21787.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/gunnm1lastorder_09122002.jpg")
+                .withFormat(MANGA)
                 .withEditeur("Glénat"));
 
         c.addSerie(new Serie("Dangoo")
@@ -769,6 +821,7 @@ public class CollectionBuilder {
                 .addManquante("8", "Tome 8","", "http://www.bedetheque.com/media/Couvertures/Couv_123896.jpg")
                 .addManquante("9", "Tome 9","", "http://www.bedetheque.com/media/Couvertures/Couv_123897.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_120767.jpg")
+                .withFormat(MANGA)
                 .withEditeur("Samji"));
 
         c.addSerie(new Serie("Kwaïdan")
