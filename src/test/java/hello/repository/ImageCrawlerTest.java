@@ -102,6 +102,7 @@ public class ImageCrawlerTest {
         }
         catch (IOException e)
         {
+            errorUrls.add(host);
             Assert.fail(e.getMessage());
         }
 

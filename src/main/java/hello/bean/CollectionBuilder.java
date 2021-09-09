@@ -245,6 +245,7 @@ public class CollectionBuilder {
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_163937.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
+
         c.addSerie(new Serie( "Lanfeust de Troy")
                 .addManquante("1","L'ivoire du Magohamoth","2-87764-257-7", "https://www.bedetheque.com/media/Couvertures/Couv_740.jpg")
                 .addManquante("2","Thanos l'incongru","2-87764-306-9 ", "https://www.bedetheque.com/media/Couvertures/Couv_741.jpg")
@@ -256,6 +257,16 @@ public class CollectionBuilder {
                 .addPossede("8","La bête fabuleuse"," 2-84565-033-7", "http://www.bedetheque.com/media/Couvertures/Couv_2107.jpg")
                 .withEditeur("Soleil")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_2107.jpg")
+        );
+
+        c.addSerie(new Serie("Les conquérants de Troy")
+                .addPossede("1","Exil à Port-Fleuri","2-84565-686-6","https://www.bedetheque.com/media/Couvertures/Couv_47153.jpg")
+                .addManquante("2","Eckmül le bûcheron","978-2-302-00209-8","https://www.bedetheque.com/media/Couvertures/Couv_79350.jpg")
+                .addManquante("3","La Bataille de Port-Fleuri","978-2-302-01589-0", "https://www.bedetheque.com/media/Couvertures/Couv_144472.jpg")
+                .addManquante("4", "Le Mont Rapace","978-2-302-03675-8", "https://www.bedetheque.com/media/Couvertures/Couv_228357.jpg")
+                .addManquante("INT", "Les conquérants de Troy","978-2-302-06854-4", "https://www.bedetheque.com/media/Couvertures/Couv_337914.jpg")
+                .withEditeur("Soleil Productions")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_47153.jpg")        
         );
 
         c.addSerie(new Serie( "Les chroniques de la lune noire")
