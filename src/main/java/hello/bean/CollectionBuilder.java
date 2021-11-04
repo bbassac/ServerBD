@@ -79,6 +79,7 @@ public class CollectionBuilder {
                 .addPossede("12","L'Œil du dragon","978-2-302-06977-0", "https://www.bedetheque.com/media/Couvertures/Couv_332537.jpg")
                 .addManquante("13","Piment rouge et alcool blanc","978-2-302-07647-1", "https://www.bedetheque.com/media/Couvertures/Couv_363862.jpg")
                 .addManquante("14","L'épaule du maître","978-2-302-08309-7", "https://www.bedetheque.com/media/Couvertures/Couv_401502.jpg")
+                .addManquante("15","Insoupçonnable","978-2-302-09348-5", "https://www.bedetheque.com/media/Couvertures/Couv_431815.jpg" )
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/samurai01.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -102,7 +103,7 @@ public class CollectionBuilder {
                 .withEditeur("Soleil")
                 .withFini(true));
 
-        c.addSerie(new Serie( "Samurai Origines ")
+        c.addSerie(new Serie( "Samurai Origines")
                 .addPossede( "1", "Takeo","978-2-302-06362-4", "https://www.bedetheque.com/media/Couvertures/Couv_311651.jpg")
                 .addPossede( "2", "Le Maître des encens","978-2-302-07515-3", "https://www.bedetheque.com/media/Couvertures/Couv_361250.jpg")
                 .addManquante("3","Eiko","978-2-302-08167-3","https://www.bedetheque.com/media/Couvertures/Couv_386228.jpg")
@@ -203,6 +204,7 @@ public class CollectionBuilder {
                 .addPossede("29","Les Sœurs de la Vengeance","978-2-302-07885-7", "https://www.bedetheque.com/media/Couvertures/Couv_378803.jpg")
                 .addManquante( "HS1", "Les contrees du levant","978-2-302-01464-0", "http://www.bedetheque.com/media/Couvertures/Couv_118631.jpg")
                 .addManquante("30","L'Ancienne","978-2-302-08317-2","https://www.bedetheque.com/media/Couvertures/Couv_405224.jpg")
+                .addManquante("31","Les hauts faits de la troisième armada","978-2-302-09111-5","https://www.bedetheque.com/media/Couvertures/Couv_434351.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_1333.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -325,7 +327,7 @@ public class CollectionBuilder {
                 .addPossede( "16", "Opération Montecristo","2-87129-592-1", "http://www.bedetheque.com/media/Couvertures/Couv_33245.jpg")
                 .addPossede( "17", "L'or de Maximilien","2-87129-755-X", "http://www.bedetheque.com/media/Couvertures/Couv_49961.jpg")
                 .addPossede( "18", "La version Irlandaise","978-2-505-00131-7", "http://www.bedetheque.com/media/Couvertures/Couv_68485.jpg")
-                .addPossede( "19", "Le dernier round","978-2-505-00130-0", "http://www.bedetheque.com/media/Couvertures/xiii19couv.jpg")
+                .addPossede( "19", "Le dernier round","978-2-505-00130-0", "https://www.bedetheque.com/media/Couvertures/Couv_68505.jpg")
                 .addPossede( "20", " Le jour du Mayflower","978-2-505-01294-8", "http://www.bedetheque.com/media/Couvertures/Couv_141327.jpg")
                 .addPossede( "21", "L'appât","978-2-505-01504-8", "http://www.bedetheque.com/media/Couvertures/Couv_170163.jpg")
                 .addPossede( "22", "Retour à Greenfalls","978-2-505-01799-8", "http://www.bedetheque.com/media/Couvertures/Couv_195999.jpg")
@@ -377,6 +379,7 @@ public class CollectionBuilder {
                 .addManquante("36","Aniel","978-2-8036-7217-2", "https://www.bedetheque.com/media/Couvertures/Couv_348589.jpg")
                 .addManquante("37","L'Ermite de Skellingar","978-2-8036-7372-8", "https://www.bedetheque.com/media/Couvertures/Couv_375436.jpg")
                 .addManquante("38","La selkie","978-2-8036-7718-4","https://www.bedetheque.com/media/Couvertures/Couv_405264.jpg")
+                .addManquante("39","Neokóra","978-2-8036-8031-3","https://www.bedetheque.com/media/Couvertures/Couv_433699.jpg")
                 .addManquante( "HS1", "Trois femmes pour un heros","2296509460", "http://www.bedetheque.com/media/Couvertures/Couv_170514.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_398.jpg")
                 .withEditeur("Le Lombard")
@@ -403,6 +406,7 @@ public class CollectionBuilder {
         c.addSerie(new Serie( "Les complaintes des landes perdues cycle 3 : Les sorcières")
                 .addPossede("5","Tête noire","978-2-505-06350-6", "http://www.bedetheque.com/media/Couvertures/Couv_253349.jpg")
                 .addPossede("6","Inferno","978-2-505-06399-5", "https://www.bedetheque.com/media/Couvertures/Couv_353803.jpg")
+                .addManquante("7","Lord Héron","978-2-505-08268-2","https://www.bedetheque.com/media/Couvertures/Couv_435009.jpg" )
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_253349.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -684,7 +688,7 @@ public class CollectionBuilder {
                 .withEditeur("Soleil Celtic")
                 .withFini(true));
 
-        c.addSerie(new Serie( "La foret")
+        c.addSerie(new Serie( "La forêt (Perez/Oger)")
                 .addPossede( "1", "La foret","978-2-203-39159-8", "https://www.bedetheque.com/media/Couvertures/Couv_62310.jpg")
                 .addPossede( "2", "Le logis des ames","978-2-203-01668-2", "https://www.bedetheque.com/media/Couvertures/Couv_80394.jpg")
                 .addManquante( "3", "A vida y a muert","978-2-203-02248-5", "https://www.bedetheque.com/media/Couvertures/Couv_103242.jpg")

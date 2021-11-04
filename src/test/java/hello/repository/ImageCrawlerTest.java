@@ -41,7 +41,7 @@ public class ImageCrawlerTest {
             getAllFiles(serie);
             currentSerie++;
         }
-        Assert.assertEquals(errorUrls.size(), 0);
+        Assert.assertEquals(errorUrls.size(), 0,errorUrls.toString());
         Assert.assertEquals(countImages("target\\img"), countImages("src\\main\\resources\\static\\img\\couv"));
     }
 
@@ -103,7 +103,7 @@ public class ImageCrawlerTest {
         catch (IOException e)
         {
             errorUrls.add(host);
-            Assert.fail(e.getMessage());
+           // Assert.fail(e.getMessage());
         }
 
 
