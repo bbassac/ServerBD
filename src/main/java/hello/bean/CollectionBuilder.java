@@ -406,7 +406,7 @@ public class CollectionBuilder {
         c.addSerie(new Serie( "Les complaintes des landes perdues cycle 3 : Les sorcières")
                 .addPossede("5","Tête noire","978-2-505-06350-6", "http://www.bedetheque.com/media/Couvertures/Couv_253349.jpg")
                 .addPossede("6","Inferno","978-2-505-06399-5", "https://www.bedetheque.com/media/Couvertures/Couv_353803.jpg")
-                .addManquante("7","Lord Héron","978-2-505-08268-2","https://www.bedetheque.com/media/Couvertures/Couv_435009.jpg" )
+                .addPossede("7","Lord Héron","978-2-505-08268-2","https://www.bedetheque.com/media/Couvertures/Couv_435009.jpg" )
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_253349.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -662,7 +662,7 @@ public class CollectionBuilder {
                 .addPossede( "1", "Le trone de rubis","978-2-7234-8704-7", "http://www.bedetheque.com/media/Couvertures/Couv_187244.jpg")
                 .addPossede( "2", "Stormbringer","978-2-7234-8705-4", "http://www.bedetheque.com/media/Couvertures/Couv_222568.jpg")
                 .addPossede( "3", "Le Loup Blanc","978-2-7234-8706-1", "https://www.bedetheque.com/media/Couvertures/Couv_309200.jpg")
-                .addManquante("4","La cité qui rêve","978-2-7234-8707-8","https://www.bedetheque.com/media/Couvertures/Couv_422125.jpg")
+                .addPossede("4","La cité qui rêve","978-2-7234-8707-8","https://www.bedetheque.com/media/Couvertures/Couv_422125.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_187244.jpg")
                 .withEditeur("Glenat")
                 .withFini(true));
@@ -737,7 +737,7 @@ public class CollectionBuilder {
                 .addPossede( "24", "Le Testament de William S.","978-2-87097-242-7", "http://www.bedetheque.com/media/Couvertures/Couv_293206.jpg")
                 .addPossede( "25","La Vallée des Immortels : Menace sur Hong Kong","978-2-87097-244-1", "https://www.bedetheque.com/media/Couvertures/Couv_348626.jpg")
                 .addPossede("26","La Vallée des Immortels - Tome 2 - Le Millième Bras du Mékong","978-2-87097-281-6", "https://www.bedetheque.com/media/Couvertures/Couv_377354.jpg")
-                .addManquante("27","Le cri du Moloch","978-2-87097-292-2","https://www.bedetheque.com/media/Couvertures/Couv_405221.jpg")
+                .addPossede("27","Le cri du Moloch","978-2-87097-292-2","https://www.bedetheque.com/media/Couvertures/Couv_405221.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_115948.jpg")
                 .withEditeur("Black et Mortimer")
                 .withFini(true));
