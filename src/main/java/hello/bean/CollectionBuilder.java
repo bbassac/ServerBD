@@ -626,6 +626,13 @@ public class CollectionBuilder {
                 .withEditeur("Dargaud")
                 .withFini(false));
 
+        c.addSerie(new Serie( "Dick Herisson Integrales")
+                .addPossede( "1", "Volume 1","2-205-05928-9", "https://www.bedetheque.com/media/Couvertures/dickherrisonint01_59054.jpg")
+                .addManquante( "2", "Volume 2","978-2-205-05976-2", "https://www.bedetheque.com/media/Couvertures/Couv_62120.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/dickherrisonint01_59054.jpg")
+                .withEditeur("Dargaud")
+                .withFini(false));
+
         c.addSerie(new Serie( "Chaos Team")
                 .addPossede( "1.1", "Tome 1.1","978-2-355-74124-1", "http://www.bedetheque.com/media/Couvertures/Couv_180438.jpg")
                 .addPossede( "1.2", "Tome 1.2","978-2-355-74142-5", "http://www.bedetheque.com/media/Couvertures/Couv_194532.jpg")
@@ -738,6 +745,7 @@ public class CollectionBuilder {
                 .addPossede( "25","La Vallée des Immortels : Menace sur Hong Kong","978-2-87097-244-1", "https://www.bedetheque.com/media/Couvertures/Couv_348626.jpg")
                 .addPossede("26","La Vallée des Immortels - Tome 2 - Le Millième Bras du Mékong","978-2-87097-281-6", "https://www.bedetheque.com/media/Couvertures/Couv_377354.jpg")
                 .addPossede("27","Le cri du Moloch","978-2-87097-292-2","https://www.bedetheque.com/media/Couvertures/Couv_405221.jpg")
+                .addManquante("28","Le Dernier Espadon","978-2-87097-285-4", "https://www.bedetheque.com/media/Couvertures/Couv_436466.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_115948.jpg")
                 .withEditeur("Black et Mortimer")
                 .withFini(true));
@@ -863,6 +871,18 @@ public class CollectionBuilder {
                 .addManquante("3","Quand vient le sage...","978-2-302-07764-5", "https://www.bedetheque.com/media/Couvertures/Couv_375017.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_341999.jpg")
                 .withEditeur("Soleil Productions"));
+
+
+        c.addSerie(new Serie("Sept")
+                .addPossede("Saison 2 Volume 5", "Sept Dragons","978-2-7560-2442-4","https://www.bedetheque.com/media/Couvertures/Couv_154598.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_154598.jpg")
+                .withEditeur("Delcourt"));
+                 
+        c.addSerie(new Serie("Aslak")
+                .addPossede("1 2 3", "Volume 1","978-2-413-01018-0","https://www.bedetheque.com/media/Couvertures/Couv_363604.jpg")
+                .addPossede("4 5 6", "Volume 2","978-2-413-02436-1","https://www.bedetheque.com/media/Couvertures/Couv_402221.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_363604.jpg")
+                .withEditeur("Delcourt"));       
         return c;
     }
 
