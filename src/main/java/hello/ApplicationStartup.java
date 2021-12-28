@@ -25,7 +25,6 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
         LogUtils.warn("######################################");
         LogUtils.warn("#       DELETE COLLECTIONS           #");
         LogUtils.warn("######################################");
-        customRepo.deleteCollection();
         LogUtils.warn("#       CREATE COLLECTION            #");
         Collection collection = CollectionBuilder.getCollection();
         customRepo.createCollection(collection);

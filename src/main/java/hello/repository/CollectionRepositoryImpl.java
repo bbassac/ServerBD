@@ -1,17 +1,13 @@
 package hello.repository;
 
-import hello.LogUtils;
+
 import hello.bean.*;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.*;
+
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
+
 import org.springframework.util.StringUtils;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-import java.io.ByteArrayOutputStream;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,65 +16,62 @@ import java.util.List;
  * Created by b.bassac on 24/05/2016.
  */
 @Repository
-@Transactional
 public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
 
-
-    @PersistenceContext
-     EntityManager entityManager;
-
-    CustomCache cache = new CustomCache();
+    Collection cache;
 
     @Override
     public Bd getBdFromId(long id) {
-        return entityManager.find(Bd.class, id);
+
+        for (Serie s : cache.getListeSerie()){
+                for (Bd m : s.getListManquante()){
+                    if (m.getId().equals(id)){
+                        return m;
+                    }
+                }
+                for (Bd b : s.getListPossede()){
+                    if (b.getId().equals(id)){
+                        return b;
+                    }
+                }
+        }
+        throw new BookNotFoundException();
     }
 
     @Override
     public List<Bd> getAllBd() {
-        return entityManager.createQuery("SELECT b FROM Bd b").getResultList();
+        List<Bd> toReturn = new ArrayList<>();
+        for (Serie s : cache.getListeSerie()){
+            toReturn.addAll(s.getListManquante());
+            toReturn.addAll(s.getListPossede());
+        }
+        return toReturn;
     }
 
     @Override
     public Collection getCollection() {
-       if(cache.isEmpty(CustomCache.COLLECTION_CACHE)){
-           cache.putIn(CustomCache.COLLECTION_CACHE,getCollectionFromBdd());
-       }
-        return cache.getCache(CustomCache.COLLECTION_CACHE);
+        return cache;
     }
 
     @Override
     public void createCollection(Collection c) {
-        entityManager.persist(c);
-        cache.putIn(CustomCache.COLLECTION_CACHE,getCollectionFromBdd());
+        cache=c;
     }
 
-    private Collection getCollectionFromBdd(){
-        LogUtils.warn("Get Collection from Database");
-        Query query = entityManager.createQuery("SELECT c FROM Collection c order by c.id ASC");
-        List<Collection> res = query.getResultList();
-        return res.isEmpty() ? null : res.get(0);
-    }
 
     @Override
     public Serie getSerieFromId(Long id) {
-        return entityManager.find(Serie.class, id);
+
+        Serie s = cache.getListeSerie().stream().filter(serie -> serie.getId().equals(id)).findAny().orElse(null);
+
+        return s;
     }
 
     @Override
     public List<Serie> getAllSeries() {
-        return entityManager.createQuery("SELECT s FROM Serie s").getResultList();
+        return cache.getListeSerie();
     }
 
-    @Override
-    public DeleteResult deleteCollection() {
-        DeleteResult result = new DeleteResult();
-        result.setBdDeleted(entityManager.createQuery("DELETE FROM Bd").executeUpdate());
-        result.setSerieDeleted(entityManager.createQuery("DELETE FROM Serie").executeUpdate());
-        result.setCollectionDeleted(entityManager.createQuery("DELETE FROM Collection").executeUpdate());
-        cache.clearCache(CustomCache.COLLECTION_CACHE);
-        return result;
-    }
 
     @Override
     public List<BdManquante> getAllBdManquantes() {
@@ -111,38 +104,30 @@ public class CollectionRepositoryImpl implements CollectionRepositoryCustom {
 
     @Override
     public Long switchBDAsPossede(Long bdId) {
-        Serie serie = (Serie) entityManager
-                .createQuery("SELECT bd.serie FROM Bd bd WHERE bd.id=:bdId")
-                .setParameter("bdId", bdId)
-                .getSingleResult();
 
-        Bd selectedBd = null;
-        for (Bd bd : serie.getListManquante()) {
-            if (bd.getId().equals(bdId)) {
-                selectedBd = bd;
-                break;
+        for (Serie s : cache.getListeSerie()) {
+            for (Bd b : s.getListManquante()) {
+                if (b.getId().equals(bdId)) {
+                    s.getListPossede().add(b);
+                    s.getListManquante().remove(b);
+                    return b.getId();
+                }
             }
         }
-        if (selectedBd != null) {
-            serie.getListManquante().remove(selectedBd);
-            serie.getListPossede().add(selectedBd);
-            entityManager.merge(serie);
-            entityManager.flush();
-        }
-        cache.clearCache(CustomCache.COLLECTION_CACHE);
-        return selectedBd.getId();
+        throw new BookNotFoundException();
     }
+
+
+
 
     @Override
     public byte[] exportCollectionToExcel() throws IOException {
-        Collection coll = getCollection();
-        return new ExcelExporter().exportCollectionToExcel(coll);
+        return new ExcelExporter().exportCollectionToExcel(cache);
     }
 
     @Override
     public byte[] exportAllCollectionToExcel() throws IOException {
-        Collection coll = getCollection();
-        return new ExcelExporter().exportAllCollectionToExcel(coll);
+        return new ExcelExporter().exportAllCollectionToExcel(cache);
     }
 
 

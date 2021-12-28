@@ -22,8 +22,6 @@ public interface CollectionRepositoryCustom {
 
     List<Serie> getAllSeries();
 
-    DeleteResult deleteCollection();
-
     List<BdManquante> getAllBdManquantes();
 
     Long switchBDAsPossede(Long id);

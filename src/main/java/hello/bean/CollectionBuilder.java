@@ -628,7 +628,7 @@ public class CollectionBuilder {
 
         c.addSerie(new Serie( "Dick Herisson Integrales")
                 .addPossede( "1", "Volume 1","2-205-05928-9", "https://www.bedetheque.com/media/Couvertures/dickherrisonint01_59054.jpg")
-                .addManquante( "2", "Volume 2","978-2-205-05976-2", "https://www.bedetheque.com/media/Couvertures/Couv_62120.jpg")
+                .addPossede( "2", "Volume 2","978-2-205-05976-2", "https://www.bedetheque.com/media/Couvertures/Couv_62120.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/dickherrisonint01_59054.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));

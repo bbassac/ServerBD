@@ -27,13 +27,4 @@ public class CollectionController extends AbstractController{
         return "ok";
     }
 
-    @CrossOrigin
-    @RequestMapping(method = RequestMethod.DELETE)
-    @ResponseBody
-    public DeleteResult deleteCollection() {
-        DeleteResult result = customRepo.deleteCollection();
-        return result;
-    }
-
-
 }

@@ -4,45 +4,31 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 
-import javax.persistence.*;
+
+
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
-@Table(name = "SERIE")
+
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Serie {
-    @Id
-    @Column(name = "ID")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
-    @Column(name = "NOM")
     private String nom;
 
-    @Column(name="FORMAT")
     private String format;
 
-    @Column(name = "FINI")
     private boolean fini = false;
-    @Column(name = "IMAGE_URL")
     private String imageUrl;
-    @LazyCollection(LazyCollectionOption.FALSE)
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(nullable = true)
     @JsonManagedReference
     private List<Bd> listPossede;
-    @LazyCollection(LazyCollectionOption.FALSE)
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(nullable = true)
     @JsonManagedReference
     private List<Bd> listManquante;
 
-    @Column(name = "EDITEUR")
+
     private String editeur;
-    @ManyToOne
+
     @JsonBackReference
     private Collection collection;
 

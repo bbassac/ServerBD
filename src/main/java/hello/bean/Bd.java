@@ -5,30 +5,25 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 
-import javax.persistence.*;
+
 
 /**
  * Created by b.bassac on 12/01/2015.
  */
-@Entity
-@Table(name = "BD")
+
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Bd implements Comparable {
-    @Id
-    @Column(name = "ID")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
-    @Column(name = "TITRE")
+
     private String titre;
-    @Column(name = "NUMERO")
+
     private String numero;
-    @Column(name = "COUVERTURE_URL")
+
     private String couvertureUrl;
-    @Column(name = "ISBN")
+
     private String isbn;
 
-
-    @ManyToOne
     @JsonBackReference
     private Serie serie;
 
