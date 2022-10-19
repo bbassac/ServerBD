@@ -99,6 +99,7 @@ public class CollectionBuilder {
                 .addPossede("5","Trompeuses apparences","978-2-302-07099-8", "https://www.bedetheque.com/media/Couvertures/Couv_346499.jpg")
                 .addManquante("6","Reiko","978-2-302-07756-0", "https://www.bedetheque.com/media/Couvertures/Couv_375014.jpg")
                 .addManquante("7", "L'île du yokaÏ noir","978-2-302-09289-1","https://www.bedetheque.com/media/Couvertures/Couv_422385.jpg")
+                .addManquante("8", "Dogen est de retour", "978-2-302-09572-4", "https://www.bedetheque.com/media/Couvertures/Couv_453141.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_201038.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -107,6 +108,7 @@ public class CollectionBuilder {
                 .addPossede( "1", "Takeo","978-2-302-06362-4", "https://www.bedetheque.com/media/Couvertures/Couv_311651.jpg")
                 .addPossede( "2", "Le Maître des encens","978-2-302-07515-3", "https://www.bedetheque.com/media/Couvertures/Couv_361250.jpg")
                 .addManquante("3","Eiko","978-2-302-08167-3","https://www.bedetheque.com/media/Couvertures/Couv_386228.jpg")
+                .addManquante("4", "L'honneur d'un père", "978-2-302-09316-4", "https://www.bedetheque.com/media/Couvertures/Couv_445756.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_311651.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -166,8 +168,6 @@ public class CollectionBuilder {
                 .addManquante("INT1","Tomes 10 à 12 ","2-7560-2803-7","https://www.bedetheque.com/media/Couvertures/Couv_167349.jpg")
                 .addManquante("INT1","Tomes 13 à 15 ","978-2-7560-5303-5","https://www.bedetheque.com/media/Couvertures/Couv_215093.jpg")
                 .addManquante("INT1","Tomes 16 à 18 ","978-2-413-01134-7","https://www.bedetheque.com/media/Couvertures/Couv_369957.jpg")
-
-
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_113601.jpg")
                 .withEditeur("Delcourt")
                 .withFini(false));
@@ -257,6 +257,7 @@ public class CollectionBuilder {
                 .addManquante("6","Cixi impératrice","2-87764-795-1", "https://www.bedetheque.com/media/Couvertures/Couv_1371.jpg")
                 .addManquante("7","Les pétaures se cachent pour mourir","2-87764-923-7", "https://www.bedetheque.com/media/Couvertures/Couv_1799.jpg")
                 .addPossede("8","La bête fabuleuse"," 2-84565-033-7", "http://www.bedetheque.com/media/Couvertures/Couv_2107.jpg")
+                .addManquante("9", "La Forêt noiseuse", "978-2-302-09203-7", "https://www.bedetheque.com/media/Couvertures/Couv_434346.jpg")
                 .withEditeur("Soleil")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_2107.jpg")
         );
@@ -294,6 +295,7 @@ public class CollectionBuilder {
                 .addPossede("20","Une porte sur l'Enfer","978-2-205-07947-0", "https://www.bedetheque.com/media/Couvertures/Couv_378961.jpg")
                 .addPossede( "HS1", "L'empire de la negation","978-2-205-07256-3", "http://www.bedetheque.com/media/Couvertures/Couv_201795.jpg")
                 .addPossede("0","En un jeu cruel","978-2-205-06071-3", "http://www.bedetheque.com/media/Couvertures/Couv_139500.jpg")
+                .addManquante("21", "Sic Transit Gloria Mundi", "978-2-205-08504-4", "https://www.bedetheque.com/media/Couvertures/Couv_437413.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_955.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -333,9 +335,10 @@ public class CollectionBuilder {
                 .addPossede( "22", "Retour à Greenfalls","978-2-505-01799-8", "http://www.bedetheque.com/media/Couvertures/Couv_195999.jpg")
                 .addPossede( "23", "Le Message du martyr","978-2-505-06003-1", "http://www.bedetheque.com/media/Couvertures/Couv_225425.jpg")
                 .addPossede("24","L'Héritage de Jason Mac Lane","978-2-505-06351-3", "http://www.bedetheque.com/media/Couvertures/Couv_277935.jpg")
-                .addManquante("25","The XIII history","978-2-505-06880-8", "https://www.bedetheque.com/media/Couvertures/Couv_373052.jpg")
-                .addManquante("26","2132 mètres","978-2-505-06990-4", "https://www.bedetheque.com/media/Couvertures/Couv_377348.jpg")
-                .addManquante("27", "Mémoire rechargée", "978-2-505-08332-0", "https://www.bedetheque.com/media/Couvertures/Couv_409329.jpg")
+                .addPossede("25","The XIII history","978-2-505-06880-8", "https://www.bedetheque.com/media/Couvertures/Couv_373052.jpg")
+                .addPossede("26","2132 mètres","978-2-505-06990-4", "https://www.bedetheque.com/media/Couvertures/Couv_377348.jpg")
+                .addPossede("27", "Mémoire rechargée", "978-2-505-08332-0", "https://www.bedetheque.com/media/Couvertures/Couv_409329.jpg")
+                .addManquante("28", "Cuba, où tout a commencé", "9-782-505-08948-3", "https://www.bedetheque.com/media/Couvertures/Couv_457411.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_177856.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -381,6 +384,7 @@ public class CollectionBuilder {
                 .addManquante("38","La selkie","978-2-8036-7718-4","https://www.bedetheque.com/media/Couvertures/Couv_405264.jpg")
                 .addManquante("39","Neokóra","978-2-8036-8031-3","https://www.bedetheque.com/media/Couvertures/Couv_433699.jpg")
                 .addManquante( "HS1", "Trois femmes pour un heros","2296509460", "http://www.bedetheque.com/media/Couvertures/Couv_170514.jpg")
+                .addManquante("40", "Tupilaks", "978-2-8082-0347-0", "https://www.bedetheque.com/media/Couvertures/Couv_457535.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_398.jpg")
                 .withEditeur("Le Lombard")
                 .withFini(false));
@@ -395,18 +399,19 @@ public class CollectionBuilder {
                 .withFini(true));
 
         c.addSerie(new Serie( "La complainte des landes perdues cycle 2 : Les chevaliers du pardon")
-                .addPossede( "1", "Moriganes","2-87129-683-9", "http://www.bedetheque.com/media/Couvertures/Couv_40118.jpg")
-                .addPossede( "2", "Le Guinea Lord","978-2-505-00464-6", "http://www.bedetheque.com/media/Couvertures/Couv_79248.jpg")
-                .addPossede( "3", "La Fée Sanctus","978-2-505-01387-7", "http://www.bedetheque.com/media/Couvertures/Couv_164562.jpg")
-                .addPossede( "4", "Sill Valt","978-2-505-01979-4", "http://www.bedetheque.com/media/Couvertures/Couv_223389.jpg")
+                .addPossede( "5", "Moriganes","2-87129-683-9", "http://www.bedetheque.com/media/Couvertures/Couv_40118.jpg")
+                .addPossede( "6", "Le Guinea Lord","978-2-505-00464-6", "http://www.bedetheque.com/media/Couvertures/Couv_79248.jpg")
+                .addPossede( "7", "La Fée Sanctus","978-2-505-01387-7", "http://www.bedetheque.com/media/Couvertures/Couv_164562.jpg")
+                .addPossede( "8", "Sill Valt","978-2-505-01979-4", "http://www.bedetheque.com/media/Couvertures/Couv_223389.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_40118.jpg")
                 .withEditeur("Dargaud")
                 .withFini(true));
 
         c.addSerie(new Serie( "Les complaintes des landes perdues cycle 3 : Les sorcières")
-                .addPossede("5","Tête noire","978-2-505-06350-6", "http://www.bedetheque.com/media/Couvertures/Couv_253349.jpg")
-                .addPossede("6","Inferno","978-2-505-06399-5", "https://www.bedetheque.com/media/Couvertures/Couv_353803.jpg")
-                .addPossede("7","Lord Héron","978-2-505-08268-2","https://www.bedetheque.com/media/Couvertures/Couv_435009.jpg" )
+                .addPossede("9","Tête noire","978-2-505-06350-6", "http://www.bedetheque.com/media/Couvertures/Couv_253349.jpg")
+                .addPossede("10","Inferno","978-2-505-06399-5", "https://www.bedetheque.com/media/Couvertures/Couv_353803.jpg")
+                .addPossede("11","Lord Héron","978-2-505-08268-2","https://www.bedetheque.com/media/Couvertures/Couv_435009.jpg" )
+                .addManquante("12", "Aylissa", "978-2-505-11154-2", "https://www.bedetheque.com/media/Couvertures/Couv_456805.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_253349.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
@@ -458,6 +463,7 @@ public class CollectionBuilder {
                 .addPossede("10","Le Destin du jongleur","978-2-302-06305-1", "https://www.bedetheque.com/media/Couvertures/Couv_315467.jpg")
                 .addPossede("11","La fable oubliée","978-2-302-08049-2", "https://www.bedetheque.com/media/Couvertures/Couv_381488.jpg")
                 .addManquante("12","L'Étincel courroucé","978-2-302-09080-4","https://www.bedetheque.com/media/Couvertures/Couv_408929.jpg")
+                .addManquante("13", "Le Songe du havre", "978-2-302-09125-2", "https://www.bedetheque.com/media/Couvertures/Couv_437143.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/foretsdopale01.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -482,6 +488,7 @@ public class CollectionBuilder {
                 .addPossede("9","Commando noir","978-2-7560-8085-7", "https://www.bedetheque.com/media/Couvertures/Couv_312786.jpg")
                 .addPossede("10","Le complot","978-2-413-01298-6", "https://www.bedetheque.com/media/Couvertures/Couv_361308.jpg")
                 .addManquante("11","Invasion","978-2-413-02016-5","https://www.bedetheque.com/media/Couvertures/Couv_405138.jpg")
+                .addManquante("12", "Le dernier homme", "978-2-413-03849-8", "https://www.bedetheque.com/media/Couvertures/Couv_454681.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_69106.jpg")
                 .withEditeur("Delcourt")
                 .withFini(false));
@@ -746,6 +753,7 @@ public class CollectionBuilder {
                 .addPossede("26","La Vallée des Immortels - Tome 2 - Le Millième Bras du Mékong","978-2-87097-281-6", "https://www.bedetheque.com/media/Couvertures/Couv_377354.jpg")
                 .addPossede("27","Le cri du Moloch","978-2-87097-292-2","https://www.bedetheque.com/media/Couvertures/Couv_405221.jpg")
                 .addManquante("28","Le Dernier Espadon","978-2-87097-285-4", "https://www.bedetheque.com/media/Couvertures/Couv_436466.jpg")
+                .addManquante("29", "Huit heures à Berlin", "978-2-87097-236-6", "https://www.bedetheque.com/media/Couvertures/Couv_457555.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_115948.jpg")
                 .withEditeur("Black et Mortimer")
                 .withFini(true));
@@ -869,6 +877,7 @@ public class CollectionBuilder {
                 .addPossede("1","L'Évangile d'Ariathie","978-2-302-07120-9", "https://www.bedetheque.com/media/Couvertures/Couv_341999.jpg")
                 .addManquante("2","La guilde des assassins","978-2-302-07411-8", "https://www.bedetheque.com/media/Couvertures/Couv_353816.jpg")
                 .addManquante("3","Quand vient le sage...","978-2-302-07764-5", "https://www.bedetheque.com/media/Couvertures/Couv_375017.jpg")
+                .addManquante("4", "Les splendeurs de Soo", "978-2-302-09750-6", "https://www.bedetheque.com/media/Couvertures/Couv_453145.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_341999.jpg")
                 .withEditeur("Soleil Productions"));
 
