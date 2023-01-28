@@ -9,6 +9,45 @@ public class CollectionBuilder {
     public static Collection getCollection() {
         Collection c = new Collection();
         c.setId(next(withId));
+
+        c.addSerie(new Serie("Les passagers du vent 1 - 5")
+                .addPossede("1","La fille sous la dunette","2723401324","https://www.bedetheque.com/media/Couvertures/Couv_302.jpg")
+                .addPossede("2","Le ponton","2723401642","https://www.bedetheque.com/media/Couvertures/Couv_303.jpg")
+                .addPossede("3","Le comptoir de Juda","2723402150","https://www.bedetheque.com/media/Couvertures/Couv_304.jpg")
+                .addPossede("4","L'heure du serpent'","2723402908","https://www.bedetheque.com/media/Couvertures/Couv_305.jpg")
+                .addPossede("5","Le bois d'ébène","2723404404","https://www.bedetheque.com/media/Couvertures/Couv_306.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_302.jpg")
+                .withEditeur("Glénat")
+        );
+
+        c.addSerie(new Serie("Les passagers du vent 6 - 7")
+                .addManquante("6","La Petite Fille Bois-Caïman Livre 1","9782356480668","https://www.bedetheque.com/media/Couvertures/Couv_93413.jpg")
+                .addManquante("7","La Petite Fille Bois-Caïman Livre 2","9782356481122","https://www.bedetheque.com/media/Couvertures/Couv_99109.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_93413.jpg")
+                .withEditeur("12 bis")
+        );
+
+        c.addSerie(new Serie("Les passagers du vent 8 - 9")
+                .addPossede("8","Le Sang des cerises Livre 1","9782413004080","https://www.bedetheque.com/media/Couvertures/Couv_344648.jpg")
+                .addManquante("9","Le Sang des cerises  Livre 2","9782413030621","https://www.bedetheque.com/media/Couvertures/Couv_457547.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_344648.jpg")
+                .withEditeur("Delcourt")
+        );
+
+        c.addSerie(new Serie("Roi Ours")
+                .addPossede("1","Roi Ours","9782756034256","https://www.bedetheque.com/media/Couvertures/Couv_246249.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_246249.jpg")      
+                .withEditeur("Delcourt")
+        );
+
+        c.addSerie(new Serie("Bug (Enki Bilal)")
+                .addPossede("1","Livre  1","9782203105782","https://www.bedetheque.com/media/Couvertures/Couv_314861.jpg")
+                .addManquante("2","Livre  2","9782203163614","https://www.bedetheque.com/media/Couvertures/Couv_362623.jpg")
+                .addManquante("3","Livre  3","9782203202283","https://www.bedetheque.com/media/Couvertures/Couv_442458.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_314861.jpg")      
+        .withEditeur("Casterman")
+);
+
         c.addSerie(new Serie( "Arawn")
                 .addPossede( "1", "Bran le Maudit","978-2-302-00069-8" , "https://www.bedetheque.com/media/Couvertures/Arawn1_26012008_153221.jpg")
                 .addPossede( "2", "Les liens du sang","978-2-302-00485-6" , "https://www.bedetheque.com/media/Couvertures/Arawn2_22012009_150322.jpg")
@@ -136,9 +175,9 @@ public class CollectionBuilder {
                 .withFini(true));
 
         c.addSerie(new Serie( "Les arcanes d'Alya")
-                .addPossede( "1", "La chasseresse écarlate","978-2-84946-797-8", "http://www.bedetheque.com/media/Couvertures/ArcanesDalya01_66103.jpg")
-                .addPossede( "2", "Ames soeurs","978-2-302-00068-1", "http://www.bedetheque.com/media/Couvertures/ArcanesDalyaLes2_26012008_162242.jpg")
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/ArcanesDalya01_66103.jpg")
+                .addPossede( "1", "La chasseresse écarlate","978-2-84946-797-8", "https://www.bedetheque.com/media/Couvertures/Couv_66103.jpg")
+                .addPossede( "2", "Ames soeurs","978-2-302-00068-1", "https://www.bedetheque.com/media/Couvertures/Couv_71063.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_66103.jpg")
                 .withFini(true)
                 .withEditeur("Soleil"));
 
@@ -507,11 +546,11 @@ public class CollectionBuilder {
                 .withFini(false));
 
         c.addSerie(new Serie( "La quete de l'oiseau du temps")
-                .addManquante( "1", "La conque de Ramor","2-205-02406-X", "http://www.bedetheque.com/media/Couvertures/Couv_15409.jpg")
-                .addPossede( "2", "Le temple de l'oubli","2-205-02576-7", "http://www.bedetheque.com/media/Couvertures/Couv_15408.jpg")
+                .addPossede( "1", "La conque de Ramor","2-205-02406-X", "http://www.bedetheque.com/media/Couvertures/Couv_15409.jpg")
+                .addManquante( "2", "Le temple de l'oubli","2-205-02576-7", "http://www.bedetheque.com/media/Couvertures/Couv_15408.jpg")
                 .addManquante( "3", "Le Rige","2-205-02952-5", "http://www.bedetheque.com/media/Couvertures/Couv_321.jpg")
                 .addManquante( "4", "L'oeuf des ténébres","2-205-03460-X", "http://www.bedetheque.com/media/Couvertures/Couv_322.jpg")
-                .addManquante( "5", "L'ami Javin","2-205-04394-3", "http://www.bedetheque.com/media/Couvertures/Couv_1361.jpg")
+                .addPossede( "5", "L'ami Javin","2-205-04394-3", "http://www.bedetheque.com/media/Couvertures/Couv_1361.jpg")
                 .addManquante( "6", "Le grimoire des dieux","978-2-205-05633-4", "http://www.bedetheque.com/media/Couvertures/Couv_69122.jpg")
                 .addManquante( "7", "La voie du Rige","978-2-205-06009-6", "http://www.bedetheque.com/media/Couvertures/Couv_105589.jpg")
                 .addManquante( "8", "Le chevalier Bragon","978-2-205-06330-1", "http://www.bedetheque.com/media/Couvertures/Couv_197893.jpg")
@@ -522,6 +561,8 @@ public class CollectionBuilder {
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_69122.jpg")
                 .withEditeur("Dargaud")
                 .withFini(false));
+
+
 
         c.addSerie(new Serie( "Atalante - La Légende")
                 .addManquante("0","Première larme","978-2-302-09096-5","https://www.bedetheque.com/media/Couvertures/Couv_414587.jpg")
@@ -753,7 +794,7 @@ public class CollectionBuilder {
                 .addPossede("26","La Vallée des Immortels - Tome 2 - Le Millième Bras du Mékong","978-2-87097-281-6", "https://www.bedetheque.com/media/Couvertures/Couv_377354.jpg")
                 .addPossede("27","Le cri du Moloch","978-2-87097-292-2","https://www.bedetheque.com/media/Couvertures/Couv_405221.jpg")
                 .addManquante("28","Le Dernier Espadon","978-2-87097-285-4", "https://www.bedetheque.com/media/Couvertures/Couv_436466.jpg")
-                .addManquante("29", "Huit heures à Berlin", "978-2-87097-236-6", "https://www.bedetheque.com/media/Couvertures/Couv_457555.jpg")
+                .addManquante("29", "Huit heures à Berlin", "978-2-87097-236-6", "https://www.bedetheque.com/media/Couvertures/Couv_461918.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_115948.jpg")
                 .withEditeur("Black et Mortimer")
                 .withFini(true));
