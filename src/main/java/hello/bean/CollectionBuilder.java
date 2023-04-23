@@ -597,7 +597,7 @@ public class CollectionBuilder {
                 .addPossede( "10", "Les 4 as et le tyran","2-203-31510-5", "https://www.bedetheque.com/media/Couvertures/quatreas10_03112002.jpg")
                 .addPossede( "11", "Les 4 as et la ruee vers l'or","2-203-31511-3", "https://www.bedetheque.com/media/Couvertures/quatreas11_03112002.jpg")
                 .addManquante( "12", "Les 4 as et le Picasso vole","2-203-31512-1", "https://www.bedetheque.com/media/Couvertures/quatreas12.jpg")
-                .addPossede( "13", "Les 4 as et la bombe F","2-203-31513-X", "https://www.bedetheque.com/media/Couvertures/quatreas13.jpg")
+                .addPossede( "13", "Les 4 as et la bombe F","2-203-31513-X", "https://www.bedetheque.com/media/Couvertures/Couv_5878.jpg")
                 .addPossede( "14", "Les 4 as et la Saucisse volante","2-203-31514-8", "https://www.bedetheque.com/media/Couvertures/4as14.jpg")
                 .addPossede( "15", "Les 4 as et le gang des chapeaux blancs","2-203-31515-6", "https://www.bedetheque.com/media/Couvertures/les4aslegangdeschapeauxblancs_5880.jpg")
                 .addPossede( "16", "Les 4 as et le vaisseau fantôme","2-203-31516-4", "https://www.bedetheque.com/media/Couvertures/Couv_5911.jpg")
@@ -611,7 +611,7 @@ public class CollectionBuilder {
                 .addPossede( "24", "Les 4 as et le secret de la montagne","2-203-31524-5", "https://www.bedetheque.com/media/Couvertures/quatreas24.jpg")
                 .addManquante( "25", "Les 4 as et la déesse des mers","2-203-31525-3", "https://www.bedetheque.com/media/Couvertures/Couv_5918.jpg")
                 .addManquante( "26", "Les 4 as et la navette spatiale","2-203-31526-1", "https://www.bedetheque.com/media/Couvertures/4as26navettespatiale.jpg")
-                .addManquante( "27", "Les 4 as et le requin geant","2-203-31527-X", "https://www.bedetheque.com/media/Couvertures/4as27requingeant.jpg")
+                .addManquante( "27", "Les 4 as et le requin geant","2-203-31527-X", "https://www.bedetheque.com/media/Couvertures/Couv_36240.jpg")
                 .addManquante( "28", "Les 4 as et l'empire cache","2-203-31528-8", "https://www.bedetheque.com/media/Couvertures/quatreas28.jpg")
                 .addManquante( "29", "Les 4 as et le mystere de la jungle","2-203-31529-6", "https://www.bedetheque.com/media/Couvertures/Couv_35606.jpg")
                 .addManquante( "30", "Les 4 as et les extraterrestres","2-203-31530-X", "https://www.bedetheque.com/media/Couvertures/Couv_24983.jpg")
@@ -619,12 +619,12 @@ public class CollectionBuilder {
                 .addManquante( "32", "Les 4 as et le robot vandale","2-203-31532-6", "https://www.bedetheque.com/media/Couvertures/quatreas32.jpg")
                 .addPossede( "33", "Les 4 as et l'atlantide","2-203-31533-4", "https://www.bedetheque.com/media/Couvertures/4as033_12102003.jpg")
                 .addManquante( "34", "Les 4 as et les sorcieres","2-203-31534-2", "https://www.bedetheque.com/media/Couvertures/quatreas34.jpg")
-                .addManquante( "35", "Les 4 as et les dinosaures","2-203-31535-0", "https://www.bedetheque.com/media/Couvertures/4as35.jpg")
+                .addManquante( "35", "Les 4 as et les dinosaures","2-203-31535-0", "https://www.bedetheque.com/media/Couvertures/Couv_5919.jpg")
                 .addManquante( "36", "Les 4 as et la momie","2-203-31536-9", "https://www.bedetheque.com/media/Couvertures/Couv_36229.jpg")
-                .addManquante( "37", "Les 4 as et les fantômes","2-203-31537-7", "https://www.bedetheque.com/media/Couvertures/4as037_12102003.jpg")
+                .addManquante( "37", "Les 4 as et les fantômes","2-203-31537-7", "https://www.bedetheque.com/media/Couvertures/Couv_30239.jpg")
                 .addManquante( "38", "Les 4 as et le monstre des oceans","2-203-31538-5", "https://www.bedetheque.com/media/Couvertures/4asles38_40797.jpg")
                 .addManquante( "39", "Les 4 As et Halloween","2-203-31539-3", "https://www.bedetheque.com/media/Couvertures/4ashalloween_29082004.jpg")
-                .addManquante( "40", "Le loup de Tasmanie","2-203-31540-7", "https://www.bedetheque.com/media/Couvertures/4as40louptasmanie.jpg")
+                .addManquante( "40", "Le loup de Tasmanie","2-203-31540-7", "https://www.bedetheque.com/media/Couvertures/Couv_36230.jpg")
                 .addManquante( "41", "Les 4 as et le grand supreme","2-203-31541-5", "https://www.bedetheque.com/media/Couvertures/quatreas41.jpg")
                 .addManquante( "42", "Mission Mars","2-203-31542-3", "https://www.bedetheque.com/media/Couvertures/4AsLes42_08072005.jpg")
                 .addManquante( "43", "La balade des 4 as","978-2-203-31543-3", "https://www.bedetheque.com/media/Couvertures/4asles43_64626.jpg")
@@ -932,7 +932,15 @@ public class CollectionBuilder {
                 .addPossede("1 2 3", "Volume 1","978-2-413-01018-0","https://www.bedetheque.com/media/Couvertures/Couv_363604.jpg")
                 .addPossede("4 5 6", "Volume 2","978-2-413-02436-1","https://www.bedetheque.com/media/Couvertures/Couv_402221.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_363604.jpg")
-                .withEditeur("Delcourt"));       
+                .withEditeur("Delcourt"));  
+        
+        c.addSerie(new Serie("Valérian")
+                .addPossede("2", "L'empire des mille planètes","","https://www.bedetheque.com/media/Couvertures/Couv_311241.jpg")
+                .addPossede("3", "Le pays sans étoile","","https://www.bedetheque.com/media/Couvertures/Couv_311242.jpg")
+                .addPossede("12","Les foudres d'Hypsis","","https://www.bedetheque.com/media/Couvertures/Couv_320928.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_336804.jpg")
+                .withEditeur("Hachette"));         
+                
         return c;
     }
 
