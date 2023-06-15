@@ -119,6 +119,7 @@ public class CollectionBuilder {
                 .addManquante("13","Piment rouge et alcool blanc","978-2-302-07647-1", "https://www.bedetheque.com/media/Couvertures/Couv_363862.jpg")
                 .addManquante("14","L'épaule du maître","978-2-302-08309-7", "https://www.bedetheque.com/media/Couvertures/Couv_401502.jpg")
                 .addManquante("15","Insoupçonnable","978-2-302-09348-5", "https://www.bedetheque.com/media/Couvertures/Couv_431815.jpg" )
+                .addManquante("16","Le Sabre des Takashi","978-2-302-09652-3","https://www.bedetheque.com/media/Couvertures/Couv_469764.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/samurai01.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -511,6 +512,7 @@ public class CollectionBuilder {
                 .addPossede("11","La fable oubliée","978-2-302-08049-2", "https://www.bedetheque.com/media/Couvertures/Couv_381488.jpg")
                 .addManquante("12","L'Étincel courroucé","978-2-302-09080-4","https://www.bedetheque.com/media/Couvertures/Couv_408929.jpg")
                 .addManquante("13", "Le Songe du havre", "978-2-302-09125-2", "https://www.bedetheque.com/media/Couvertures/Couv_437143.jpg")
+                .addManquante("14","Le Titan de Lumière","978-2-302-09589-2","https://www.bedetheque.com/media/Couvertures/Couv_465591.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/foretsdopale01.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -534,8 +536,8 @@ public class CollectionBuilder {
                 .addPossede("8","Ultimatum","978-2-7560-7104-6", "http://www.bedetheque.com/media/Couvertures/Couv_291293.jpg")
                 .addPossede("9","Commando noir","978-2-7560-8085-7", "https://www.bedetheque.com/media/Couvertures/Couv_312786.jpg")
                 .addPossede("10","Le complot","978-2-413-01298-6", "https://www.bedetheque.com/media/Couvertures/Couv_361308.jpg")
-                .addManquante("11","Invasion","978-2-413-02016-5","https://www.bedetheque.com/media/Couvertures/Couv_405138.jpg")
-                .addManquante("12", "Le dernier homme", "978-2-413-03849-8", "https://www.bedetheque.com/media/Couvertures/Couv_454681.jpg")
+                .addPossede("11","Invasion","978-2-413-02016-5","https://www.bedetheque.com/media/Couvertures/Couv_405138.jpg")
+                .addPossede("12", "Le dernier homme", "978-2-413-03849-8", "https://www.bedetheque.com/media/Couvertures/Couv_454681.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_69106.jpg")
                 .withEditeur("Delcourt")
                 .withFini(false));
