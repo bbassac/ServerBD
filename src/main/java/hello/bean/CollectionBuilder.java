@@ -604,9 +604,9 @@ public class CollectionBuilder {
                 .addManquante( "7", "Les 4 as et le dragon des neiges","2-203-31507-5", "https://www.bedetheque.com/media/Couvertures/4as07.jpg")
                 .addManquante( "8", "Les 4 as et le rallye olympique","2-203-31508-3", "https://www.bedetheque.com/media/Couvertures/Couv_20185.jpg")
                 .addPossede( "9", "Les 4 as et l'île du robinson","2-203-31509-1", "https://www.bedetheque.com/media/Couvertures/4as09.jpg")
-                .addPossede( "10", "Les 4 as et le tyran","2-203-31510-5", "https://www.bedetheque.com/media/Couvertures/quatreas10_03112002.jpg")
-                .addPossede( "11", "Les 4 as et la ruee vers l'or","2-203-31511-3", "https://www.bedetheque.com/media/Couvertures/quatreas11_03112002.jpg")
-                .addManquante( "12", "Les 4 as et le Picasso vole","2-203-31512-1", "https://www.bedetheque.com/media/Couvertures/quatreas12.jpg")
+                .addPossede( "10", "Les 4 as et le tyran","2-203-31510-5", "https://www.bedetheque.com/media/Couvertures/Couv_20187.jpg")
+                .addPossede( "11", "Les 4 as et la ruee vers l'or","2-203-31511-3", "https://www.bedetheque.com/media/Couvertures/Couv_20188.jpg")
+                .addManquante( "12", "Les 4 as et le Picasso vole","2-203-31512-1", "https://www.bedetheque.com/media/Couvertures/Couv_5877.jpg")
                 .addPossede( "13", "Les 4 as et la bombe F","2-203-31513-X", "https://www.bedetheque.com/media/Couvertures/Couv_5878.jpg")
                 .addPossede( "14", "Les 4 as et la Saucisse volante","2-203-31514-8", "https://www.bedetheque.com/media/Couvertures/4as14.jpg")
                 .addPossede( "15", "Les 4 as et le gang des chapeaux blancs","2-203-31515-6", "https://www.bedetheque.com/media/Couvertures/les4aslegangdeschapeauxblancs_5880.jpg")
@@ -715,11 +715,11 @@ public class CollectionBuilder {
                 .withFini(true));
 
         c.addSerie(new Serie( "Korrigans (Mosdi/Civiello)")
-                .addPossede( "1", "Les enfants de la nuit","978-2-7560-3005-0  ", "https://www.bedetheque.com/media/Couvertures/150570_c.jpg")
-                .addPossede( "2", "Guerriers des ténèbres","978-2-7560-3005-0  ", "https://www.bedetheque.com/media/Couvertures/150570_c.jpg")
-                .addPossede( "3", "Le peuple de Dana","978-2-7560-3005-0  ", "https://www.bedetheque.com/media/Couvertures/150570_c.jpg")
-                .addPossede( "4", "Le seigneur du chaos","978-2-7560-3005-0  ", "https://www.bedetheque.com/media/Couvertures/150570_c.jpg")
-                .withImageUrl("http://www.bedetheque.com/media/Couvertures/150570_c.jpg")
+                .addPossede( "1", "Les enfants de la nuit","978-2-7560-3005-0  ", "https://www.bedetheque.com/media/Couvertures/Couv_150570.jpg")
+                .addPossede( "2", "Guerriers des ténèbres","978-2-7560-3005-0  ", "https://www.bedetheque.com/media/Couvertures/Couv_150570.jpg")
+                .addPossede( "3", "Le peuple de Dana","978-2-7560-3005-0  ", "https://www.bedetheque.com/media/Couvertures/Couv_150570.jpg")
+                .addPossede( "4", "Le seigneur du chaos","978-2-7560-3005-0  ", "https://www.bedetheque.com/media/Couvertures/Couv_150570.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_150570.jpg")
                 .withEditeur("Delcourt")
                 .withFini(true));
 

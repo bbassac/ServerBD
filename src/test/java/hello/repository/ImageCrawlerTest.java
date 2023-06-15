@@ -41,7 +41,7 @@ public class ImageCrawlerTest {
             getAllFiles(serie);
             currentSerie++;
         }
-        Assert.assertEquals(errorUrls.size(), 0,errorUrls.toString());
+        Assert.assertEquals(errorUrls.size(), 0,String.join(System.lineSeparator(), errorUrls));
         Assert.assertEquals(countImages("target\\img"), countImages("src\\main\\resources\\static\\img\\couv"));
     }
 
