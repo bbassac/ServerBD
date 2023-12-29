@@ -140,6 +140,7 @@ public class CollectionBuilder {
                 .addManquante("6","Reiko","978-2-302-07756-0", "https://www.bedetheque.com/media/Couvertures/Couv_375014.jpg")
                 .addManquante("7", "L'île du yokaÏ noir","978-2-302-09289-1","https://www.bedetheque.com/media/Couvertures/Couv_422385.jpg")
                 .addManquante("8", "Dogen est de retour", "978-2-302-09572-4", "https://www.bedetheque.com/media/Couvertures/Couv_453141.jpg")
+                .addManquante("9", "Le goût de l'acier", "978-2-302-09957-9", "https://www.bedetheque.com/media/Couvertures/Couv_478602.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_201038.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -149,6 +150,7 @@ public class CollectionBuilder {
                 .addPossede( "2", "Le Maître des encens","978-2-302-07515-3", "https://www.bedetheque.com/media/Couvertures/Couv_361250.jpg")
                 .addManquante("3","Eiko","978-2-302-08167-3","https://www.bedetheque.com/media/Couvertures/Couv_386228.jpg")
                 .addManquante("4", "L'honneur d'un père", "978-2-302-09316-4", "https://www.bedetheque.com/media/Couvertures/Couv_445756.jpg")
+                .addManquante("5","La valse des masques", "978-2-302-09692-9","https://www.bedetheque.com/media/Couvertures/Couv_485450.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_311651.jpg")
                 .withEditeur("Soleil")
                 .withFini(true));
@@ -245,6 +247,7 @@ public class CollectionBuilder {
                 .addManquante( "HS1", "Les contrees du levant","978-2-302-01464-0", "http://www.bedetheque.com/media/Couvertures/Couv_118631.jpg")
                 .addPossede("30","L'Ancienne","978-2-302-08317-2","https://www.bedetheque.com/media/Couvertures/Couv_405224.jpg")
                 .addPossede("31","Les hauts faits de la troisième armada","978-2-302-09111-5","https://www.bedetheque.com/media/Couvertures/Couv_434351.jpg")
+                .addManquante("32","Et la Hache passe dans d'autres mains","978-2-302-09528-1", "https://www.bedetheque.com/media/Couvertures/Couv_486203.jpg")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_1333.jpg")
                 .withEditeur("Soleil")
                 .withFini(false));
@@ -425,6 +428,7 @@ public class CollectionBuilder {
                 .addManquante("39","Neokóra","978-2-8036-8031-3","https://www.bedetheque.com/media/Couvertures/Couv_433699.jpg")
                 .addManquante( "HS1", "Trois femmes pour un heros","2296509460", "http://www.bedetheque.com/media/Couvertures/Couv_170514.jpg")
                 .addManquante("40", "Tupilaks", "978-2-8082-0347-0", "https://www.bedetheque.com/media/Couvertures/Couv_457535.jpg")
+                .addManquante("41","Mille yeux","978-2-8082-1085-0","https://www.bedetheque.com/media/Couvertures/Couv_483664.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_398.jpg")
                 .withEditeur("Le Lombard")
                 .withFini(false));
@@ -458,7 +462,7 @@ public class CollectionBuilder {
         c.addSerie(new Serie ("Complainte des landes perdues : cycle Les Sudenne")
                 .addPossede("1","Lord Heron","978-2-505-08268-2","https://www.bedetheque.com/media/Couvertures/Couv_435009.jpg")
                 .addPossede("2", "Aylissa","978-2-505-11154-2","https://www.bedetheque.com/media/Couvertures/Couv_456805.jpg")
-                .addManquante("3", "La folie Seamus","","")
+                .addManquante("3", "La folie Seamus","978-2-505-11360-7","https://www.bedetheque.com/media/Couvertures/Couv_483338.jpg")
                 .addManquante("4","","","")
                 .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_435009.jpg")
                 .withEditeur("Dargaud")
@@ -588,6 +592,7 @@ public class CollectionBuilder {
                 .addManquante("10","Les Hordes de Sargon","978-2-302-06512-3", "https://www.bedetheque.com/media/Couvertures/Couv_315468.jpg")
                 .addManquante("11","Retour aux sources","978-2-302-07295-4", "https://www.bedetheque.com/media/Couvertures/Couv_363136.jpg")
                 .addManquante("12","Le Sanglier de Calydon","978-2-302-08969-3","https://www.bedetheque.com/media/Couvertures/Couv_417398.jpg")
+                .addManquante("13","La Dernière Course","978-2-302-09117-7","https://www.bedetheque.com/media/Couvertures/Couv_476342.jpg")
                 .addManquante( "HS 1", "Les amis d'Atalantes","2-84565-682-3", "http://www.bedetheque.com/media/Couvertures/Couv_30442.jpg")
                 .addManquante( "HS 2", "Atalantes","2-915419-05-1", "https://www.bedetheque.com/media/Couvertures/Couv_48033.jpg")
                 .withImageUrl("http://www.bedetheque.com/media/Couvertures/Couv_1938.jpg")
@@ -643,9 +648,9 @@ public class CollectionBuilder {
                 .withFini(false));
 
         c.addSerie(new Serie( "Merlin (Istin/Lambert)")
-                .addPossede( "1", "La colère d'Ahès ","2-914235-23-2", "http://www.bedetheque.com/media/Couvertures/merlinnucleasoleilcouv01.jpg")
-                .addPossede( "2", "L'éveil du pouvoir","2-914235-33-X", "http://www.bedetheque.com/media/Couvertures/merlinnucleasoleil02.jpg")
-                .addPossede( "3", "Le Cromm-Cruach","2-84565-310-7", "http://www.bedetheque.com/media/Couvertures/merlinnucleasoleil03.jpg")
+                .addPossede( "1", "La colère d'Ahès ","2-914235-23-2", "https://www.bedetheque.com/media/Couvertures/Couv_1994.jpg")
+                .addPossede( "2", "L'éveil du pouvoir","2-914235-33-X", "https://www.bedetheque.com/media/Couvertures/Couv_2549.jpg")
+                .addPossede( "3", "Le Cromm-Cruach","2-84565-310-7", "https://www.bedetheque.com/media/Couvertures/merlinnucleasoleil03.jpg")
                 .addPossede( "4", "Avalon","2-84565-561-4", "http://www.bedetheque.com/media/Couvertures/merlinnucleasoleil04.jpg")
                 .addPossede( "5", "Brendann le maudit","2-84565-750-1", "http://www.bedetheque.com/media/Couvertures/Merlinsoleil05.jpg")
                 .addPossede( "6", "L'ermite et le nid","2-84565-894-X", "http://www.bedetheque.com/media/Couvertures/merlinnucleasoleil06.jpg")
