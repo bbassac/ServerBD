@@ -10,6 +10,14 @@ public class CollectionBuilder {
         Collection c = new Collection();
         c.setId(next(withId));
 
+        
+        c.addSerie(new Serie("Guerres d'Arran")
+                .addPossede("1","La Compagnie des bannis","978-2-302-09212-9","https://www.bedetheque.com/media/Couvertures/Couv_470091.jpg")
+                .addPossede("2","Dal'darum","978-2-302-09630-1","https://www.bedetheque.com/media/Couvertures/Couv_482616.jpg")
+                .withImageUrl("https://www.bedetheque.com/media/Couvertures/Couv_470091.jpg")
+                .withEditeur("Soleil Productions")
+        );
+
         c.addSerie(new Serie("Les passagers du vent 1 - 5")
                 .addPossede("1","La fille sous la dunette","2723401324","https://www.bedetheque.com/media/Couvertures/Couv_302.jpg")
                 .addPossede("2","Le ponton","2723401642","https://www.bedetheque.com/media/Couvertures/Couv_303.jpg")
